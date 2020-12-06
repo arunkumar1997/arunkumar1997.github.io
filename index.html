@@ -72,8 +72,11 @@
       <li class="nav-item mr-4">
         <div class=" dropdown"style="margin-left: 0px!important">
 
-                  <button type="button" class="btn btn-info dropdown-toggle"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" class="plan">Sheltie's Plan</button>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 60px !important;" data-toggle="modal" data-target="#myModal3">
+
+
+
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" class="plan">Sheltie's Plan</button>
+                  <div data-toggle="modal" data-target="#myModal3" class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 60px !important;" >
                       <a class="dropdown-item" href="#">Premium Tenant Plans</a>
                       <a class="dropdown-item" href="#" >Premium Partner Plans</a>
                       <a class="dropdown-item" href="#">Career Reboot 2.0</a>
@@ -100,25 +103,7 @@
       
     </ul>
     <!-- Modal start -->
-                  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h5>Coming Soon to Your Place</h5>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+                 
                   <!-- modal end -->
   </div>
 </nav>
@@ -202,12 +187,13 @@
                           document.getElementById("collapseOne").classList.remove("show")
                         }
                       </script>
-                      <div class="prem-filter">
+<div class="prem-filter">
                         <div class="pre" style="margin-top: -5px; background-color: #2ECAB6; text-align: center; padding: 1rem 0;  position: relative;"><strong style="margin-left:0.5rem;" >Sheltie's Shelter </strong><button class="newbtn"  disabled > NEW</button>
                         </div> 
                           <p style=" text-align: center; margin-left: 10px;">Premium Filters<input type="checkbox" data-toggle="modal" data-target="#exampleModalLong" style=" margin-left: 10px; margin-top: 2px;"></p>   
-                      </div>                 
-                      <hr style="margin: 0">
+                      </div>  
+                       <hr style="margin: 0">
+                      <div class="scroll">
                        <ul> 
                           <li>
                             <a class="cat-btn" style="text-decoration: none;">Categories
@@ -277,20 +263,99 @@
                                   <li>Above 15<input type="checkbox" class="check"></li>
                                 </ul>
                               </li>
-                              <li><button id="clearall" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em;">Apply</button></li>
-                              <li><button id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
+
+                               <li>
+                            <a class="bal-btn" style="text-decoration: none;">Balcony
+                               <span class="fas fa-caret-down seventh"></span>
+                            </a>
+                            <ul class="bal-show" style="text-decoration: none;">
+                              <li>Yes<input type="checkbox" class="check"></li>
+                              <li>No<input type="checkbox" class="check"></li>
+                            </ul>
+                          </li>
+
+                           <li>
+                            <a class="sup-btn" style="text-decoration: none;">Water Supply
+                               <span class="fas fa-caret-down eight"></span>
+                            </a>
+                            <ul class="sup-show" style="text-decoration: none;">
+                              <li>Yes<input type="checkbox" class="check"></li>
+                              <li>No<input type="checkbox" class="check"></li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <a class="gated-btn" style="list-style: none;">Gated Security
+                               <span class="fas fa-caret-down ninth"></span>
+                            </a>
+                            <ul class="gated-show" style="list-style: none;">
+                              <li>Yes<input type="checkbox" class="check"></li>
+                              <li>No<input type="checkbox" class="check"></li>
+                            </ul>
+                          </li>
+
+                              <li>
+                                <a class="amn-btn" style="list-style: none;">Amenities
+                                  <span class="fas fa-caret-down tenth"></span>
+                                </a>
+                                <ul class="amn-show" style="list-style: none;">
+                                  <li>Lift<input type="checkbox" class="check"></li>
+                                  <li>Childrens Playing Area<input type="checkbox" class="check"></li>
+                                  <li>Power Backup<input type="checkbox" class="check"></li>
+                                  <li>Internet Services<input type="checkbox" class="check"></li>
+                                  <li>Fire Safety<input type="checkbox" class="check"></li>
+                                  <li>Gas Pipeline<input type="checkbox" class="check"></li>
+                                  <li>Visitor Parking<input type="checkbox" class="check"></li>
+                                  <li>Air Conditioner<input type="checkbox" class="check"></li>
+                                </ul>
+                              </li>
+
+                              <li>
+                            <a class="ostay-btn" style="text-decoration: none;">Owner Stays
+                               <span class="fas fa-caret-down eleven"></span>
+                            </a>
+                            <ul class="ostay-show" style="list-style: none;">
+                              <li>At Property<input type="checkbox" class="check"></li>
+                              <li>No<input type="checkbox" class="check"></li>
+                            </ul>
+                            </li>
+
+                          <li>
+                            <a class="meal-btn" style="text-decoration: none;">Meals Included
+                               <span class="fas fa-caret-down twelve"></span>
+                            </a>
+                            <ul class="meal-show" style="list-style: none;">
+                              <li>In Rent<input type="checkbox" class="check"></li>
+                              <li>Exclusive<input type="checkbox" class="check"></li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <a class="ogender-btn" style="text-decoration: none;">Opposite Gender Visitors
+                               <span class="fas fa-caret-down thirteen"></span>
+                            </a>
+                            <ul class="ogender-show" style="list-style: none;">
+                              <li >Allowed<input type="checkbox" class="check"></li>
+                              <li>No<input type="checkbox" class="check"></li>
+                            </ul>
+                          </li>
+                        </div>
+                             <li style="text-decoration: none; list-style: none;">
+                                    <button  type="submit" class="btn btn-sm " style="float: left;   color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">  Apply </button></li>
+                                  <li style="text-decoration: none; list-style: none;"><button type="button" id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                               
                             </ul>
                          </div>
 
                           <div id="collapseTwo" class="collapse"  data-parent="#accordion" aria-expanded="false">
-                            <ul class="checkboxc" >
+                            <ul class="checkboxc" style="text-decoration: none;" >
                                   <li class="sortc" >Popularity<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Customer Ratings<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Lowest to Highest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Highest to Lowest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
-                                  <li><button  type="submit" class="btn btn-sm " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">  Apply </button></li>
-                                  <li><button type="button" id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
+                                  <li style="text-decoration: none;">
+                                    <button  type="submit" class="btn btn-sm " style="float: left;   color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">  Apply </button></li>
+                                  <li style="text-decoration: none;"><button type="button" id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                                  
                                 </ul>
 
@@ -312,7 +377,7 @@
   <!---------------middle part start------------------------->
 <!---------------middle part start------------------------->
 <div class="col-lg-8 col-md-7 col-sm-7">
-    <div class="middle " style="background: white;">
+    <div class="middle ">
           <div style="margin-top: 0;  border:none!important;" class="generalcard">
               <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
                   <div class=" d-flex justify-content-around">
@@ -336,40 +401,50 @@
             
 
 
-              <div style=" margin:5px 10px; background-color: white; border: 1px solid grey;" class="upper">
+              <div style=" margin:5px 0; background-color: white; border: 1px solid grey;" class="upper">
                 <div class="container-fluid">
                 <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 pt-3">
                   <div  class="images">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                            <ol class="carousel-indicators">
-                               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                               <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                               <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                               <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
                            </ol>
                            <div class="carousel-inner">
                                <div class="carousel-item active">
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
+
                                    <img class="d-block w-100"
                                        src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
                                        alt="First slide">
                                </div>
                                <div class="carousel-item">
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
                                    <img class="d-block w-100"
                                        src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
                                        alt="Second slide">
                                </div>
                                <div class="carousel-item">
+                                 <div class="watermark">
+                             <div class="content">Sheltown.in</div>
+                           </div>
                                    <img class="d-block w-100"
                                        src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
                                        alt="Third slide">
                                </div>
                            </div>
-                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
                                data-slide="prev">
                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                <span class="sr-only">Previous</span>
                            </a>
-                           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
                                data-slide="next">
                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                <span class="sr-only">Next</span>
@@ -380,178 +455,130 @@
                      
                 </div><!-----col-4(image) end----------->
                 <div class="col-lg-8 col-md-8 col-sm-8">
-                      <div  style="margin:0; margin-top: 15px;margin-right: 18px;" class="pp2 " >
+                      <div  style="margin:15px 0 ;" class="pp2 " >
 
                                  Property Name
-                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart"><i class="fa fa-heart  heartinactive" id="heart" ></i></button>
+                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
+                                 <style>
+                                   .heartactive{
+                                     color: red !important;
+                                     font-size:23px;
+                                   }
+                                   .heartinactive-a{
+                                     color:#9fa5a5 !important;
+                                     font-size:19px;
+                                   }
+                                 </style>
+                                 <script>
+                                 var v = document.getElementById("heart-a");
+                                 document.getElementById("btn-heart-a").addEventListener("click",changecolor);
+                                 function changecolor(){
+                                   if(v.classList.contains("heartinactive-a")){
+                                     document.getElementById("heart-a").classList.add("heartactive");
+                                     document.getElementById("heart-a").classList.remove("heartinactive-a");
+                                   }
+                                   else{
+                                     document.getElementById("heart-a").classList.add("heartinactive-a");
+                                     document.getElementById("heart-a").classList.remove("heartactive");
+                                   }
+                                 }
                                  
-                                   <style>
-                                    .heartactive{
-                                      color: red !important;
-                                      font-size:23px;
-                                    }
-                                    .heartinactive{
-                                      color:#9fa5a5 !important;
-                                      font-size:19px;
-                                    }
-                                  </style>
-                                  <script>
-                                  var t = document.getElementById("heart");
-                                  document.getElementById("btn-heart").addEventListener("click",changecolor);
-                                  function changecolor(){
-                                    if(t.classList.contains("heartinactive")){
-                                      document.getElementById("heart").classList.add("heartactive");
-                                      document.getElementById("heart").classList.remove("heartinactive");
-                                    }
-                                    else{
-                                      document.getElementById("heart").classList.add("heartinactive");
-                                      document.getElementById("heart").classList.remove("heartactive");
-                                    }
-                                  }
 
-                                  </script>
-                                 
-                                 <hr style="margin: 4px;">
-                                 <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br><hr  style=" margin: 3px; margin-top: 3px">
-                                  
+                                 </script>
+                                
+                                 <hr style="margin: 4px; ">
+                                 <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
                         
-                        <div class="price-nego">
-                       
-                       <div class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 </div>
-                       <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style=" padding-top: 0.1rem; font-size: x-small; color:  black !important;margin-top: 0.2rem; cursor: pointer;color: #2ecab6; margin-top: 5px; margin-left: 3px;" ></i>
-                         
-                        <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button>
-                       </div>
-
+                                 <div class="price-nego">
+                                   <div style="position: relative; " class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="position: absolute; top: 10%;right: 5%; font-size: x-small; font-size: 7px; color:  black !important; cursor: pointer;" ></i></div>
+                                    <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button> </div>
                         
-
-                                 <!--categoryy alined start-->                     
-                                 <div class="container-fluid " >
-                                   <style>
-                                     select{
-                                       background-color: #dadce4;
-                                       color: black;
-                                       border: none;
-                                       outline: none;
-                                       appearance: none;
-                                       border: solid  2px #dadce4;
-                                       border-radius: 5px;
-                                       width: 10em;
-                                       text-indent: 2px;
-                                     
-                                      
-                                     }
-                                     option{
-                                       background-color: #dadce4;
-                                       color: black; 
-                                      
-                                     }
-                                  
-
-                                     @media  (max-width: 1200px) {
-                                       div  .lower a{
-                                        float: left !important;
-                                        padding-top: -40px !important;
-                                       }
-                                       .live{
-                                        margin-top: 2px !important;
-                                       }
-                                       .filters, .sortby{
-                                        height: 25px !important;
-                                       }
-                                       
-                                     }
-                                   </style>
-                                   <ul class=" floatleft" ; >
-                                     <li style="list-style-type: none;"><div class="dropdown-container1">
-                                      <select  class="mt-1" name="category" id="category" >
-                                        <option value="none" selected disabled>Category</option>
-                                        <option value="none">PG/Hostel</option>
-                                        <option value="none">Apartment</option>
-                                        <option value="none">Independent House</option>
-                                        <option value="none">Gated Community</option>
-                                      </select>
-                                    </div></li>
-                                   <!-- <br> -->
-                                    <li style="list-style-type: none;"><div class="dropdown-container2">
-                                      <select class="  mt-1"  name="opt1" id="opt1" >
-                                        <option value="none" selected disabled>Preference</option>
-                                        <option value="none">Male only </option>
-                                        <option value="none">Female Only</option>
-                                        <option value="none">Couple Privacy</option>
-                                        <option value="none">Family zoned</option>
-                                      </select>
-                                        
-                                      </div></li>
-            
-                                        <li style="list-style-type: none;"><div class="dropdown-container3">
-                                          <select class="  mt-1"width name="opt2" id="opt2">
-                                            <option value="none" selected disabled>Deposit</option>
-                                            <option value="none">1 Month Deposit</option>
-                                            <option value="none">2 Month Deposit</option>
-                                            <option value="none">No Security</option>
-                                          </select>
-
-                                      
-                                     </div></li>
-                                   </ul>
-                                          <!--  <br> -->
-                                    <ul >
-                                     <li style="list-style-type: none; margin-top: 20px !important;"><div class="dropdown-container5">
-                                      <select class=" mt-1" name="category" id="category" >
-                                        <option value="none" selected disabled>Furnish</option>
-                                        <option value="none">Non Furnished</option>
-                                        <option value="none">Semi Furnished</option>
-                                        <option value="none">Fully Furnished</option>
-                                      </select>
-                                    </div></li>
-            
+                        
+                        
+                        
+                        
+                                 <div class="container-fluid ">
                                    
-                                 <!--  <br> -->
-                                 <li style="list-style-type: none;">
-                                  <div class="dropdown-container7">
-                                    <select class=" mt-1" name="category"  id="category">
-                                      <option value="none" selected disabled>BHK Type</option>
-                                      <option value="none">1 RK</option>
-                                      <option value="none">1 BHK</option>
-                                      <option value="none">2 BHK</option>
-                                      <option value="none">3 BHK</option>
-                                      <option value="none">4 BHK</option>
-                                      <option value="none">5 BHK</option>
-                                  </select>
-                                  
-                                   </div></li>
-
-                                   <li style="list-style-type: none;"> <div class="dropdown-container6">
-                                    <select class="  mt-1" name="category"  id="category">
-                                      <option value="none" selected disabled>Property Age</option>
-                                      <option value="none">Below 5</option>
-                                      <option value="none">Below 5</option>
-                                      <option value="none">5-10</option>
-                                      <option value="none">10-15</option>
-                                      <option value="none">Above 15</option>
-                                  </select>
-                                  
-                                    </div></li></ul>
-                                  
-                                      <!--   <br> -->
+                                   
+                                   <div class="col">
+                                     <select  class="mt-1" name="category" id="category" >
+                                       <option value="none" selected disabled>Category</option>
+                                       <option value="none">PG/Hostel</option>
+                                       <option value="none">Apartment</option>
+                                       <option value="none">Independent House</option>
+                                       <option value="none">Gated Community</option>
+                                     </select>
+                                
+                                  <!-- <br> -->
+                                
+                                     <select class="  mt-1"  name="opt1" id="opt1" >
+                                       <option value="none" selected disabled>Preference</option>
+                                       <option value="none">Male only </option>
+                                       <option value="none">Female Only</option>
+                                       <option value="none">Couple Privacy</option>
+                                       <option value="none">Family zoned</option>
+                                     </select>
                                        
-                                </div>
-                               
-                                <!--category alined end here-->
+                           
+           
+                                     
+                                         <select class="  mt-1"width name="opt2" id="opt2">
+                                           <option value="none" selected disabled>Deposit</option>
+                                           <option value="none">1 Month Deposit</option>
+                                           <option value="none">2 Month Deposit</option>
+                                           <option value="none">No Security</option>
+                                         </select>
+                                       </div>
 
+                                     
+                                
+                                         <!--  <br> -->
+                            
+                                   <div class="col">
+                                     <select class=" mt-1" name="category" id="category" >
+                                       <option value="none" selected disabled>Furnish</option>
+                                       <option value="none">Non Furnished</option>
+                                       <option value="none">Semi Furnished</option>
+                                       <option value="none">Fully Furnished</option>
+                                     </select>
+                         
+           
+                                  
+                                <!--  <br> -->
+                                
+                          
+                                   <select class=" mt-1" name="category"  id="category">
+                                     <option value="none" selected disabled>BHK Type</option>
+                                     <option value="none">1 RK</option>
+                                     <option value="none">1 BHK</option>
+                                     <option value="none">2 BHK</option>
+                                     <option value="none">3 BHK</option>
+                                     <option value="none">4 BHK</option>
+                                     <option value="none">5 BHK</option>
+                                 </select>
+                                 
+                                 
+
+                                
+                                   <select class="  mt-1" name="category"  id="category">
+                                     <option value="none" selected disabled>Property Age</option>
+                                     <option value="none">Below 5</option>
+                                     <option value="none">Below 5</option>
+                                     <option value="none">5-10</option>
+                                     <option value="none">10-15</option>
+                                     <option value="none">Above 15</option>
+                                 </select>
+                                 
+                                   </div>
+            
+                                </div>
 
                    </div><!-----pp2 end------->
-                  <div class="lower2 py-2" style="float: right; ">
-                         <button style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
-                         <button style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
-                         <i  class="fa fa-info-circle" style="margin-top: 12px;" data-toggle="modal" data-target="#myModal2"></i>
-                       </div>
-                     
-                        
-                       
-                   
-
+                  
+<div class="lower2 py-2" style="float: right; ">
+ <button  aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Unlimited Owner Details-Free" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
+ <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
+</div>
            </div><!---col-8 end------->
 
 
@@ -568,40 +595,50 @@
 <!-----genaral card div end-------------->
 <!-- card 2 start
  --><br>
-    <div style=" margin:5px 10px; background-color: white; border: 1px solid grey;">
+    <div style=" margin:5px 0; background-color: white; border: 1px solid grey;" class="upper">
                  <div class="container-fluid">
                  <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 pt-3">
                    <div  class="images">
-                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
+                                  <div class="watermark">
+                              <div class="content">Sheltown.in</div>
+                            </div>
+
                                     <img class="d-block w-100"
                                         src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
                                         alt="First slide">
                                 </div>
                                 <div class="carousel-item">
+                                  <div class="watermark">
+                              <div class="content">Sheltown.in</div>
+                            </div>
                                     <img class="d-block w-100"
                                         src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
                                         alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
+                                  <div class="watermark">
+                              <div class="content">Sheltown.in</div>
+                            </div>
                                     <img class="d-block w-100"
                                         src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
                                         alt="Third slide">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
                                 data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
                                 data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
@@ -612,7 +649,7 @@
                       
                  </div><!-----col-4(image) end----------->
                  <div class="col-lg-8 col-md-8 col-sm-8">
-                       <div  style="margin:0; margin-top: 15px;margin-right: 15px;" class="pp2 " >
+                       <div  style="margin:15px 0 ;" class="pp2 " >
 
                                   Property Name
                                   <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
@@ -647,100 +684,95 @@
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
                          
                                   <div class="price-nego">
-                       
-                                    <div class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 </div>
-                                    <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style=" padding-top: 0.1rem; font-size: x-small; color:  black !important;margin-top: 0.2rem; cursor: pointer;color: #2ecab6; margin-top: 5px; margin-left: 3px;" ></i>
-                                      
-                                     <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button>
-                                     </div>
+                                    <div style="position: relative; " class="negoo " data-toggle="modal" data-target="#myModal"> ₹4500 <i class="fa fa-asterisk" aria-hidden="true" data-toggle="tooltip" title="Negotiable"  data-placement="top"  style="position: absolute; top: 10%;right: 5%; font-size: x-small; font-size: 7px; color:  black !important; cursor: pointer;" ></i></div>
+                                     <button type="button" class="btn btn-secondary btn-hid" data-container="body" data-toggle="popover" style=" visibility: hidden;" ></button> </div>
+                         
+                         
                          
                          
                          
                                   <div class="container-fluid ">
                                     
                                     
-                                    <ul  style="margin-top: 0;">
-                                      <li style="list-style-type: none;"><div class="dropdown-container1">
-                                       <select  class="mt-1" name="category" id="category" >
-                                         <option value="none" selected disabled>Category</option>
-                                         <option value="none">PG/Hostel</option>
-                                         <option value="none">Apartment</option>
-                                         <option value="none">Independent House</option>
-                                         <option value="none">Gated Community</option>
-                                       </select>
-                                     </div></li>
-                                    <!-- <br> -->
-                                     <li style="list-style-type: none;"><div class="dropdown-container2">
-                                       <select class="  mt-1"  name="opt1" id="opt1" >
-                                         <option value="none" selected disabled>Preference</option>
-                                         <option value="none">Male only </option>
-                                         <option value="none">Female Only</option>
-                                         <option value="none">Couple Privacy</option>
-                                         <option value="none">Family zoned</option>
-                                       </select>
-                                         
-                                       </div></li>
-             
-                                         <li style="list-style-type: none;"><div class="dropdown-container4">
-                                           <select class="  mt-1"width name="opt2" id="opt2">
-                                             <option value="none" selected disabled>Deposit</option>
-                                             <option value="none">1 Month</option>
-                                             <option value="none">2 Month</option>
-                                             <option value="none">No Security</option>
-                                           </select>
-                                       
-             
-                                     </select>
-                                       
-                                      </div></li>
-                                    </ul>
-                                           <!--  <br> -->
-                                     <ul style="margin-top: 0;">
-                                      <li style="list-style-type: none;"><div class="dropdown-container5">
-                                       <select class="mt-1" name="category" id="category" >
-                                         <option value="none" selected disabled>Furnish</option>
-                                         <option value="none">Non</option>
-                                         <option value="none">Semi</option>
-                                         <option value="none">Fully</option>
-             
-             
-                                       </select>
-                                     </div></li>
-             
-                                    
-                                  <!--  <br> -->
-                                  <li style="list-style-type: none;">
-                                   <div class="dropdown-container7">
-                                     <select class=" mt-1" name="category"  id="category">
-                                       <option value="none" selected disabled>BHK Type</option>
-                                       <option value="none">1 BHK</option>
-                                       <option value="none">2 BHK</option>
-                                       <option value="none">3 BHK</option>
-                                       <option value="none">4 BHK</option>
-                                       <option value="none">5 BHK</option>
-                                   </select>
+                                    <div class="col">
+                                      <select  class="mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Category</option>
+                                        <option value="none">PG/Hostel</option>
+                                        <option value="none">Apartment</option>
+                                        <option value="none">Independent House</option>
+                                        <option value="none">Gated Community</option>
+                                      </select>
+                                 
+                                   <!-- <br> -->
+                                 
+                                      <select class="  mt-1"  name="opt1" id="opt1" >
+                                        <option value="none" selected disabled>Preference</option>
+                                        <option value="none">Male only </option>
+                                        <option value="none">Female Only</option>
+                                        <option value="none">Couple Privacy</option>
+                                        <option value="none">Family zoned</option>
+                                      </select>
+                                        
+                            
+            
+                                      
+                                          <select class="  mt-1"width name="opt2" id="opt2">
+                                            <option value="none" selected disabled>Deposit</option>
+                                            <option value="none">1 Month Deposit</option>
+                                            <option value="none">2 Month Deposit</option>
+                                            <option value="none">No Security</option>
+                                          </select>
+                                        </div>
+
+                                      
+                                 
+                                          <!--  <br> -->
+                             
+                                    <div class="col">
+                                      <select class=" mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Furnish</option>
+                                        <option value="none">Non Furnished</option>
+                                        <option value="none">Semi Furnished</option>
+                                        <option value="none">Fully Furnished</option>
+                                      </select>
+                          
+            
                                    
-                                    </div></li>
-                                    <li style="list-style-type: none;"> <div class="dropdown-container6">
-                                     <select class="  mt-1" name="category"  id="category">
-                                       <option value="none" selected disabled>Property Age</option>
-                                       <option value="none">  < 5</option>
-                                       <option value="none">5-10</option>
-                                       <option value="none">10-15</option>
-                                       <option value="none">> 15</option>
-                                   </select>
-                                     </div>
+                                 <!--  <br> -->
+                                 
+                           
+                                    <select class=" mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>BHK Type</option>
+                                      <option value="none">1 RK</option>
+                                      <option value="none">1 BHK</option>
+                                      <option value="none">2 BHK</option>
+                                      <option value="none">3 BHK</option>
+                                      <option value="none">4 BHK</option>
+                                      <option value="none">5 BHK</option>
+                                  </select>
+                                  
+                                  
+
+                                 
+                                    <select class="  mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>Property Age</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">5-10</option>
+                                      <option value="none">10-15</option>
+                                      <option value="none">Above 15</option>
+                                  </select>
+                                  
+                                    </div>
              
                                  </div>
 
                     </div><!-----pp2 end------->
                    
 <div class="lower2 py-2" style="float: right; ">
-                         <button style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
-                         <!-- <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Get owner details</button>-->
-                         <button style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
-                         <i  class="fa fa-info-circle" style="margin-top: 12px;" data-toggle="modal" data-target="#myModal2"></i>
-                       </div>
+  <button  aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Unlimited Owner Details-Free" style=" border : none;background-color: #32a898; color: white;" type="button" class="btn btn-primary mt-2 btn-sm";>Owner Details</button>
+  <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #32a898; color: white; margin-left: 5px;" type="button" class="btn btn-primary mt-2 btn-sm">Book Now </button>
+</div>
             </div><!---col-8 end------->
 
 
@@ -785,19 +817,26 @@
     </div>
   </div>
 
-<div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-   <div class="modal-content">
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
         
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       <div class="modal-body">
-        <h5>We only take bookings for Verified Properties</h5>
+        <h5>Coming Soon to Your Place</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>
 </div>
+
 <br>
 
     </div><!--------middle end--->

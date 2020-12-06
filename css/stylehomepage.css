@@ -3,100 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "ITC Officina Sans Std Book";
-  cursor:default;
 }
-input[type=checkbox] ,a{
-cursor: pointer;
-}
-
 body {
   background: #f1f3f6;
 }
 
-/*.dropdown {
-    position: relative;
-    display: inline-block;
+input[type=checkbox] ,a{
+cursor: pointer;
 }
-.login a:hover{
-  text-decoration: underline;
-  background-color: white !important;
-}
-.choose > a{
-  color: black !important;
-  font-size: 18px;
-}
-.choose a:hover{
-  background-color: #2ecab6;
-}
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-/*.main > div{
-  align-items: center;
-}
-.center{
-  color: white;
-  margin-top: 5%;
-  margin-left: 3%;
-}
-.left{
-  float: left;
-}
-/*Middle Checkbox*/
-/*.box{
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 10px 30px;
-    width: 40%;
-    height: 80%;
-    box-sizing: border-box;    
-}
-.innerbox{
-margin: 12px 12px;
-padding: 3px;
-font-size: 16px;
-}
-.generalcard{
-  margin: 5px 0px;
-  padding: 10px 10px;
-  border: 1px solid grey;
-  font-size: 18px;
-  float:left;
-  width: 100%;
-}
-/**/
+
 
 
 /*--------------------------navbar------------------------------------------*/
@@ -124,7 +39,61 @@ font-size: 16px;
   text-decoration: underline;
 }
 
-/* new btn */
+/*-----------------------navbar end------------------------------------------->*/
+/*------------------------all media queries-----------------------------*/
+/* check box mv */
+@media screen and (max-width: 465px) {
+  .checkbox{
+    font-size: 11px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Category option mv */
+@media only screen and (min-width: 360px) and (max-width: 767px){
+  select{
+    font-size: 0.7em;
+  }
+}
+
+
+
+@media (max-width: 576px){
+  .navbar-brand{
+    padding-left: 0!important;
+  }
+  .dropdown{
+    margin-left: -20px!important
+  }
+  .navbar-brand{
+  font-size: 18px;
+      }
+   .navbar-brand p{
+  font-size: 12px;  
+}
+.filters, .sortby{
+height: 25px !important;
+ }
+  
+}
+@media (max-width: 386px)and (min-width: 381px)  {
+   .dropdown{
+    margin-left: -25px!important
+  }
+  .filters, .sortby{
+                                        height: 25px !important;
+                                       }
+}
+@media (max-width: 381px){
+  .dropdown{
+    margin-left: -35px!important
+  }
+  .filters, .sortby{
+                                        height: 25px !important;
+                                       }
+}
+
 .prem-filter .pre .newbtn{
   background-color: red;
   color: white;
@@ -151,7 +120,8 @@ font-size: 16px;
 /* Category option mv */
 @media (min-width: 360px) and (max-width: 767px){
   select{ 
-    font-size: 0.7em;
+    width: 70px !important;
+    font-size: 12px;
   }
 }
 /* Negotiation and price */
@@ -162,7 +132,7 @@ font-size: 16px;
 @media   (min-width: 360px) and (max-width: 767px){
   .negoo{
     margin-right: 5px;
-    width: 20% !important;
+    width: 25% !important;
   }
   .price-nego{
     display: flex;
@@ -173,47 +143,6 @@ font-size: 16px;
     right: 30% ;
     top: 10%  ;
   }
-}
-@media (max-width: 576px){
-  .navbar-brand{
-    padding-left: 0!important;
-  }
-  .dropdown{
-    margin-left: -20px!important
-  }
-  .navbar-brand{
-  font-size: 18px;
-      }
-   .navbar-brand p{
-  font-size: 12px;  
-}
-.filters, .sortby{
-height: 25px !important;
- }
-  /*input[type="search"]{
-    font-size: 10px;
-  }
-  .btn.btn-search{
-      font-size: 10px;
-      padding-top: 17px!important;
-   padding-bottom: 18px!important;
-  } */
-}
-@media (max-width: 386px)and (min-width: 381px)  {
-   .dropdown{
-    margin-left: -25px!important
-  }
-  .filters, .sortby{
-                                        height: 25px !important;
-                                       }
-}
-@media (max-width: 381px){
-  .dropdown{
-    margin-left: -35px!important
-  }
-  .filters, .sortby{
-                                        height: 25px !important;
-                                       }
 }
 
 /*---------------------------left part start---------------------------------------------*/
@@ -249,7 +178,7 @@ height: 25px !important;
 }
 
 .sidebar ul .cat-show.show,.sidebar ul .bhk-show.show1,.sidebar ul .pg-show.show2,
-.sidebar ul .floor-show.show3,.sidebar ul .fur-show.show4,.sidebar ul .pro-show.show5
+.sidebar ul .floor-show.show3,.sidebar ul .fur-show.show4,.sidebar ul .pro-show.show5,.sidebar ul .bal-show.show6,.sidebar ul .sup-show.show7,.sidebar ul .gated-show.show8,.sidebar ul .amn-show.show9,.sidebar ul .ostay-show.show10,.sidebar ul .meal-show.show11,.sidebar ul .ogender-show.show12
 {
   display: block;
 }
@@ -278,13 +207,44 @@ height: 25px !important;
   color: #17c3ad !important;
   
 }
+div.scroll {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.myModal3 {
+/* bug fix - no overlay */    
+display: none;}
+
+.watermark {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+
+.content {
+  position: absolute; /* Position the background text */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+
+
+.ogender-show li:hover,
+.meal-show li:hover,
+.ostay-show li:hover,
+.amn-show li:hover,
+.gated-show li:hover,
+.sup-show li:hover,
+.bal-show li:hover,
 .pro-show li:hover,
 .fur-show li:hover,
 .floor-show li:hover,
 .pg-show li:hover,
 .bhk-show li:hover,
-.cat-show
- li:hover,
+.cat-show li:hover,
 .checkboxc > label:hover
 {
   background: #d5f6f2!important;
@@ -305,12 +265,9 @@ height: 25px !important;
   transform: translateY(-50%) rotate(-180deg);
   
 }
-/*.sidebar a {
-  line-height: 20px !important;
-}*/
+
 .sortc{
   font-size: 16px;
-  /*margin-bottom: 5px;*/
   margin-left: 15px;
 
 }
@@ -362,7 +319,7 @@ color: white !important;
   letter-spacing: 1px;
 }
 .vl {
-  border-left: 6px solid white;
+  border-left: 3px solid white;
   height: 50px;
 }
 /*.btn-info.focus, .btn-info:focus {
@@ -411,8 +368,6 @@ ul.breadcrumb {
   padding: 10px 10px;
   list-style: none;
   background-color: #eee;
-  /*float:left;*/
-  /*margin: 5px;*/
 }
 ul.breadcrumb li {
   display: inline;
@@ -449,26 +404,6 @@ ul.breadcrumb li a:hover {
   margin-right: 5px;
 }
 
-/* negotiation button */
-.negoo:hover{
-  font-weight: bolder;
-  color:#4b8a82 !important;
-  transition: all 150ms ease 0s; 
-}
-
-/* tooltip */
-.tooltip-inner {
-  border-radius: 5px;
-}
-.tooltip .arrow:before {
-  border-top-color: #333 !important;
-   }
-.tooltip .tooltip-inner {
-  background-color: #333;
-  font-size: 0.75rem;
-   }
-  /* tooltip end */
-
 .fa-heart{
   color: red;
   float: right;
@@ -491,31 +426,32 @@ ul.breadcrumb li a:hover {
   right: 5px;
 }
 
-.dropdown-container1,.dropdown-container3,.dropdown-container5,.dropdown-container7{
-  float: left;
-  margin-left: 10px;
-}
-
-.dropdown-container2,.dropdown-container4,.dropdown-container6,.dropdown-container8{
-  float:left;
-  margin-left: 10px;
-}
 
 .generalcard{
   font-size: 15px;
 }
 
-/*select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /*padding: 2px 30px 2px 2px;*/
-    /* border:solid;*/
-    /*text-decoration: none;
-    background:#f1f3f6;
-     margin: 10px;
-     padding: 2px;
-}*/
+/* negotiation button */
+.negoo:hover{
+  font-weight: bolder;
+  color:#4b8a82 !important;
+  transition: all 150ms ease 0s;
+  
+ 
+}
+
+/* tooltip */
+.tooltip-inner {
+  border-radius: 5px;
+}
+.tooltip .arrow:before {
+  border-top-color: #333 !important;
+   }
+.tooltip .tooltip-inner {
+  background-color: #333;
+  font-size: 0.75rem;
+   }
+  /* tooltip end */
 
 /*---------------------------middle part end---------------------------------------------*/
 
@@ -528,11 +464,9 @@ ul.breadcrumb li a:hover {
   color: black !important;
 }
 .title {
-/*  position: relative;*/
   font-weight: 800;
   padding: 5px 0px;
   margin:0;
-  /*display: inline-block;*/
   background-color:#2ecab6;
   color: #ffffff;
   text-transform: uppercase;
@@ -545,8 +479,7 @@ ul.breadcrumb li a:hover {
   font-weight: bold;
   font-size: 0.85rem;
 }
- /*.features li:nth-child(even) {
-  /*background: rgba(0, 0, 0, 0.08);}*/
+
 .features i {
   margin-right: 8px;
   opacity: 0.6;
@@ -563,11 +496,12 @@ ul.breadcrumb li a:hover {
   margin-bottom:1px;
   position: relative;
   color: red;
+  padding-top: 2px;
   cursor: pointer; 
   font-weight: bolder; 
   font-size: large;
   text-align: center; 
-  width: 10%;
+  width: 13%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -643,4 +577,36 @@ footer a {
   display: block;
 }
 }
-  /*---------------------------mob  view end---------------------------------------------*/
+/*---------------------------mob view part end---------------------------------------------*/
+
+select{
+  background-color: #dadce4;
+  color: black;
+  border: none;
+  outline: none;
+  appearance: none;
+  border: solid  2px #dadce4;
+  border-radius: 5px;
+  width:150px;
+  text-indent: 2px; 
+}
+option{
+  background-color: #dadce4;
+  color: black;
+ 
+}
+
+
+@media only screen and (max-width: 1200px) {
+  div  .lower a{
+   float: left !important;
+   padding-top: -40px !important;
+  }
+  .live{
+   margin-top: 2px !important;
+  }
+  .filters, .sortby{
+   height: 25px !important;
+  }
+  
+}
