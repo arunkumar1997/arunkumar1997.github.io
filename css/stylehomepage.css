@@ -43,10 +43,9 @@ cursor: pointer;
 /*------------------------all media queries-----------------------------*/
 /* check box mv */
 @media screen and (max-width: 465px) {
-  .checkbox{
-    font-size: 11px;
-    align-items: center;
-    text-align: center;
+  .checkboxx li{
+   font-size: 15px;
+   margin-left: 50px;
   }
 }
 
