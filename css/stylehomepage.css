@@ -128,18 +128,16 @@ display: inline;
   }
 
 
-@media   (min-width: 350px) and (max-width: 767px){
+@media   (min-width: 360px) and (max-width: 767px){
   .hide-owner-mv{
     display: none;
   }
   .hide-owner-dv{
     display: inline;
   }
-  .negoo{
-    margin-right: 5px;
-    width: 25% !important;
-  }
+  
   .price-nego{
+    width: 30%;
     display: flex;
     justify-content: flex-start !important;}
   }
@@ -590,15 +588,24 @@ select{
   border: none;
   outline: none;
   appearance: none;
-  border: solid  2px #dadce4;
+  padding:3px;
   border-radius: 5px;
   width: 100%;
-  text-indent: 2px; 
 }
 option{
   background-color: #dadce4;
   color: black;
  
+}
+.catmm{                                    
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4px;
+  
+}
+
+@media   (min-width: 360px) and (max-width: 767px){
+
 }
 
 
