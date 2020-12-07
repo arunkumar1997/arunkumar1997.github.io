@@ -51,11 +51,6 @@ cursor: pointer;
 }
 
 /* Category option mv */
-@media only screen and (min-width: 360px) and (max-width: 767px){
-  select{
-    font-size: 0.7em;
-  }
-}
 
 
 
@@ -118,18 +113,28 @@ height: 25px !important;
 }
 
 /* Category option mv */
-@media (min-width: 360px) and (max-width: 767px){
-  select{ 
-    width: 70px !important;
-    font-size: 12px;
-  }
-}
+
 /* Negotiation and price */
 .price-nego{ 
   display: flex;
-  justify-content: flex-end ;}
+  justify-content: flex-end ;
+  
+}
+.hide-owner-mv{
+display: inline;
+}
+.hide-owner-dv{
+  display: none;
+  }
+
 
 @media   (min-width: 360px) and (max-width: 767px){
+  .hide-owner-mv{
+    display: none;
+  }
+  .hide-owner-dv{
+    display: inline;
+  }
   .negoo{
     margin-right: 5px;
     width: 25% !important;
@@ -587,7 +592,7 @@ select{
   appearance: none;
   border: solid  2px #dadce4;
   border-radius: 5px;
-  width:150px;
+  width: 100%;
   text-indent: 2px; 
 }
 option{
@@ -609,4 +614,7 @@ option{
    height: 25px !important;
   }
   
+}
+.lower2 {
+  text-align: end;
 }
