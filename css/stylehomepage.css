@@ -68,8 +68,7 @@ cursor: pointer;
 }
 .filters, .sortby{
 height: 25px !important;
- }
-  
+ } 
 }
 @media (max-width: 386px)and (min-width: 381px)  {
    .dropdown{
@@ -336,13 +335,13 @@ color: white !important;
   } 
   .filters{
     text-align: center; 
-    margin-left: 20px;
-     margin-right: -10px; 
+    margin-left: 0px !important;
+    margin-right: -40px !important; 
   }
   .sortby {
-    text-align: center;
-    margin-right: 25px;
-    margin-left: -15px;
+    text-align: center; 
+    margin-right: 0px !important;
+    margin-left: -40px !important;
   }
 }
 
@@ -691,4 +690,18 @@ option{
 .heartactive{
   color: red !important ;
   font-size:23px !important;
+}
+
+
+.amn-hide-mv{
+  display: inline;
+}
+.amn-hide-dv{
+  display: none ;
+}
+@media (max-width:600px){
+  .check{
+    top:0 !important;
+    right: 0  !important;
+  }
 }
