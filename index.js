@@ -75,4 +75,3 @@ $('#btnhearta').click( function(){
     $('#hearta1').toggleClass("heartactive");
     });
   
-
