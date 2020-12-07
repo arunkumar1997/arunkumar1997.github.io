@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
     <title>Property Results Page</title>
-    <link rel="stylesheet" href="style_side_right_bar.css">
+   
 
     <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
     <link
@@ -366,7 +366,7 @@
                             function uncheckAll() {
                               $("input[type='checkbox']:checked").prop("checked", false)
                             }
-                            $(':clearall').on('click', uncheckAll)
+                            $('#clearall').on('click', uncheckAll)
                           </script>
 
                  </nav>  
@@ -458,33 +458,8 @@
                       <div  style="margin:15px 0 ;" class="pp2 " >
 
                                  Property Name
-                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
-                                 <style>
-                                   .heartactive{
-                                     color: red !important;
-                                     font-size:23px;
-                                   }
-                                   .heartinactive-a{
-                                     color:#9fa5a5 !important;
-                                     font-size:19px;
-                                   }
-                                 </style>
-                                 <script>
-                                 var v = document.getElementById("heart-a");
-                                 document.getElementById("btn-heart-a").addEventListener("click",changecolor);
-                                 function changecolor(){
-                                   if(v.classList.contains("heartinactive-a")){
-                                     document.getElementById("heart-a").classList.add("heartactive");
-                                     document.getElementById("heart-a").classList.remove("heartinactive-a");
-                                   }
-                                   else{
-                                     document.getElementById("heart-a").classList.add("heartinactive-a");
-                                     document.getElementById("heart-a").classList.remove("heartactive");
-                                   }
-                                 }
-                                 
-
-                                 </script>
+                                 <button style="float: right; border: none;outline: none;background-color: white;" id="btnhearta"><i class="fa fa-heart " style=" color:#9fa5a5 ;font-size:19px;"  id="hearta" ></i></button>
+                     
                                 
                                  <hr style="margin: 4px; ">
                                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
@@ -657,34 +632,7 @@
                        <div  style="margin:15px 0 ;" class="pp2 " >
 
                                   Property Name
-                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
-                                  <style>
-                                    .heartactive{
-                                      color: red !important;
-                                      font-size:23px;
-                                    }
-                                    .heartinactive-a{
-                                      color:#9fa5a5 !important;
-                                      font-size:19px;
-                                    }
-                                  </style>
-                                  <script>
-                                  var v = document.getElementById("heart-a");
-                                  document.getElementById("btn-heart-a").addEventListener("click",changecolor);
-                                  function changecolor(){
-                                    if(v.classList.contains("heartinactive-a")){
-                                      document.getElementById("heart-a").classList.add("heartactive");
-                                      document.getElementById("heart-a").classList.remove("heartinactive-a");
-                                    }
-                                    else{
-                                      document.getElementById("heart-a").classList.add("heartinactive-a");
-                                      document.getElementById("heart-a").classList.remove("heartactive");
-                                    }
-                                  }
-                                  
-
-                                  </script>
-                                 
+                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btnhearta1"><i class="fa fa-heart" style=" color:#9fa5a5 ;font-size:19px;" id="hearta1" ></i></button>
                                   <hr style="margin: 4px; ">
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Nearby<br><hr  style="margin: 3px; margin-top: 3px">
                          
@@ -696,7 +644,7 @@
                          
                          
                          
-                                     <div class="catmm" >
+                                     <div class="catmm"  >
                                    
                                    
                                       <div class="col1">
@@ -1046,13 +994,13 @@
       <script>
         if (screen.width<576){
           document.getElementById("ll").classList.add("l");
-          // document.getElementById("sheltiebtn").classList.remove("dis");
+           
         }
           else{
-            des.classList.add("dis");
+          
             document.getElementById("ll").classList.remove("l");
-            // document.getElementById("checkbox1").classList.remove("diss");
-          //   document.getElementById("collapseOne").classList.remove("collapse-show");
+           
+         
           }
          
         </script>

@@ -67,3 +67,12 @@ $('nav ul li').click(function(){
 $(document).ready(function() {
   $('[data-toggle=tooltip]').tooltip();
 });
+$('#btnhearta').click( function(){
+  $('#hearta').toggleClass("heartactive");
+  });
+
+  $('#btnhearta1').click( function(){
+    $('#hearta1').toggleClass("heartactive");
+    });
+  
+
