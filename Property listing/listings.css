@@ -185,14 +185,14 @@
   display: grid;
   grid-row-gap: 5px;
   width: auto;
-  grid-template-columns: repeat(8,auto);
+  grid-template-columns: repeat(8,0.125fr);
  }
 
 
 @media (max-width:600px){
   .ame{
     display: grid;
-    grid-template-columns: repeat(3,auto) !important ;
+    grid-template-columns: repeat(3,0.333fr) ;
     width: 100%;
     grid-auto-flow: dense;
     grid-row-gap: 0;
