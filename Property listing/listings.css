@@ -174,7 +174,6 @@
     display: grid;
     grid-template-columns: auto  auto  ;
     grid-gap: 10px;
-    
   }
   .fea p{
     text-align: start !important;
@@ -183,6 +182,20 @@
 }
 
 .ame{
+  display: grid;
+  grid-row-gap: 5px;
+  width: auto;
+  grid-template-columns: repeat(8,auto);
+ }
 
+
+@media (max-width:600px){
+  .ame{
+    display: grid;
+    grid-template-columns: repeat(3,auto) !important ;
+    width: 100%;
+    grid-auto-flow: dense;
+    grid-row-gap: 0;
+   }
 }
   /*---------------------------mob view part end---------------------------------------------*/
