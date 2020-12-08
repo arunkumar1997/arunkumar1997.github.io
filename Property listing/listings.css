@@ -198,5 +198,69 @@
     grid-row-gap: 0;
    }
 }
+
+@keyframes slidefromleft{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes slidefromright{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidefromtop{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes slidefrombtm{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.slide-left{
+  animation: slidefromleft 0.8s ease-in;
+}
+.slid-right{
+  animation: slidefromright 0.8s ease-in;
+}
+.slide-bottom{
+  animation: slidefrombtm 0.8s ease-in;
+}
+.slid-top{
+  animation: slidefromtop 0.5s ease-in;
+}
+
+.img-slid{
+  animation: slidefromleft 0.8s ease-in;
+}
+.d-slid{
+  animation: slidefromright 0.8s ease-in;
+}
+.a-slid{
+  animation: slidefrombtm 0.8s ease-in;
+}
+@media (max-width:600px){
+.img-slid{
+  animation: slidefromtop 0.7s ease-in;
+}
+.d-slid{
+  animation: slidefrombtm 0.7s ease-in;
+}
+}
 /* Amenities end */
   /*---------------------------mob view part end---------------------------------------------*/
