@@ -140,7 +140,7 @@
     display: block;
   }
   }
-
+/* Description card */
 .bot-card:hover{
   cursor: default;
  transition: transform 0.4s ease;
@@ -159,7 +159,6 @@
     background-color: #fff;
   }
 }
-
 .fea{
   display: grid;
   grid-template-columns: auto  auto auto auto  auto auto;
@@ -181,6 +180,7 @@
   }
 }
 
+/* Amenities start */
 .ame{
   display: grid;
   grid-row-gap: 5px;
@@ -198,4 +198,5 @@
     grid-row-gap: 0;
    }
 }
+/* Amenities end */
   /*---------------------------mob view part end---------------------------------------------*/
