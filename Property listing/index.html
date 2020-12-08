@@ -448,50 +448,78 @@ for (i = 0; i < acc.length; i++) {
     <!-- faq end -->
 
     <!-- modal btn -->
-    <button type="button" class="btn btn-info mt-lg-3 mt-sm-2 mt-2" data-toggle="modal" data-target="#myModal" style="  background-color:#2ECAB6">
+    <button type="button" class="btn btn-info mt-lg-3 mt-sm-2 mt-2 mb-3" data-toggle="modal" data-target="#myModal" style="  background-color:#2ECAB6">
   Launch demo modal
 </button>
+<div class="card">
+
+</div>
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="top">
+      <div class="modal-body m-0 p-0">
+        <div class="card">
+          <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
+            <h5 class=" p-0 m-0 "><i style="display: inline;" class="fas fa-people-arrows ml-2"></i>
+        Get Owner Details</h5>
+          <p class=" p-0 m-0 ">100% Genuine Owners</p>
+          </div>
+          <form class="m-1 px-4">
+          <div class="form-group">
+          <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
+          <button class="btn btn-primary btn-sm  mb-2 "  style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
+          <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
+          <input type="name" class="form-control ip mt-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  style="border:#2ecab6 solid 2px;outline:none;">
+          <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button>
+          </div>
+          </form>
+        </div>
 
-          <h5>Get Owner Details
-        <i style="display: inline;" class="far fa-people-arrows"></i>
-
-        <p>100% Genuine Owners</p>
-        <i style="display: inline;" class="far fa-people-arrows"></i>
-      </div>
-      <form>
-       <div class="form-group">
-        <label for="mobileno">Mobile no</label>
-        <input type="tel" class="form-control" id="mobileno" aria-describedby="mobileno" placeholder="Enter email">
-                <button data-toggle="collapse-show" data-target="#demo">Get OTP</button>
-
-
-<br>
-        <label for="name">Name</label>
-        <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Name">
-
-        <label for="email1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-    </form>
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
+</div>
     <!-- modal btn -->
+
+
+    <!-- price table -->
+  <div class="card" style="width:20rem;">
+    <div class="card-header" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
+      To Get Exclusive Offers LOGIN
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <table class="table ">
+          <tbody>
+            <tr>
+              <td colspan="2">Rent</td>
+              <td>₹10000</td>
+              <td></td>
+            </tr>
+            <tr>
+            <td colspan="2">Security (Refundable)</td>
+            <td>₹10000</td>
+            <td></td>
+          </tr>
+          <tr>
+          <td colspan="2">Booking Amount <span  style="color: green;">(Adjustable In Rent)</span></td>
+          <td>₹2500</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <a href="#" class="btn btn-info" style="background-color: #2ECAB6">Continue To Book</a>
+  </div>
+</div>
+<!-- price table end -->
 </div>
 <!-- container-fluid end -->
 <!-------------------------footer start------------------------------------------------->
