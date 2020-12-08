@@ -177,7 +177,12 @@
     
   }
   .fea p{
+    text-align: start !important;
     font-size: 15px !important;
   }
+}
+
+.ame{
+
 }
   /*---------------------------mob view part end---------------------------------------------*/
