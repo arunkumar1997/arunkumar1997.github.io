@@ -198,7 +198,9 @@
     grid-row-gap: 0;
    }
 }
+/* Amenities end */
 
+/* animattions start */
 @keyframes slidefromleft{
   0%{
     transform: translateX(-100%);
@@ -262,5 +264,5 @@
   animation: slidefrombtm 0.7s ease-in;
 }
 }
-/* Amenities end */
+/* animation end */
   /*---------------------------mob view part end---------------------------------------------*/
