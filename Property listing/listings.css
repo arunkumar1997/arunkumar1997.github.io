@@ -165,4 +165,19 @@
   grid-template-columns: auto  auto auto auto  auto auto;
   grid-gap: 10px;
 }
+.fea p{
+  font-size: 15px;
+  font-weight: bold;
+}
+@media (max-width:760px){
+  .fea{
+    display: grid;
+    grid-template-columns: auto  auto  ;
+    grid-gap: 10px;
+    
+  }
+  .fea p{
+    font-size: 15px !important;
+  }
+}
   /*---------------------------mob view part end---------------------------------------------*/
