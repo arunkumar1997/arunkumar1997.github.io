@@ -59,13 +59,13 @@
     .navbar-brand p{
    font-size: 12px;
  }
- .price{
+ /* .price{ */
   /* margin: 5px !important;*/
    margin-bottom: 10px !important;
    width: 19.5rem !important;
    margin-left: 14px !important;
    margin-right: 14px !important;
- }
+ /* } */
  .owner{
    margin-top: 10px !important;
  }
@@ -287,7 +287,9 @@ transition: transform 0.4s ease;
   }
 }
 .fst{
+  margin-top: 5px;
   display: grid;
+  grid-column-gap: 5rem;
   grid-template-columns: 2fr 1fr;
 }
 @media (max-width:600px){
