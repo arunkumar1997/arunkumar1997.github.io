@@ -1,579 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
-    />
-    <title>Property Listings</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+  <title>Property Listings</title>
 
 
-    <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+  <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/all.css"
-      rel="stylesheet"
-    />
-    <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
-      rel="stylesheet"
-    />
-    <link href="listings.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="listings.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
 
-  <body>
+<body>
 
-  <div class="header" style="margin-bottom: 4.8rem;" >
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top "style="background-color: #fff;">
- <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br><p>Live Like You Own It</p></a>
- <div  class="navbar-brand  py-0"style="font-size: 16px;">
-  <div class="nav-item dropdown" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-map-marker-alt" style="color: #2ecab6 !important"></i>Choose City
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Bangalore</a>
-          <a class="dropdown-item" href="#">Bhopal</a>
-          <a class="dropdown-item" href="#">Delhi</a>
-          <a class="dropdown-item" href="#">Ghaziabad</a>
-          <a class="dropdown-item" href="#">Gurgaon</a>
-          <a class="dropdown-item" href="#">Indore</a>
-          <a class="dropdown-item" href="#">Jaipur</a>
-          <a class="dropdown-item" href="#">Kota</a>
-          <a class="dropdown-item" href="#">Noida</a>
-          <a class="dropdown-item" href="#">Pune</a>
+  <div class="header" style="margin-bottom: 4.8rem;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #fff;">
+      <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+      <div class="navbar-brand  py-0" style="font-size: 16px;">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-map-marker-alt" style="color: #2ecab6 !important"></i>Choose City
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Bangalore</a>
+            <a class="dropdown-item" href="#">Bhopal</a>
+            <a class="dropdown-item" href="#">Delhi</a>
+            <a class="dropdown-item" href="#">Ghaziabad</a>
+            <a class="dropdown-item" href="#">Gurgaon</a>
+            <a class="dropdown-item" href="#">Indore</a>
+            <a class="dropdown-item" href="#">Jaipur</a>
+            <a class="dropdown-item" href="#">Kota</a>
+            <a class="dropdown-item" href="#">Noida</a>
+            <a class="dropdown-item" href="#">Pune</a>
+          </div>
+
         </div>
-
       </div>
-    </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 mr-md-0 mr-lg-0" type="search" placeholder="Search Locality" aria-label="Search "style="border-radius: 0!important">
-      <button class="btn btn-search btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
-    </form>
-      <li class="nav-item mr-4 login" style="list-style: none;">
-        <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign Up </a>
-      </li>
-      <li class="nav-item mr-4 login" style="list-style: none;">
-        <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign In </a>
-      </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 mr-md-0 mr-lg-0" type="search" placeholder="Search Locality" aria-label="Search " style="border-radius: 0!important">
+          <button class="btn btn-search btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <li class="nav-item mr-4 login" style="list-style: none;">
+          <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign Up </a>
+        </li>
+        <li class="nav-item mr-4 login" style="list-style: none;">
+          <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign In </a>
+        </li>
+      </div>
+    </nav>
   </div>
-</nav>
-</div><!--header end---------->
+  <!--header end---------->
+  <div class="container-fluid">
+    <div class="row mx-0">
+      <div class="col-8" style="background-color:blue;">75%
 
-<!-- Carousel start -->
-<div style="margin-top:5px; background-color: white; border: 1px solid grey; margin: 20px;" class="upper">
-  <div class="container-fluid" >
-    <div class="fst ">
-    <div  class="images " style="margin-bottom: 20px; background-color: #fff; ">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-         <ol class="carousel-indicators">
-             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-         </ol>
-         <!-- desktop carousel -->
-          <!-- <div class="carousel-inner dv" style="display:none;">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
-                  alt="First slide">
-
-                  </div>
-                  <div class="col-6">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
-                  alt="Second slide">
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="carousel-item ">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
-                  alt="Third slide">
-
-                  </div>
-                  <div class="col-6">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
-                  alt="Third slide">
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="carousel-item ">
-                <div class="row">
-                  <div class="col">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
-                  alt="First slide">
-
-                  </div>
-                  <div class="col-6">
-                    <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-
-              <img class="d-block w-100"
-                  src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
-                  alt="Third slide">
-
-                  </div>
-
-                </div>
-              </div>
-         </div>
-          <!-- desktop carousel end -->
-          <!-- mobile carousel -->
-         <div class="carousel-inner mv ">
-             <div class="carousel-item active">
-
-               <div class="watermark">
-           <div class="content">Sheltown.in</div>
-         </div>
-
-         <img class="d-block"
-             src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
-             alt="First slide">
-
-     </div>
-     <div class="carousel-item">
-       <div class="watermark">
-   <div class="content">Sheltown.in</div>
- </div>
-         <img class="d-block"
-             src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
-             alt="Second slide">
-     </div>
-     <div class="carousel-item">
-       <div class="watermark">
-   <div class="content">Sheltown.in</div>
- </div>
-         <img class="d-block "
-             src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
-             alt="Third slide">
-     </div>
- </div>
- <!-- mobile corausal end -->
-
-
-
- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-     data-slide="prev">
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-     <span class="sr-only">Previous</span>
- </a>
- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-     data-slide="next">
-     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-     <span class="sr-only">Next</span>
- </a>
-
-</div><!-----carousel end--->
-
-
-</div><!-----image div end----------->
-<!-----col-4(image) end----------->
- <!-- price table -->
-  <div class="card" style="height:20rem;">
-    <div class="card-header " style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
-      To Get Exclusive Offers LOGIN
-    </div>
-    <div class="card-body p-1">
-      <div class="card-text">
-        <table class="table ">
-          <tbody>
-            <tr>
-              <td colspan="2">Rent</td>
-              <td>₹10000</td>
-            </tr>
-            <tr>
-            <td colspan="2">Security (Refundable)</td>
-            <td>₹10000</td>
-          </tr>
-          <tr>
-          <td colspan="2">Booking Amount <span  style=" border-bottom:color: green;">(Adjustable In Rent)</span></td>
-          <td>₹2500</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <a href="#" class="btn btn-info mt-lg-3 ml-lg-2 ml-md-2" style="background-color: #2ECAB6">Continue To Book</a>
-  </div>
-<!--price table end -->
-</div>
-    </div>
-
-<!-- carousel end -->
-<button type="button " class="  m-1  btn btn-info" data-toggle="modal" data-target="#myModal" style="background-color:#2ECAB6;">
-  Get Owner Details
-</button>
-
-
-<!-- Property details start -->
-    <!-- Property details start -->
-    <div class="card mb-3 d-slid " >
-      <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; color: #fff;">
-        <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
-        <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium;"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-        <h3 class="mt-3 mt-lg-4 ">Description <i class="fa fa-check ml-lg-4  " style=" font-size: medium !important; color: red; " aria-hidden="true" ><span style="font-size: large !important; color: red ; font-weight: 500 !important;"> 100% Brokage free</span></i></h3>
       </div>
-        <div class="card-body">
-            <p class="card-text ">A property listed by SheltOwn for your comfortable stay.
-                This property includes all the basic amenities without any restriction and no interference.
-                We make sure that there is no brokerage or middle man involved in this booking.
-                SheltOwn provides 24&#215;7 support on this property.
-                Rent is accepted online for this property.
-            </p>
-            <div class="fea mt-lg-5 mt-md-4 mt-sm-1">
-              <div class="card-header bot-card text-center m-0 p-0" style=" background-color:#fff;">
-                <p class="card-title  m-0 p-2" style="color: red;font-weight: bold;">Pg/Hostel</p>
-              </div>
-              <div class="card-header bot-card text-center m-0 p-0" style="  background-color:#fff;">
-                <p class="card-title  m-0 p-2" style="color: red;font-weight: bold;" >Electricity Not Included  </p>
-              </div>
-              <div class="card-header bot-card text-center m-0 p-0" style="background-color: #fff;">
-                <p class="card-title  m-0 p-2" style="color: red;font-weight: bold;">Sheltown+</p>
-              </div>
-              <div class="card-header bot-card text-center m-0 p-0" style="background-color:#fff;">
-                <p class="card-title  m-0 p-2" style="color: red;font-weight:bolder;">Meals Not Included</p>
-              </div>
-              <div class="card-header bot-card text-center m-0 p-0" style="background-color: #fff;">
-                <p class="card-title  m-0 p-2" style="color: red;font-weight: bold;">Avaliable Now</p>
-              </div>
-              <div class="card-header bot-card text-center m-0 p-0" style="background-color: #fff;">
-                <p class="card-title  m-0 p-2" style="color: red; font-weight: bold;">Semi Furnished</p>
-              </div>
-            </div>
-        </div>
-    </div>
+      <div class="col-4" style="background-color:yellow;">25%
 
-<!-- Property details start -->
-
-<!-- Amenities start -->
-<div class="card mb-3 a-slid  ">
-    <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-      <h3>Amenities.</h3>
-    </div>
-        <div class="card-body my-3 p-0 ame text-center">
-          <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
-            <p>WiFi</p>
-          </div>
-          <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
-            <p>TV</p>
-          </div>
-          <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
-            <p>Bed</p>
-          </div>
-          <div class="ac"><!-- <i class="fa fa-snowflake" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/air-conditioner.png"/></i></i>
-            <p>AC</p>
-          </div>
-          <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
-            <p>Guard</p>
-          </div>
-          <div class="laundry"> <!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/washing-machine.png"/></i></i>
-            <p>Laundry</p>
-          </div>
-          <div class="microwave"><!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/microwave.png"/></i></i>
-            <p>Microwave</p>
-          </div>
-          <div class="balcony"><!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/balcony.png"/></i>
-            <p>Balcony</p>
-          </div>
-          <div class="cctv"><!--  <i class="fa fa-h-square" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/bullet-camera.png"/></i></i>
-            <p>CCTV</p>
-            </div>
-          <div class="lift"><!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/elevator.png"/></i></i>
-            <p>Lift</p>
-            </div>
-          <div class="cooler"><!-- <i class="fas fa-snowflake" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>Cooler</p>
-            </div>
-          <div class="Fridge"><!--  <i class="fa fa-snowflake" aria-hidden="true"> --><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png"/></i></i>
-            <p>Fridge</p>
-            </div>
-          <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
-            <p>Table &  Chair</p>
-          </div>
-          <div class="ab"><!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/door-closed.png"/></i></i>
-            <p>Attached Bathroom</p>
-          </div>
-          <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
-            <p>Power Backup</p>
-          </div>
-          <div class="ro"><!-- <i class="fa fa-check-circle" aria-hidden="true"> --><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>RO</p>
-          </div>
-      </div>
-    </div>
-</div>
-<!-- Amenities end -->
-
-<!-- Know your new home start -->
-
-<div class="card new" style="margin: 15px;">
-    <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-     <h5 style="color: white"> Know Your New Home <h5>
-    </div>
-    <div class="card-body">
-        <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
-                <tbody>
-                    <tr>
-                        <td> House Keeping </td>
-                <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Daily</option>
-            <option value="#">Weekly</option>
-            <option value="#">No House keeping</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Owner Stays At Property</td>
-                <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-              </tr>
-                    <tr>
-                        <td >Non-Veg Allowed</td>
-                      <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Yes</option>
-                          <option value="#">No</option>
-            </select></center>
-                </td>
-                          </tr>
-                    <tr>
-                        <td>Visitors Allowed</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                      <option value="#">Yes</option>
-                      <option value="#">No</option>
-            </select></center>
-                </td>
-                  </tr>
-                    <tr>
-                        <td>Drinking And Smoking Allowed</td>
-                        <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Total Beds</td>
-                        <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">1</option>
-            <option value="#">2-3</option>
-            <option value="#">3-4</option>
-
-            </select></center>
-                </td>
-
-                    </tr>
-                    <tr>
-                        <td>Sharing Type</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Single</option>
-            <option value="#">Twin</option>
-            <option value="#">Tripple</option>
-            <option value="#">Quadraple</option>
-
-
-            </select></center>
-                </td>
-                      </tr>
-                    <tr>
-                        <td>Maximum Beds In Room</td>
-                      <td style="color: #23b6ae;">
-                  <center> <select>
-                <option value="#">1-10</option>
-                <option value="#">11-20</option>
-                <option value="#">21-30</option>
-
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Landmark Nearby</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">Near Allen Building</option>
-                      <option value="#"></option>
-                    <option value="#"></option>
-
-            </select></center>
-                </td>
-                 </tr>
-
-                </tbody>
-            </table>
-
-
-
-
-    </div>
-  </div>
-<!-- Amenities end -->
-
-<!-- Sheltown help -->
-<div class="card help" style="margin: 15px;">
-    <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-   <h5  style="color: white;">   How Sheltown Is Helping You ? <h5>
-      </div>
-    <div class="card-body ">
-      <h5 class="card-title"></h5>
-<button class="accordion ">Hygiene First</button>
-<div class="panel">
-  <p>For additional safety of everyone, our partners and their staff wears masks, uses sanitisers and maintains proper social distancing.</p>
-</div>
-<hr style="background-color: #2ECAB6; margin: 0;">
-
-<button class="accordion" style="background-color: white;">Covid Safety</button>
-<div class="panel">
-  <p>During these hard times, we understand how important sanitisation and cleanliness are to you. We make sure sanitisation of Floors, Rooms and Linens using good quality disinfectants.
-
-</p>
-</div>
-<hr style="background-color: #2ECAB6; margin: 0;">
-
-<button class="accordion" >Flexible Payments
-</button>
-<div class="panel">
-  <p>To book you just need to pay the booking amount now. Pay the rest while you move-in and this property accepts online payments through SheltOwn.</p>
-</div>
-<hr style="background-color: #2ECAB6; margin: 0;">
-
-
-<button class="accordion" style="background-color: white;" >Brokerage Free
-</button>
-<div class="panel">
-  <p>We do not own this property, we are providing a platform to book it meanwhile making sure that each SheltOwn standards are being followed. We never charge any Brokerage from anyone.
-
-</p>
-</div>
-<hr style="background-color: #2ECAB6; margin: 0;">
-    </div>
-  </div><br>
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-
-
-
-
-
-<!-- Sheltown help end -->
-
-<!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin: 20px; background-color:#2ECAB6">
-  Get Owner Details
-</button> -->
-
-
-
-<!-- container-fluid end -->
-
-</div>
-
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body m-0 p-0">
-        <div class="card">
-          <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
-            <h5 class=" p-0 m-0 "><i style="display: inline;" class="fas fa-people-arrows ml-2"></i>
-        Get Owner Details</h5>
-          <p class=" p-0 m-0 ">100% Genuine Owners</p>
-          </div>
-          <form class="m-1 px-4">
-          <div class="form-group">
-          <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
-          <button class="btn btn-primary btn-sm  mb-2 "  style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
-          <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
-          <input type="name" class="form-control ip mt-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  style="border:#2ecab6 solid 2px;outline:none;">
-          <!-- <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button> -->
-          </div>
-          </form>
-        </div>
-
-      <div class="modal-footer">
-       <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button>
       </div>
     </div>
   </div>
-</div>
-</div>
-    <!-- modal btn -->
-
-
-
 </body>
 
 <!-------------------------footer start------------------------------------------------->
@@ -582,152 +83,155 @@ for (i = 0; i < acc.length; i++) {
 <!-- Footer -->
 <footer class="page-footer font-small lighten-5" style="background-color: #323232;">
 
-    <!-- Footer Links -->
-    <div class="container-fluid mx-lg-0 pt-5 text-center text-md-left">
+  <!-- Footer Links -->
+  <div class="container-fluid mx-lg-0 pt-5 text-center text-md-left">
 
-        <!-- Grid row -->
-        <div class="row mt-3 white-text">
+    <!-- Grid row -->
+    <div class="row mt-3 white-text">
 
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-6 col-xl-6 mb-4">
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-6 col-xl-6 mb-4">
 
-                <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">Shelt + Own</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p style="font-size:16px" class="text-justify">We are a strong team focused on building a network where we could serve you
-                regarding
-                all your needs of having your own shelter.
-                We are bound to provide you the best possible care and support which helps you meet your demands.
-                Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely
-                interwoven into the fibre of our efforts.
-                We help you to find your match, book rental homes of choice across Indian cities.</p>
-                <p >Accept our warm SheltOwn hug.</p>
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Shelt + Own</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p style="font-size:16px" class="text-justify">We are a strong team focused on building a network where we could serve you
+          regarding
+          all your needs of having your own shelter.
+          We are bound to provide you the best possible care and support which helps you meet your demands.
+          Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely
+          interwoven into the fibre of our efforts.
+          We help you to find your match, book rental homes of choice across Indian cities.</p>
+        <p>Accept our warm SheltOwn hug.</p>
 
-            </div>
-            <!-- Grid column -->
+      </div>
+      <!-- Grid column -->
 
-            <!-- Grid column -->
-            <div class="footer-links col-md-6 col-lg-2 col-xl-2 mb-4">
+      <!-- Grid column -->
+      <div class="footer-links col-md-6 col-lg-2 col-xl-2 mb-4">
 
-                <!-- Links -->
-                <h6 class="white-text text-uppercase font-weight-bold">Useful Links</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                  <a href="/AboutUs/">About Us</a>
-                </p>
-                <p>
-                  <a href="/Policy/">Our Policies</a>
-                </p>
-                <p>
-                    <a class="" href="/Joinus/">Work With Us</a>
-                </p>
-                <p>
-                    <a class="" href="/rental/">Find a Home Now</a>
-                </p>
+        <!-- Links -->
+        <h6 class="white-text text-uppercase font-weight-bold">Useful Links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="/AboutUs/">About Us</a>
+        </p>
+        <p>
+          <a href="/Policy/">Our Policies</a>
+        </p>
+        <p>
+          <a class="" href="/Joinus/">Work With Us</a>
+        </p>
+        <p>
+          <a class="" href="/rental/">Find a Home Now</a>
+        </p>
 
-            </div>
-            <!-- Grid column -->
+      </div>
+      <!-- Grid column -->
 
-            <!-- Grid column -->
-            <div class="footer-links col-md-6 col-lg-2 col-xl-2 mb-4">
+      <!-- Grid column -->
+      <div class="footer-links col-md-6 col-lg-2 col-xl-2 mb-4">
 
-                <!-- Links -->
-                <h6 class="text-uppercase white-text font-weight-bold">Company</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a class="" href="/BecomePartner/">List Your Property</a>
-                </p>
-                <p>
-                    <a class="" href="/Testimonial/">Testimonials</a>
-                </p>
-                <p>
-                    <a class="" href="/Blog/">Blogs</a>
-                </p>
-                <p>
-                    <a class="" href="https://www.xml-sitemaps.com/download/sheltown.in-8ee3322da/sitemap.xml?view=1">Sitemap</a>
-                </p>
+        <!-- Links -->
+        <h6 class="text-uppercase white-text font-weight-bold">Company</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="" href="/BecomePartner/">List Your Property</a>
+        </p>
+        <p>
+          <a class="" href="/Testimonial/">Testimonials</a>
+        </p>
+        <p>
+          <a class="" href="/Blog/">Blogs</a>
+        </p>
+        <p>
+          <a class="" href="https://www.xml-sitemaps.com/download/sheltown.in-8ee3322da/sitemap.xml?view=1">Sitemap</a>
+        </p>
 
-            </div>
-            <!-- Grid column -->
+      </div>
+      <!-- Grid column -->
 
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-2 col-xl-2 mb-md-0 mb-4">
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 col-xl-2 mb-md-0 mb-4">
 
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Love to hear</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <i class="fas fa-home mr-3"></i> H-B2, 3rd Floor, Chattarpur Extension, New Delhi-110074</p>
-                <p>
-                    <i class="fas fa-envelope mr-3"></i> info@sheltown.com</p>
-                <p>
-                    <i class="fas fa-phone mr-3"></i> +91-7428-770-297</p>
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Love to hear</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> H-B2, 3rd Floor, Chattarpur Extension, New Delhi-110074
+        </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@sheltown.com
+        </p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +91-7428-770-297
+        </p>
 
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center white-text py-3" style="background: #444;">Copyright © 2020 All Rights Reserved
-        <a class="white-text font-weight-bold" href="">SheltOwn.in</a>
+      </div>
+      <!-- Grid column -->
 
     </div>
-    <!-- Copyright -->
+    <!-- Grid row -->
 
-        <div style="background-color:  #2ECAB6;">
-            <div class="container mx-0">
+  </div>
+  <!-- Footer Links -->
 
-                <!-- Grid row-->
-                <div class="row py-4 d-flex align-items-center">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center white-text py-3" style="background: #444;">Copyright © 2020 All Rights Reserved
+    <a class="white-text font-weight-bold" href="">SheltOwn.in</a>
 
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 pl-5">Get connected with us on social networks!</h6>
-                    </div>
-                    <!-- Grid column -->
+  </div>
+  <!-- Copyright -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <div style="background-color:  #2ECAB6;">
+    <div class="container mx-0">
 
-                        <!-- Facebook -->
-                        <a class="fb-ic" href="https://www.facebook.com/sheltownIndia/" target="_blank">
-                            <i class="fab fa-facebook-f white-text mr-4"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic" href="https://twitter.com/OwnShelt" target="_blank">
-                            <i class="fab fa-twitter white-text mr-4"> </i>
-                        </a>
-                        <!-- Google +-->
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
 
-                        <!--Linkedin -->
-                        <a class="li-ic" href="https://www.linkedin.com/company/sheltown" target="_blank">
-                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
-                            <i class="fab fa-instagram white-text mr-4"> </i>
-                        </a>
-                        <a href="#" class=" to-top"><i class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"></i></a>
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row-->
-
-            </div>
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 pl-5">Get connected with us on social networks!</h6>
         </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/sheltownIndia/" target="_blank">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic" href="https://twitter.com/OwnShelt" target="_blank">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/company/sheltown" target="_blank">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
+            <i class="fab fa-instagram white-text mr-4"> </i>
+          </a>
+          <a href="#" class=" to-top"><i class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"></i></a>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
 
 </footer>
 <!-------------------------footer end------------------------------------------------->
-     <script src="index.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
