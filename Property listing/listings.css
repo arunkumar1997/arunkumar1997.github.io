@@ -59,15 +59,7 @@
     .navbar-brand p{
    font-size: 12px;
  }
- /* .price{ */
-  /* margin: 5px !important;*/
-   margin-bottom: 10px !important;
-   width: 19.5rem !important;
-   margin-left: 14px !important;
-   margin-right: 14px !important;
- /* } */
 
- }
  @media (max-width: 386px)and (min-width: 381px)  {
     .dropdown{
      margin-left: -25px!important
@@ -175,12 +167,7 @@ select::-ms-expand{
   margin: auto;
 }
 
-@media (max-width: 577px) {
-  .img1 {
-    /*width: 100%;
-  height: auto;*/
-  }
-}
+
 .cf h5 {
   font-weight: bold;
 }
@@ -331,6 +318,7 @@ transition: transform 0.4s ease;
   grid-column-gap: 5rem;
   grid-template-columns: 2fr 1fr;
 }
+ }
 
 @media (max-width:600px) {
   .fst{
@@ -345,6 +333,19 @@ transition: transform 0.4s ease;
 }
 
 
-
-
+/* right side */
+.b-btm{
+  border-bottom: solid 1px;
+}
+.optf{
+    border: none;border:#2ecab6 solid 1px;outline:none;
+    width:11rem;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+/* right side end */
  /*---------------------------mob view part end---------------------------------------------*/

@@ -707,6 +707,7 @@
          <!-------------------------Our Services part end--------------------------------------->
     
     </div>
+    <!-- right side -->
     <div class="col-3 ml-0 pl-0">
       <!-- price table -->
      <div class="card mt-3" style="margin-right: 15px;">
@@ -783,7 +784,6 @@
   }
  
 }
-
       </style>
       <script>  
   
@@ -795,8 +795,96 @@
         document.getElementById("rn").innerHTML =randomNumber(1,20) ;
         </script> 
     </div>
+    <div class="card p-0 mt-3" style="margin-right: 15px;">
+    <h4 class="text-center py-2" style=" background-color: #23b6ae;color: #fff;">Reviews</h4>
+    <div class="card m-2">
+      <div class="card-body mx-0 px-1 py-2">
+        <p class="card-textmb-2">	&quot;Some quick example text to build on the card title and make up the bulk of the card's content.	&quot;</p>
+        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+      </div>
+    </div>
+    <div class="card m-2">
+      <div class="card-body px-1 mx-0  py-2">
+        <p class="card-text pb-0 mb-2">	&quot;Some quick example text to build on the card title and make up the bulk of the card's content.	&quot;</p>
+        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+      </div>
+    </div>
+    <div class="commnt">
+    <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <form>
+          <div class="card p-0 m-0" >
+            <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
+              <h5 class=" p-0 m-0 ">Write Comment</h5>
+            </div>
+            <div class="card-body">
+              <form class="m-1 px-4">
+                <div class="form-group f">
+                  <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
+                  <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email"  style="border:#2ecab6 solid 2px;outline:none;">
+                  <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
+                  <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Write Comments here ." id="comment" style="border:#2ecab6 solid 2px;outline:none;"></textarea>
+                </div>
+                <div class="buttonn d-flex justify-content-between">
+                <button type="button" class="btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Verify OTP</button>
+                <button type="button" class="btn btn-primary btn-sm" id="optrqt" style="background-color: #2ecab6;">Request OTP</button>
+                <button type="button" class="btn btn-primary btn-sm" style="background-color: #2ecab6;">Resend OTP</button>
+                
+                </div>
+                </form>
+            </div>
+          </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+    var wrapper = $(".f");
+    var add_otp = $("#optrqt");
+    var  c = 0;
+    $(add_otp).click(function(e) {
+      if (c<=0){
+        c=1;
+        e.preventDefault(); 
+            $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="4" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;">'); //add input box
+      }
+    });
+});
+      </script>
+      <script>
+    $(document).ready(function() {
+    var wrapper = $(".f1");
+    var add_otp = $("#optrqt1");
+    var  c = 0;
+    $(add_otp).click(function(e) {
+      if (c<=0){
+        c=1;
+        e.preventDefault(); 
+            $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="4" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;"> <button type="button" class="btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Verify OTP</button> <button type="button" class=" btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Resend OTP</button>'); //add input box
+      }
+    });
+});
+      </script>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #2ecab6;">Post Comment</button>
+      </div>
+    </div>
   </div>
 </div>
+  </div>
+    </div>
+  </div>  <!-- right side end -->
+ 
+</div>  <!-- row end -->
+
 <!-- Amenities start -->
 <div class="card mb-3 a-slid" style="width: 65%; margin-left: 15px" >
     <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
@@ -961,11 +1049,11 @@ for (i = 0; i < acc.length; i++) {
           <p class=" p-0 m-0 ">100% Genuine Owners</p>
           </div>
           <form class="m-1 px-4">
-          <div class="form-group">
+          <div class="form-group f1">
             <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
             <input type="name" class="form-control ip mt-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email"  style="border:#2ecab6 solid 2px;outline:none;">
           <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
-          <button class="btn btn-primary btn-sm  mb-2 "  style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
+          <button class="btn btn-primary btn-sm  mb-2  "  id="optrqt1" style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
           
           
           <!-- <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button> -->
@@ -974,7 +1062,7 @@ for (i = 0; i < acc.length; i++) {
         </div>
 
       <div class="modal-footer">
-       <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get Owner Details</button>
+       <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;">Get Owner Details</button>
       </div>
     </div>
   </div>
