@@ -749,7 +749,12 @@
             </button> 
           </div>
     </div>
-    <a href="#" class="btn btn-info mt-lg-3 btn-block" style="background-color: #2ECAB6">Book Now</a>
+    <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #23b6ae; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
+    <script>
+      $(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+    </script>
     </div> 
   <!--price table end -->
     </div>
