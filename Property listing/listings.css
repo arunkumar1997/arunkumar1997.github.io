@@ -44,6 +44,10 @@ cursor: pointer;
   font-size: 20px;
   margin-right: 5px;
 }
+.other{
+color: black;
+}
+
 /*-----------------------navbar end------------------------------------------->*/
 /*all media queries start*/
 @media (max-width: 576px){
@@ -110,7 +114,8 @@ width: 100%;
 }
 
 
-.accordion {
+
+/*.accordion {
 background-color:#f1f1f1 ;
 color: #444;
 cursor: pointer;
@@ -357,5 +362,13 @@ grid-template-columns: repeat(8,0.125fr);
     margin: 0 !important;
     padding: 0 !important;
   }
+}
+.vall {
+opacity: 0.6;
+  z-index: 100;
+}
+.vall :hover{
+  cursor: pointer;
+  opacity: 1;
 }
 /*---------------------------mob view part end---------------------------------------------*/
