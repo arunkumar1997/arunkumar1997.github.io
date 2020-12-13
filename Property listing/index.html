@@ -30,8 +30,17 @@
       rel="stylesheet"
     />
     <link href="listings.css" rel="stylesheet" />
+     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
 
   <body>
@@ -173,22 +182,23 @@
       <div class="card-header mb-0" style="border:none; background-color: #2ecab6; color: #fff;">
         <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
         <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-        <p class="mb-0" style="font-size: 17px;">Sheltown Recommended</p>
+        <select  name="category" id="category" style="background-color: #2ECAB6; color: white">
+          <option class="opt" value="none" selected disabled >Residential Rent</option>
+          <option class="opt" value="none">Family Zoned</option>
+          <option class="opt" value="none">Female Only</option>
+          <option class="opt"z value="none">Male Only</option>
+        </select>
       </div>
-      <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 d-flex justify-content-between" >
-        <select  name="category" id="category"    >
+      <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 " >
+        <select  name="category" id="category" style="margin-left: 3px;"  >
           <option class="opt" value="none" selected disabled>Couple Privacy</option>
           <option class="opt" value="none">Family Zoned</option>
           <option class="opt" value="none">Female Only</option>
           <option class="opt" value="none">Male Only</option> 
         </select>
+        <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended</p>
 
-        <select  name="category" id="category" >
-          <option class="opt" value="none" selected disabled>Residential Rent</option>
-          <option class="opt" value="none">Family Zoned</option>
-          <option class="opt" value="none">Female Only</option>
-          <option class="opt"z value="none">Male Only</option>
-        </select>
+        
       </div> 
 </div>
     <!-- prop details end -->
@@ -242,7 +252,7 @@
      <div class="card mt-3 mb-3">
       <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
         <h4>Get Owner Details</h4>
-        <a href="" style="color: white; font-size: small; ">LOGIN is Required</a>
+        <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
     
       </div>
       <div class="card-body p-1" style="margin: 15px;">
@@ -250,10 +260,15 @@
           <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
             <div class="  rnt mb-1">
             <h4 class="p-0 m-0" >&#8377;4500</h4>
-            <p class="p-0 m-0" style="font-size: small;" >(Per month rent)</p>
+            <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
           </div>
+
           <h4 >-</h4>
-          <h5 >Negotiable</h5>
+         <!--  <h5 >Negotiable</h5> -->
+         <select class="p-0  mb-3" style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+              <option value="1m">Negotiable</option>
+              <option value="2m">Non-Negotiable</option>
+            </select>
           </div>
           <div class="depo py-3" style="border-bottom:#444 solid 1px;">
             <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
@@ -262,14 +277,14 @@
             </select>
           </div>
           <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Owner Identity verified </h6>
+            <h6 class="p-0 m-0">Owner Identity Verified </h6>
             <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
           </div>
           <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Property listed by <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+            <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
               <option value="1m">Owner</option>
-              <option value="2m">opt2</option>
-              <option value="2m">opt3</option>
+              <option value="2m">Manager</option>
+              <option value="2m">Buyer</option>
             </select> </h6>
           </div>
           <div class="contactd py-3">
@@ -569,6 +584,7 @@
   <!-- reviews -->
   <div class="card p-0 mt-3 mb-3">
     <h4 class="text-center py-2" style=" background-color: #23b6ae;color: #fff;">Reviews</h4>
+    <div class="reviewsm">
     <div class="card m-2">
       <div class="card-body mx-0 px-1 py-2">
         <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
@@ -581,6 +597,19 @@
         <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
       </div>
     </div>
+    <div class="card m-2">
+      <div class="card-body mx-0 px-1 py-2">
+        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+      </div>
+    </div>
+    <div class="card m-2">
+      <div class="card-body mx-0 px-1 py-2">
+        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+      </div>
+    </div>
+  </div>
     <div class="commnt">
     <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
   </div>
@@ -590,7 +619,7 @@
 
 <!-------------------------Our Services part start----------------------->
     <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
-      <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
+      <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); ">
         <div class="header d-flex justify-content-center mb-4">
             <div style="padding-top:10px;">
                 <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
@@ -1054,10 +1083,223 @@
     </div>
   </div>
 <!-- privacy 2.0 end -->
+    <!-- Location Start --->
+<div class="card new" style=" margin: 15px;">
+  <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
+      <h5 style="color: white">Location<h5>
+    </div>
+  <div class="card-body" style="display: flex;flex-direction: row;">
+    <label style="font-size: 20px; margin-bottom: 10px;">City :</label>
+    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Locality :</label>
+    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Nearest Bus/Metro Stop:</label>
+    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+    
+  </div>
+</div>
+<!-- location end -->
+<!-- Amenities start -->
+<div class="card mb-3 amenity new " style=" margin: 15px; " >
+    <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
+      <h5 style="color: white">Amenities<h5>
+    </div><br>
+        <div class="card-body my-3 p-0 m-3 ame text-center ">
+          <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
+            <p>WiFi</p>
+          </div>
+          <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
+            <p>TV</p>
+          </div>
+          <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
+            <p>Bed</p>
+          </div>
+          <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png"/></i></i>
+            <p>AC</p>
+          </div>
+          <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
+            <p>Guard</p>
+          </div>
+          <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png"/></i></i>
+            <p>Laundry</p>
+          </div>
+          <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png"/></i></i>
+            <p>Microwave</p>
+          </div>
+          <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png"/></i>
+            <p>Balcony</p>
+          </div>
+          <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png"/></i></i>
+            <p>CCTV</p>
+            </div>
+          <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png"/></i></i>
+            <p>Lift</p>
+            </div>
+          <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
+            <p>Cooler</p>
+            </div>
+          <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png"/></i></i>
+            <p>Fridge</p>
+            </div>
+          <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
+            <p>Table &  Chair</p>
+          </div>
+          <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png"/></i></i>
+            <p>Attached Bathroom</p>
+          </div>
+          <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
+            <p>Power Backup</p>
+          </div>
+          <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
+            <p>RO</p>
+          </div>
+      </div>
+    </div>
+    <!-- Amenities end -->
+    
+    </div>
+   <!-- right side -->
+   <div class="col-3 ml-0 pl-0">
+    <!-- price table -->
+   <div class="card mt-3" style="margin-right: 15px;">
+    <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
+      <h4>Get Owner Details</h4>
+      <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
+  
+    </div>
+    <div class="card-body p-1" style="margin: 15px;">
+      <div class="card-text">
+        <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
+          <div class="  rnt mb-1">
+          <h4 class="p-0 m-0" >&#8377;4500</h4>
+          <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
+        </div>
+        <h4 >-</h4>
+        <!-- <h5 >Negotiable</h5> -->
+        <select class="p-0 mb-3 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+            <option value="1m">Negotiable</option>
+            <option value="2m">Non-Negotiable</option>
+          </select>
+        </div>
+        <div class="depo py-3" style="border-bottom:#444 solid 1px;">
+          <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+            <option value="1m">1 Month Deposit</option>
+            <option value="2m">2 Month Deposit</option>
+          </select>
+        </div>
+        <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
+          <h6 class="p-0 m-0">Owner Identity Verified </h6>
+          <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
+        </div>
+        <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
+          <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+            <option value="1m">Owner</option>
+            <option value="2m">Manager</option>
+            <option value="2m">Buyer</option>
+          </select> </h6>
+        </div>
+        <div class="contactd py-3">
+          <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6; border: none; outline: none;">
+            Get Contact Details
+          </button> 
+        </div>
+  </div>
+  <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #23b6ae; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
+  <script>
+    $(document).ready(function() {
+  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+  </script>
+  </div> 
+<!--price table end -->
+  </div>
+  <div class="card mt-3" style="margin-right: 15px;">
+    <div class="card-body p-0">
+      <div class="card-text">
+        <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #2ecab6; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
+      </div>
+    </div>
+    <style>
+      #flashh { 
+  -webkit-animation: breathing 2s ease-out infinite normal;
+  animation: breathing 1s ease-in-out infinite normal;
+  }
 
-<!-------------------------Our Services part start----------------------->
+
+@-webkit-keyframes breathing {
+from{
+  color: rgb(160, 141, 141);
+}
+to{
+  color: #333;
+}
+}
+
+@keyframes breathing {
+from{
+  color: rgb(160, 141, 141);
+}
+to{
+  color: #333;
+}
+
+}
+    </style>
+    <script>  
+
+      // Function to generate random number  
+      function randomNumber(min, max) {  
+          return Math.floor(Math.random() * (max - min) + min); 
+      }   
+      // Function call 
+      document.getElementById("rn").innerHTML =randomNumber(1,20) ;   // for mv
+      document.getElementById("rn1").innerHTML =randomNumber(1,20) ;   // for dv
+      </script> 
+  </div>
+  <!-- reviews -->
+  <div class="card p-0 mt-3" style="margin-right: 15px;">
+  <h4 class="text-center py-2" style=" background-color: #23b6ae;color: #fff;">Reviews</h4>
+    <div class="review">
+      <div class="card m-2">
+    <div class="card-body mx-0 px-1 py-2">
+      <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+    </div>
+  </div>
+ 
+  <div class="card m-2">
+    <div class="card-body px-1 mx-0  py-2">
+      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+    </div>
+  </div>
+  <div class="card m-2">
+    <div class="card-body px-1 mx-0  py-2">
+      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+    </div>
+  </div>
+  <div class="card m-2">
+    <div class="card-body px-1 mx-0  py-2">
+      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
+      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+    </div>
+  </div>
+</div>
+ 
+  <div class="commnt">
+  <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+</div>
+</div>
+
+   
+  <!-- rewievs end -->
+</div>  <!-- right side end -->
+</div>
+<!-- col9 start left  end-->
+ <!-------------------------Our Services part start----------------------->
     <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
-    <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
+      <section  class=" dv pb-0" style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
         <div class="header d-flex justify-content-center mb-4">
             <div style="padding-top:10px;">
                 <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
@@ -1194,199 +1436,7 @@
     
         </div>
          <!-------------------------Our Services part end--------------------------------------->
-    
-    </div>
-   <!-- right side -->
-   <div class="col-3 ml-0 pl-0">
-    <!-- price table -->
-   <div class="card mt-3" style="margin-right: 15px;">
-    <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
-      <h4>Get Owner Details</h4>
-      <a href="" style="color: white; font-size: small; ">LOGIN is Required</a>
-  
-    </div>
-    <div class="card-body p-1" style="margin: 15px;">
-      <div class="card-text">
-        <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
-          <div class="  rnt mb-1">
-          <h4 class="p-0 m-0" >&#8377;4500</h4>
-          <p class="p-0 m-0" style="font-size: small;" >(Per month rent)</p>
-        </div>
-        <h4 >-</h4>
-        <h5 >Negotiable</h5>
-        </div>
-        <div class="depo py-3" style="border-bottom:#444 solid 1px;">
-          <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
-            <option value="1m">1 Month Deposit</option>
-            <option value="2m">2 Month Deposit</option>
-          </select>
-        </div>
-        <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-          <h6 class="p-0 m-0">Owner Identity verified </h6>
-          <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
-        </div>
-        <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
-          <h6 class="p-0 m-0">Property listed by <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
-            <option value="1m">Owner</option>
-            <option value="2m">opt2</option>
-            <option value="2m">opt3</option>
-          </select> </h6>
-        </div>
-        <div class="contactd py-3">
-          <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6; border: none; outline: none;">
-            Get Contact Details
-          </button> 
-        </div>
-  </div>
-  <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" border : none;background-color: #23b6ae; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
-  <script>
-    $(document).ready(function() {
-  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-});
-  </script>
-  </div> 
-<!--price table end -->
-  </div>
-  <div class="card mt-3" style="margin-right: 15px;">
-    <div class="card-body p-0">
-      <div class="card-text">
-        <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #2ecab6; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
-      </div>
-    </div>
-    <style>
-      #flashh { 
-  -webkit-animation: breathing 2s ease-out infinite normal;
-  animation: breathing 1s ease-in-out infinite normal;
-  }
 
-
-@-webkit-keyframes breathing {
-from{
-  color: rgb(160, 141, 141);
-}
-to{
-  color: #333;
-}
-}
-
-@keyframes breathing {
-from{
-  color: rgb(160, 141, 141);
-}
-to{
-  color: #333;
-}
-
-}
-    </style>
-    <script>  
-
-      // Function to generate random number  
-      function randomNumber(min, max) {  
-          return Math.floor(Math.random() * (max - min) + min); 
-      }   
-      // Function call 
-      document.getElementById("rn").innerHTML =randomNumber(1,20) ;   // for mv
-      document.getElementById("rn1").innerHTML =randomNumber(1,20) ;   // for dv
-      </script> 
-  </div>
-  <!-- reviews -->
-  <div class="card p-0 mt-3" style="margin-right: 15px;">
-  <h4 class="text-center py-2" style=" background-color: #23b6ae;color: #fff;">Reviews</h4>
-  <div class="card m-2">
-    <div class="card-body mx-0 px-1 py-2">
-      <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
-  <div class="card m-2">
-    <div class="card-body px-1 mx-0  py-2">
-      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
-  <div class="commnt">
-  <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
-</div>
-  </div> 
-  <!-- rewievs end -->
-</div>  <!-- right side end -->
-</div>
-<!-- col9 start left  end-->
-
-<!-- Amenities start -->
-<div class="card mb-3 amenity dv " style="width: 75%; margin-left: 15px; margin-right: 15px;" >
-    <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-      <h5 style="color: white">Amenities<h5>
-    </div><br>
-        <div class="card-body my-3 p-0 m-3 ame text-center ">
-          <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
-            <p>WiFi</p>
-          </div>
-          <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
-            <p>TV</p>
-          </div>
-          <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
-            <p>Bed</p>
-          </div>
-          <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png"/></i></i>
-            <p>AC</p>
-          </div>
-          <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
-            <p>Guard</p>
-          </div>
-          <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png"/></i></i>
-            <p>Laundry</p>
-          </div>
-          <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png"/></i></i>
-            <p>Microwave</p>
-          </div>
-          <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png"/></i>
-            <p>Balcony</p>
-          </div>
-          <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png"/></i></i>
-            <p>CCTV</p>
-            </div>
-          <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png"/></i></i>
-            <p>Lift</p>
-            </div>
-          <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>Cooler</p>
-            </div>
-          <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png"/></i></i>
-            <p>Fridge</p>
-            </div>
-          <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
-            <p>Table &  Chair</p>
-          </div>
-          <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png"/></i></i>
-            <p>Attached Bathroom</p>
-          </div>
-          <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
-            <p>Power Backup</p>
-          </div>
-          <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>RO</p>
-          </div>
-      </div>
-    </div>
-    <!-- Amenities end -->
-    <!-- Location Start --->
-<div class="card dv" style="width: 75%; margin: 15px;">
-  <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-      <h5 style="color: white">Location<h5>
-    </div>
-  <div class="card-body" style="display: flex;flex-direction: row;">
-    <label style="font-size: 20px; margin-bottom: 10px;">City :</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Locality :</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Nearest Bus/Metro Stop:</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    
-  </div>
-</div>
-<!-- location end -->
 </div>
 <!-- Sheltown help end -->
 <!-- Desktop view end -->
@@ -1428,7 +1478,7 @@ to{
     </div>
   </div>
 </div>
-</div
+</div>
     <!-- modal btn-->
 
  <!-- Modal comment -->
@@ -1453,7 +1503,7 @@ to{
                   <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
                   <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email"  style="border:#2ecab6 solid 2px;outline:none;">
                   <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
-                  <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Write Comments here ." id="comment" style="border:#2ecab6 solid 2px;outline:none;"></textarea>
+                  <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Write Comments Here ." id="comment" style="border:#2ecab6 solid 2px;outline:none;"></textarea>
                 </div>
                 <div class="buttonn d-flex justify-content-between">
                   <button type="button" class="btn btn-primary btn-sm" id="optrqt" style="background-color: #2ecab6;">Request OTP</button>
@@ -1653,8 +1703,8 @@ to{
      <script src="index.js"></script>
      <script>
 $(document).ready(function(){
-	$('#carouselExampleIndicators').carousel();
-	$('#carouselExampleIndicators1').carousel();
+  $('#carouselExampleIndicators').carousel();
+  $('#carouselExampleIndicators1').carousel();
 })
      </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
