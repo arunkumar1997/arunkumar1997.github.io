@@ -1,1554 +1,1572 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
     <title>Property Listings</title>
 
 
     <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/all.css"
-      rel="stylesheet"
-    />
-    <link
-      href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="listings.css" rel="stylesheet" />
-     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-      new WOW().init();
+        new WOW().init();
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
 
-  <div class="header" style="margin-bottom: 4.8rem;" >
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top "style="background-color: #fff;">
- <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br><p>Live Like You Own It</p></a>
- <div  class="navbar-brand  py-0"style="font-size: 16px;">
-  <div class="nav-item dropdown" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-map-marker-alt" style="color: #2ecab6 !important"></i>Choose City
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Bangalore</a>
-          <a class="dropdown-item" href="#">Bhopal</a>
-          <a class="dropdown-item" href="#">Delhi</a>
-          <a class="dropdown-item" href="#">Ghaziabad</a>
-          <a class="dropdown-item" href="#">Gurgaon</a>
-          <a class="dropdown-item" href="#">Indore</a>
-          <a class="dropdown-item" href="#">Jaipur</a>
-          <a class="dropdown-item" href="#">Kota</a>
-          <a class="dropdown-item" href="#">Noida</a>
-          <a class="dropdown-item" href="#">Pune</a>
-        </div>
-
-      </div>
-    </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 mr-md-0 mr-lg-0" type="search" placeholder="Search Locality" aria-label="Search "style="border-radius: 0!important">
-      <button class="btn btn-search btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
-    </form>
-      <ul class="navbar-nav ml-auto">
-      <li class="nav-item mr-4">
-        <div class=" dropdown"style="margin-left: 0px!important">
-
-
-
-
-                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" class="plan" style="background-color: #2ECAB6">Sheltie's Plan</button>
-                  <div data-toggle="modal" data-target="#myModal3" class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 60px !important;" >
-                      <a class="dropdown-item" href="#">Premium Tenant Plans</a>
-                      <a class="dropdown-item" href="#" >Premium Partner Plans</a>
-                      <a class="dropdown-item" href="#">Career Reboot 2.0</a>
-                      <a class="dropdown-item" href="#">Gharelu-Serve & Earn</a>
-                      <a class="dropdown-item" href="#">Financial Assistance</a>
-                      <a class="dropdown-item" href="#">Plot Buying Assistance</a>
-                      <a class="dropdown-item" href="#">Home Buying Solutions</a>
-                      <a class="dropdown-item" href="#">Strategic Advisory & Valuation</a>
-                      <a class="dropdown-item" href="#">Plot Selling Assistance</a>
-                      <a class="dropdown-item" href="#">Home Selling Assistance</a>
-                      <a class="dropdown-item" href="#">Loan Assistance</a>
-                      
-                  </div>
-                  
-                 
-              </li>
-
-      <li class="nav-item mr-4 login">
-        <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign up </a>
-      </li>
-      <li class="nav-item mr-4 login">
-        <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign in </a>
-      </li>
-      
-    </ul>
-  </div>
-</nav>
-</div><!--header end---------->
-
-
-<div style="margin-top:5px; background-color: #f1f3f6; border: 1px solid grey; margin: 20px;">
-  <div class="container-fluid">
-
-<!-- mobile view -->
-<div class="mv">
-  <!-- img --> 
-  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="position: relative;">
-    <ol class="carousel-indicators ">
-      <style>
-      .carousel-indicators li {
-      
-        margin: 20px;
-      }
-     
-      </style>
-      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" style="margin-top: 15px">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col">
-            <div class="watermark">
-              <div class="content">Sheltown.in</div>
-            </div>
-            <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 250px; ">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col">
-            <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-              <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184" alt="First slide" style="height: 250px;">
-          </div>
-        </div>
-      </div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col">
-          <div class="watermark">
-            <div class="content">Sheltown.in</div>
-          </div>
-          <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 250px;" >
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-info btn-sm vall"  style=" position: absolute; right: 4%; top:65%; background-color: #2ecab6;"><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All Photos</button>
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next" style="height: 80%;">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <!-- img end -->
-    <!-- Prop details -->
-    <div class="card mb-3 mt-1" >
-      <div class="card-header mb-0" style="border:none; background-color: #2ecab6; color: #fff;">
-        <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
-        <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-        <select  name="category" id="category" style="background-color: #2ECAB6; color: white">
-          <option class="opt" value="none" selected disabled >Residential Rent</option>
-          <option class="opt" value="none">Family Zoned</option>
-          <option class="opt" value="none">Female Only</option>
-          <option class="opt"z value="none">Male Only</option>
-        </select>
-      </div>
-      <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 " >
-        <select  name="category" id="category" style="margin-left: 3px;"  >
-          <option class="opt" value="none" selected disabled>Couple Privacy</option>
-          <option class="opt" value="none">Family Zoned</option>
-          <option class="opt" value="none">Female Only</option>
-          <option class="opt" value="none">Male Only</option> 
-        </select>
-        <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended</p>
-
-        
-      </div> 
-</div>
-    <!-- prop details end -->
-    <!-- location -->
-<div class="card " >
-  <div class="card-header pb-1" style="background-color: #2ecab6; color: #fff; ">
-      <h5  style="color: white">Location<h5>
-    </div>
-  <div class="card-body py-2 px-1 ">
-    <div class="row">
-      <div class="col-5 ">
-        <div class="input-group input-group-sm mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">City</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-        </div>
-      </div>
-      <div class="col pb-0">
-        <div class="input-group input-group-sm mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Locality</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-        </div>
-      </div>
-    </div>
-    <div class="row pb-0">
-      <div class="col">
-      <div class="input-group input-group-sm mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Nearest Bus/Metro Stop</span>
-        </div>
-        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-    <!-- location end -->
-    <!-- peoples viewing -->
-    <div class="card mt-3" >
-      <div class="card-body p-0">
-        <div class="card-text">
-          <p class="text-center py-1 mb-0" style="font-size: 20px; background-color: #2ecab6;"><span class="mx-1" id="rn"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
-        </div>
-      </div>
-    </div>
-    <!-- peoples are viewing end -->
-      <!-- price table -->
-     <div class="card mt-3 mb-3">
-      <div class="card-header text-center" style="font-size: 20px; background-color: #2ecab6; color: white; border:none;">
-        <h4>Get Owner Details</h4>
-        <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
-    
-      </div>
-      <div class="card-body p-1" style="margin: 15px;">
-        <div class="card-text">
-          <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
-            <div class="  rnt mb-1">
-            <h4 class="p-0 m-0" >&#8377;4500</h4>
-            <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
-          </div>
-
-          <h4 >-</h4>
-         <!--  <h5 >Negotiable</h5> -->
-         <select class="p-0  mb-3" style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
-              <option value="1m">Negotiable</option>
-              <option value="2m">Non-Negotiable</option>
-            </select>
-          </div>
-          <div class="depo py-3" style="border-bottom:#444 solid 1px;">
-            <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
-              <option value="1m">1 Month Deposit</option>
-              <option value="2m">2 Month Deposit</option>
-            </select>
-          </div>
-          <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Owner Identity Verified </h6>
-            <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
-          </div>
-          <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
-            <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
-              <option value="1m">Owner</option>
-              <option value="2m">Manager</option>
-              <option value="2m">Buyer</option>
-            </select> </h6>
-          </div>
-          <div class="contactd py-3">
-            <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6; border: none; outline: none;">
-              Get Contact Details
-            </button> 
-          </div>
-    </div>
-    <button aria-hidden="true" style=" border : none;background-color: #23b6ae; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
-    </div> 
-    </div> <!--price table end -->
-    <!-- know your new home -->
-    <div class="card new mb-3">
-      <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-       <h5 style="color: white; "> Know Your New Home <h5>
-      </div>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
-                  <tbody>
-                      <tr>
-                        <td >Rental Category</td>
-                        <td class="w-auto" style="color: #23b6ae;">
-                      <center> <select>
-                    <option value="#">Semi-Furnished</option>
-                    <option value="#">Non-Furnished</option>
-                    <option value="#">Fully-Furnished</option>
-                    </select></center>
-                        </td>
-                      </tr>
-                      <tr>
-              <td>Gym</td>
-                  <td class="w-auto" style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-              <option value="#">Yes</option>
-              <option value="#">No</option>
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                          <td>BHK Type</td>
-                  <td style="color: #23b6ae;">
-                    <center> <select>
-              <option value="#">1RK</option>
-              <option value="#">1BHK</option>
-              <option value="#">2BHK</option>
-              <option value="#">3BHK</option>
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                   <td>Water Supply</td>
-                  <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-              <option value="#">Yes</option>
-              <option value="#">No</option>
-              </select></center>
-                  </td>
-                </tr>
-                      <tr>
-                          <td >Floor</td>
-                        <td style="color: #23b6ae;">
-                    <center> <select>
-                      <option value="#">1st Floor</option>
-                      <option value="#">2nd Floor</option>
-                      <option value="#">3rd Floor</option>
-                      <option value="#">4th Floor</option>
-                      <option value="#">5th Floor</option>
-                      
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                   <td>Gated Security</td>
-                  <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-              <option value="#">Yes</option>
-              <option value="#">No</option>
-              </select></center>
-                  </td>
-                            </tr>
-                      <tr>
-                          <td>Bathroom</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select>
-                        <option value="#">Yes</option>
-                        <option value="#">No</option>
-                        
-              </select></center>
-                  </td></tr>
-                  <tr>
-                
-                          <td>Meals</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                      <option value="#">Not Included</option>
-                      <option value="#">Included</option>
-              </select></center>
-                  </td>
-                   </tr>
-                    
-                      <tr>
-                          <td>Parking</td>
-                          <td style="color: #23b6ae;">
-                    <center> <select>
-              <option value="#">Yes</option>
-              <option value="#">No</option>
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                  <td>Total Floors</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                      <option value="#">4</option>
-                      <option value="#">5</option>
-                      <option value="#">6</option>
-                      <option value="#">7</option>
-  
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                          <td>Electricity</td>
-                          <td style="color: #23b6ae;">
-                    <center> <select>
-              <option value="#">Not-Included</option>
-              <option value="#">Included</option>
-  
-              </select></center>
-                  </td></tr>
-                  <tr>
-                      <td>Tenant Preference</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                      <option value="#">Male Only</option>
-                      <option value="#">Female Only</option>
-                      <option value="#">Couple Privacy</option>
-                      <option value="#">Family Zoned</option>
-  
-              </select></center>
-                  </td>
-                      </tr>
-                      <tr>
-                          <td>Balcony</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select>
-              <option value="#">Yes</option>
-              <option value="#">No</option>
-              </select></center>
-                  </td>
-                      </tr>
-                     
-<tr>
-                          <td>PG Sharing type</td>
-                      <td style="color: #23b6ae;">
-                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-              <option value="#">Single</option>
-              <option value="#">Double</option>
-              <option value="#">Tripple</option>
-              <option value="#">Quadraple</option>
-
-              </select></center>
-                  </td>
-                      </tr>
-
-
-
-
-                  </tbody>
-              </table>
-            </div>
-  
-  
-  
-  
-      </div>
-    </div>
-    <!-- know your new home end -->
-   <!-- privacy 2.0 start -->
-  <div class="card new mb-3">
-    <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-     <h5 style="color: white; "> Privacy 2.0<h5>
-    </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-striped table-bordered mydatatable" >
-
-                <tbody>
-                    <tr>
-                        <td class="w-auto">Opposite Gender Allowed</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#" >Not-Allowed</option>
-            <option value="#">Allowed</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-
-            <td class="w-auto" >Smoking And Drinking</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-            <option value="#">Not-Allowed</option>
-            <option value="#">Allowed</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Owner Stays At Home</td>
-                <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">No</option>
-            <option value="#">Yes</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                 <td>Non-Veg Allowed</td>
-                <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                  <option value="#">Not-Allowed</option>
-                   <option value="#">Allowed</option>
-
-            </select></center>
-                </td>
-              </tr>
-
-                </tbody>
-            </table>
-          </div>
-
-
-
-
-    </div>
-  </div>
-<!-- privacy 2.0 end -->
-
-<!-- Amenities  -->
-<div class="card mb-3  " >
-  <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-    <h5 style="color: white">Amenities<h5>
-  </div><br>
-      <div class="card-body my-3 p-0 m-3 ame text-center ">
-        <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
-          <p>WiFi</p>
-        </div>
-        <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
-          <p>TV</p>
-        </div>
-        <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
-          <p>Bed</p>
-        </div>
-        <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png"/></i></i>
-          <p>AC</p>
-        </div>
-        <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
-          <p>Guard</p>
-        </div>
-        <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png"/></i></i>
-          <p>Laundry</p>
-        </div>
-        <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png"/></i></i>
-          <p>Microwave</p>
-        </div>
-        <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png"/></i>
-          <p>Balcony</p>
-        </div>
-        <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png"/></i></i>
-          <p>CCTV</p>
-          </div>
-        <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png"/></i></i>
-          <p>Lift</p>
-          </div>
-        <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-          <p>Cooler</p>
-          </div>
-        <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png"/></i></i>
-          <p>Fridge</p>
-          </div>
-        <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
-          <p>Table &  Chair</p>
-        </div>
-        <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png"/></i></i>
-          <p>Attached Bathroom</p>
-        </div>
-        <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
-          <p>Power Backup</p>
-        </div>
-        <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-          <p>RO</p>
-        </div>
-    </div>
-  </div>
-<!-- Amenities  end -->
-  <!-- reviews -->
-  <div class="card p-0 mt-3 mb-3">
-    <h4 class="text-center py-2" style=" background-color: #2ecab6;color: #fff;">Reviews</h4>
-    <div class="reviewsm ">
-    <div class="card m-2" >
-      <div class="card-body mx-0 px-1 py-2">
-        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-      </div>
-    </div>
-    <div class="card m-2">
-      <div class="card-body px-1 mx-0  py-2">
-        <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-      </div>
-    </div>
-    <div class="card m-2">
-      <div class="card-body mx-0 px-1 py-2">
-        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-      </div>
-    </div>
-    <div class="card m-2">
-      <div class="card-body mx-0 px-1 py-2">
-        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-        <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-      </div>
-    </div>
-  </div>
-    <div class="commnt">
-    <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
-  </div>
-    </div> 
-    <!-- rewievs end -->
-
-
-<!-------------------------Our Services part start----------------------->
-    <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
-      <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); ">
-        <div class="header d-flex justify-content-center mb-4">
-            <div style="padding-top:10px;">
-                <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
-                    OUR SERVICES
-                </h3>
-                <hr style="margin: 0 auto; background: red;">
-            </div>
-    
-        </div>
-        <div class="container-fluid cf m-0 p-0">
-            <div class="row p-lg-4 p-md-4 p-sm-3 p-0 mb-3 text-center">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
-                    <div class="card  ">
-                        <img class="img1 wow swing"src="./images/4-star-hotel.png" alt="Card image cap" />
-                        <h5 class="text-center wow bounce"><b>Rental Services Listing</b></h5>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i>PG/Hostel<br>
-                            <i class="fas fa-check mr-2"></i>Flat & Apartments<br>
-                            <i class="fas fa-check mr-2"></i>House<br>
-                            <i class="fas fa-check mr-2"></i>Commercial Space etc.
-                        </div>
-    
+    <div class="header" style="margin-bottom: 4.8rem;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #fff;">
+            <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+        <p>Live Like You Own It</p>
+      </a>
+            <div class="navbar-brand  py-0" style="font-size: 16px;">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-map-marker-alt" style="color: #2ecab6 !important"></i>Choose City
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Bangalore</a>
+                        <a class="dropdown-item" href="#">Bhopal</a>
+                        <a class="dropdown-item" href="#">Delhi</a>
+                        <a class="dropdown-item" href="#">Ghaziabad</a>
+                        <a class="dropdown-item" href="#">Gurgaon</a>
+                        <a class="dropdown-item" href="#">Indore</a>
+                        <a class="dropdown-item" href="#">Jaipur</a>
+                        <a class="dropdown-item" href="#">Kota</a>
+                        <a class="dropdown-item" href="#">Noida</a>
+                        <a class="dropdown-item" href="#">Pune</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-4 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/bank.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Strategic Advisory & Asset Valuation</h5>
-                        <p> Unleash the true potential of an asset with dynamic research insights and Discover optimum value
-                            of your
-                            assets.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-4 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/money-prize-100.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Premium Tenant Plans</h5>
-                        <p> Scheduled Cleaning, Laundry, Newspapers, Magazines, Professional Maid, Home Tuition from Premium
-                            Institution’s Alumni etc.</p>
-                    </div>
-                </div>
-    
-    
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/growing-money.png" alt="Card image cap" />
-                        <h5 class="wow bounce">Financial Assistance</h5>
-                        <div class="">Need Money?<br>
-                            Let us know your requirement...!!</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/building.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Home Buying Solutions</h5>
-                        <p>Simplifying the search for homebuyers with our wide selection of projects and exclusive offers.
-                        </p>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/online-shop.png" alt="Card image cap" />
-                        <h5 class="wow bounce">Premium Rental Services</h5>
-                        <p> Online booking available only for Premium Properties i.e. Sheltie’s Shelter.</p>
-    
-                    </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/gingerbread-house.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Premium Partner Plan</h5>
-                        <p>Sheltie’s Shelter</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/apartment.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Plot Selling Assistance</h5>
-                        <h5 class="wow bounce"> House Selling Assistance</h5>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/receive-cash.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Loan Assistance</h5>
-                        <h5 class="wow bounce"> Insurance Plans</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-5 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/real-estate.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Plot Buying Assistance</h5>
-                        <p>Want to buy piece of land and upset with Brokers?<br>
-                            Well!! Not Anymore. </p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i>See verified listings of plots and<br> compare rates quoted by
-                            seller.<br>
-                            <i class="fas fa-check  mr-2"></i>Absolutely No Commission.</div>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/icons8-home-address-100.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Gharelu-Serve & Earn</h5>
-                        <p> An initiative for domestic women that provides the best value of their top skills.</p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i> Dressmaker<br>
-                            <i class="fas fa-check mr-2"></i> Cooking<br>
-                            <i class="fas fa-check mr-2"></i>Home Decor<br>
-                            <i class="fas fa-check mr-2"></i>Pickling<br>
-                            <i class="fas fa-check mr-2"></i> Baking & much more.</div>
-                    </div>
-    
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/pass-money.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Walk of Life-CareerReboot2.0</h5>
-                        <p>For Women who are willing to start 2nd innings at work.</p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check mr-2"></i> Personalised Job Alerts <br>
-                            <i class="fas fa-check mr-2"></i> Ultramodern Trainings<br>
-                            <i class="fas fa-check mr-2"></i> Motivational Gatherings<br>
-                            <i class="fas fa-check mr-2"></i> Round-Table Sittings<br>
-                            <i class="fas fa-check mr-2"></i> Mother-To-Mother Talks</div>
-                    </div>
-    
+
                 </div>
             </div>
-    
-        </div>
-         <!-------------------------Our Services part end--------------------------------------->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</div>
-<!-- mobile view end -->
-<!-- Desktop View -->
-<!--carousel dv  -->
-<div class="dv">
-  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" style="position: relative;">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" style="margin-top: 15px">
-    <div class="carousel-item active">
-      <div class="row">
-
-        <div class="col-6">
-          <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-      <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px; ">
-    </div>
-    <div class="col-6">
-      <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-      <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184" alt="First slide" style="height: 300px;">
-      
-    </div>
-  </div>
-</div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col-6">
-          <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-      <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px;">
-    </div>
-    <div class="col-6">
-      <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-     
-      <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 300px;" >
-      
-        
-
-
-    </div>
-  </div>
-</div>
-    <div class="carousel-item">
-           <div class="row">
-        <div class="col-6">
-          <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-      <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px;">
-    </div>
-    <div class="col-6">
-      <div class="watermark">
-                <div class="content">Sheltown.in</div>
-              </div>
-      <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 300px;">
-      
-    </div>
-  </div>
-</div>
-<button type="button" class="btn btn-info vall" style="position: absolute;right:5%;bottom: 4%; background-color: #2ecab6; "><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All Photos</button>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-<!-- carousel dv end -->
-<!-- col9 start left -->
-<div class="row dv">
-  <div class="col-9 mr-0 pr-0">
-    <!-- Property details start -->
-    <div class="card mb-3 d-slid " style="margin: 15px;" >
-      <div class="card-header " style="background-color: #2ecab6; color: #fff;">
-        <div style="display: flex;flex-direction: row;">
-        <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
-        <div class="col1">
-         <select  name="category" id="category" style="margin-left: 13em;background-color: #2ecab6;" >
-           <option class="opt" value="none" selected disabled style="color: white;">Couple Privacy</option>
-           <option class="others" value="none">Family Zoned</option>
-           <option class="others" value="none">Female Only</option>
-           <option class="others" value="none">Male Only</option> 
-         </select>
-        </div></div>
-        <div style="display: flex;flex-direction: row;">
-          <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-          <p style="margin-left: 16.5em; font-size: 17px">Sheltown Recommended</p>
-        </div>
-        <div class="col2">
-         <select  name="category" id="category" style="width: 18%; background-color: #2ecab6;">
-           <option value="none" selected disabled>Residential Rent</option>
-           <option value="none">Family Zoned</option>
-           <option value="none">Female Only</option>
-           <option value="none">Male Only</option>
-           
-         </select>
-  </div>
-</div>
-</div>
-
-
-<!-- Know your new home start -->
-
-<div class="card new" style="margin: 15px;">
-    <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-     <h5 style="color: white; "> Know Your New Home <h5>
-    </div>
-    <div class="card-body">
-      <div class="table-responsive-sm">
-        <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
-
-                <tbody>
-                    <tr>
-                        <td class="w-auto">Rental Category</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Semi-Furnished</option>
-            <option value="#">Non-Furnished</option>
-            <option value="#">Fully-Furnished</option>
-            </select></center>
-                </td>
-
-            <td class="w-auto" >Gym</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>BHK Type</td>
-                <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-            <option value="#">1RK</option>
-            <option value="#">1BHK</option>
-            <option value="#">2BHK</option>
-            <option value="#">3BHK</option>
-            </select></center>
-                </td>
-                 <td>Water Supply</td>
-                <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-              </tr>
-                    <tr>
-                        <td >Floor</td>
-                      <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">1st Floor</option>
-                    <option value="#">2nd Floor</option>
-                    <option value="#">3rd Floor</option>
-                    <option value="#">4th Floor</option>
-                    <option value="#">5th Floor</option>
-                    
-            </select></center>
-                </td>
-                 <td>Gated Security</td>
-                <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-                          </tr>
-                    <tr>
-                        <td>Bathroom</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                      <option value="#">Yes</option>
-                      <option value="#">No</option>
-                      
-            </select></center>
-                </td>
-              
-                        <td>Meals</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                    <option value="#">Not Included</option>
-                    <option value="#">Included</option>
-            </select></center>
-                </td>
-                 </tr>
-                  
-                    <tr>
-                        <td>Parking</td>
-                        <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </select></center>
-                </td>
-                <td>Total Floors</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-                    <option value="#">4</option>
-                    <option value="#">5</option>
-                    <option value="#">6</option>
-                    <option value="#">7</option>
-
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Electricity</td>
-                        <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-            <option value="#">Not-Included</option>
-            <option value="#">Included</option>
-
-            </select></center>
-                </td>
-                    <td>Tenant Preference</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                    <option value="#">Male Only</option>
-                    <option value="#">Female Only</option>
-                    <option value="#">Couple Privacy</option>
-                    <option value="#">Family Zoned</option>
-                  </center>
-            </select>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Balcony</td>
-                    <td style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#">Yes</option>
-            <option value="#">No</option>
-            </center>
-            </select>
-                </td>
-                <td>PG Sharing Type</td>
-                      <td style="color: #23b6ae;"><center>
-                  <select>
-                <option value="#">Single</option>
-                <option value="#">Double</option>
-                <option value="#">Triple</option>
-                <option value="#">Quadruple</option>
-</center>
-            </select>
-          
-                </td>
-                      </tr>
-                </tbody>
-            </table>
-          </div>
-
-
-
-
-    </div>
-  </div>
-
-<!-- privacy 2.0 start -->
-
-  <div class="card new" style="margin: 15px;">
-    <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
-     <h5 style="color: white; "> Privacy 2.0 <h5>
-    </div>
-    <div class="card-body">
-      <div class="table-responsive-sm">
-        <table class="table table-striped table-bordered mydatatable" style="width: 100%;  ">
-
-                <tbody>
-                    <tr>
-                        <td class="w-auto">Opposite Gender Allowed</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select>
-            <option value="#" >Not-Allowed</option>
-            <option value="#">Allowed</option>
-            </select></center>
-                </td>
-
-            <td class="w-auto" >Smoking And Drinking</td>
-                <td class="w-auto" style="color: #23b6ae;">
-                  <center> <select >
-            <option value="#">Not-Allowed</option>
-            <option value="#">Allowed</option>
-            </select></center>
-                </td>
-                    </tr>
-                    <tr>
-                        <td>Owner Stays At Home</td>
-                <td style="color:#23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-            <option value="#">No</option>
-            <option value="#">Yes</option>
-            </select></center>
-                </td>
-                 <td>Non-Veg Allowed</td>
-                <td style="color:#23b6ae;">
-                  <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
-                  <option value="#">Not-Allowed</option>
-                   <option value="#">Allowed</option>
-
-            </select></center>
-                </td>
-              </tr>
-
-                </tbody>
-            </table>
-          </div>
-
-
-
-
-    </div>
-  </div>
-<!-- privacy 2.0 end -->
-    <!-- Location Start --->
-<div class="card new" style=" margin: 15px;">
-  <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-      <h5 style="color: white">Location<h5>
-    </div>
-  <div class="card-body" style="display: flex;flex-direction: row;">
-    <label style="font-size: 20px; margin-bottom: 10px;">City :</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Locality :</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Nearest Bus/Metro Stop:</label>
-    <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
-    
-  </div>
-</div>
-<!-- location end -->
-<!-- Amenities start -->
-<div class="card mb-3 amenity new " style=" margin: 15px; " >
-    <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-      <h5 style="color: white">Amenities<h5>
-    </div><br>
-        <div class="card-body my-3 p-0 m-3 ame text-center ">
-          <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
-            <p>WiFi</p>
-          </div>
-          <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
-            <p>TV</p>
-          </div>
-          <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
-            <p>Bed</p>
-          </div>
-          <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png"/></i></i>
-            <p>AC</p>
-          </div>
-          <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
-            <p>Guard</p>
-          </div>
-          <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png"/></i></i>
-            <p>Laundry</p>
-          </div>
-          <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png"/></i></i>
-            <p>Microwave</p>
-          </div>
-          <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png"/></i>
-            <p>Balcony</p>
-          </div>
-          <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png"/></i></i>
-            <p>CCTV</p>
-            </div>
-          <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png"/></i></i>
-            <p>Lift</p>
-            </div>
-          <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>Cooler</p>
-            </div>
-          <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png"/></i></i>
-            <p>Fridge</p>
-            </div>
-          <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
-            <p>Table &  Chair</p>
-          </div>
-          <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png"/></i></i>
-            <p>Attached Bathroom</p>
-          </div>
-          <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
-            <p>Power Backup</p>
-          </div>
-          <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png"/></i></i>
-            <p>RO</p>
-          </div>
-      </div>
-    </div>
-    <!-- Amenities end -->
-    
-    </div>
-   <!-- right side -->
-   <div class="col-3 ml-0 pl-0">
-    <!-- price table -->
-   <div class="card mt-3" style="margin-right: 15px;">
-    <div class="card-header text-center" style="font-size: 20px; background-color: #2ecab6; color: white; border:none;">
-      <h4>Get Owner Details</h4>
-      <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
-  
-    </div>
-    <div class="card-body p-1" style="margin: 15px;">
-      <div class="card-text">
-        <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
-          <div class="  rnt mb-1">
-          <h4 class="p-0 m-0" >&#8377;4500</h4>
-          <p class="p-0 m-0" style="font-size: small;" >(Per Month Rent)</p>
-        </div>
-        <h4 >-</h4>
-        <!-- <h5 >Negotiable</h5> -->
-        <select class="p-0 mb-3 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
-            <option value="1m">Negotiable</option>
-            <option value="2m">Non-Negotiable</option>
-          </select>
-        </div>
-        <div class="depo py-3" style="border-bottom:#444 solid 1px;">
-          <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
-            <option value="1m">1 Month Deposit</option>
-            <option value="2m">2 Month Deposit</option>
-          </select>
-        </div>
-        <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-          <h6 class="p-0 m-0">Owner Identity Verified </h6>
-          <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
-        </div>
-        <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
-          <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
-            <option value="1m">Owner</option>
-            <option value="2m">Manager</option>
-            <option value="2m">Buyer</option>
-          </select> </h6>
-        </div>
-        <div class="contactd py-3">
-          <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6;">
-            Get Contact Details
-          </button> 
-        </div>
-  </div>
-  <button aria-hidden="true"  data-placement="top"  data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" background-color: #2ecab6; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
-  <script>
-    $(document).ready(function() {
-  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-});
-  </script>
-  </div> 
-<!--price table end -->
-  </div>
-  <div class="card mt-3" style="margin-right: 15px;">
-    <div class="card-body p-0">
-      <div class="card-text">
-        <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #2ecab6; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
-      </div>
-    </div>
-    <style>
-      #flashh { 
-  -webkit-animation: breathing 2s ease-out infinite normal;
-  animation: breathing 1s ease-in-out infinite normal;
-  }
-
-
-@-webkit-keyframes breathing {
-from{
-  color: rgb(160, 141, 141);
-}
-to{
-  color: #333;
-}
-}
-
-@keyframes breathing {
-from{
-  color: rgb(160, 141, 141);
-}
-to{
-  color: #333;
-}
-
-}
-    </style>
-    <script>  
-
-      // Function to generate random number  
-      function randomNumber(min, max) {  
-          return Math.floor(Math.random() * (max - min) + min); 
-      }   
-      // Function call 
-      document.getElementById("rn").innerHTML =randomNumber(1,20) ;   // for mv
-      document.getElementById("rn1").innerHTML =randomNumber(1,20) ;   // for dv
-      </script> 
-  </div>
-  <!-- reviews -->
-  <div class="card p-0 mt-3" style="margin-right: 15px;">
-  <h4 class="text-center py-2" style=" background-color: #2ecab6;color: #fff;">Reviews</h4>
-    <div class="review">
-      <div class="card m-2">
-    <div class="card-body mx-0 px-1 py-2">
-      <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
- 
-  <div class="card m-2">
-    <div class="card-body px-1 mx-0  py-2">
-      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
-  <div class="card m-2">
-    <div class="card-body px-1 mx-0  py-2">
-      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
-  <div class="card m-2">
-    <div class="card-body px-1 mx-0  py-2">
-      <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content.  &quot;</p>
-      <p class="mb-0 px-2 py-1 float-right"  style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
-    </div>
-  </div>
-</div>
- 
-  <div class="commnt">
-  <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
-</div>
-</div>
-
-   
-  <!-- rewievs end -->
-</div>  <!-- right side end -->
-</div>
-<!-- col9 start left  end-->
- <!-------------------------Our Services part start----------------------->
-    <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
-      <section  class=" dv pb-0" style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
-        <div class="header d-flex justify-content-center mb-4">
-            <div style="padding-top:10px;">
-                <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
-                    OUR SERVICES
-                </h3>
-                <hr style="margin: 0 auto; background: red;">
-            </div>
-    
-        </div>
-        <div class="container-fluid cf">
-            <div class="row p-lg-4 p-md-4 p-sm-3 p-0 mb-3 text-center">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
-                    <div class="card p-3 ">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/4-star-hotel.png" alt="Card image cap" />
-                        <h5 class="text-center wow bounce"><b>Rental Services Listing</b></h5>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i>PG/Hostel<br>
-                            <i class="fas fa-check mr-2"></i>Flat & Apartments<br>
-                            <i class="fas fa-check mr-2"></i>House<br>
-                            <i class="fas fa-check mr-2"></i>Commercial Space etc.
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-4 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/bank.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Strategic Advisory & Asset Valuation</h5>
-                        <p> Unleash the true potential of an asset with dynamic research insights and Discover optimum value
-                            of your
-                            assets.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-4 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/money-prize-100.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Premium Tenant Plans</h5>
-                        <p> Scheduled Cleaning, Laundry, Newspapers, Magazines, Professional Maid, Home Tuition from Premium
-                            Institution’s Alumni etc.</p>
-                    </div>
-                </div>
-    
-    
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/growing-money.png" alt="Card image cap" />
-                        <h5 class="wow bounce">Financial Assistance</h5>
-                        <div class="">Need Money?<br>
-                            Let us know your requirement...!!</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/building.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Home Buying Solutions</h5>
-                        <p>Simplifying the search for homebuyers with our wide selection of projects and exclusive offers.
-                        </p>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/online-shop.png" alt="Card image cap" />
-                        <h5 class="wow bounce">Premium Rental Services</h5>
-                        <p> Online booking available only for Premium Properties i.e. Sheltie’s Shelter.</p>
-    
-                    </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/gingerbread-house.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Premium Partner Plan</h5>
-                        <p>Sheltie’s Shelter</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/apartment.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Plot Selling Assistance</h5>
-                        <h5 class="wow bounce"> House Selling Assistance</h5>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/receive-cash.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Loan Assistance</h5>
-                        <h5 class="wow bounce"> Insurance Plans</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card pt-3 pb-5 px-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/real-estate.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Plot Buying Assistance</h5>
-                        <p>Want to buy piece of land and upset with Brokers?<br>
-                            Well!! Not Anymore. </p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i>See verified listings of plots and<br> compare rates quoted by
-                            seller.<br>
-                            <i class="fas fa-check  mr-2"></i>Absolutely No Commission.</div>
-    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/icons8-home-address-100.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Gharelu-Serve & Earn</h5>
-                        <p> An initiative for domestic women that provides the best value of their top skills.</p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check  mr-2"></i> Dressmaker<br>
-                            <i class="fas fa-check mr-2"></i> Cooking<br>
-                            <i class="fas fa-check mr-2"></i>Home Decor<br>
-                            <i class="fas fa-check mr-2"></i>Pickling<br>
-                            <i class="fas fa-check mr-2"></i> Baking & much more.</div>
-                    </div>
-    
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card p-3">
-                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/pass-money.png" alt="Card image cap" />
-                        <h5 class="wow bounce"> Walk of Life-CareerReboot2.0</h5>
-                        <p>For Women who are willing to start 2nd innings at work.</p>
-                        <div class="text-left m-auto">
-                            <i class="fas fa-check mr-2"></i> Personalised Job Alerts <br>
-                            <i class="fas fa-check mr-2"></i> Ultramodern Trainings<br>
-                            <i class="fas fa-check mr-2"></i> Motivational Gatherings<br>
-                            <i class="fas fa-check mr-2"></i> Round-Table Sittings<br>
-                            <i class="fas fa-check mr-2"></i> Mother-To-Mother Talks</div>
-                    </div>
-    
-                </div>
-            </div>
-    
-        </div>
-         <!-------------------------Our Services part end--------------------------------------->
-
-</div>
-<!-- Sheltown help end -->
-<!-- Desktop view end -->
-
-</div>
-
-<!-- modals -->
-
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body m-0 p-0">
-        <div class="card">
-          <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
-            <h5 class=" p-0 m-0 "><i style="display: inline;" class="fas fa-people-arrows ml-2"></i>
-        Get Owner Details</h5>
-          <p class=" p-0 m-0 ">100% Genuine Owners</p>
-          </div>
-          <form class="m-1 px-4">
-          <div class="form-group f1">
-            <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
-            <input type="name" class="form-control ip mt-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email"  style="border:#2ecab6 solid 2px;outline:none;">
-          <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
-          <button class="btn btn-primary btn-sm  mb-2  "  id="optrqt1" style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
-          
-          
-          <!-- <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button> -->
-          </div>
-          </form>
-        </div>
-
-      <div class="modal-footer">
-       <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;">Get Owner Details</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-    <!-- modal btn-->
-
- <!-- Modal comment -->
- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-       
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body p-0">
-        <form>
-          <div class="card p-0 m-0" >
-            <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
-              <h5 class=" p-0 m-0 ">Write Comment</h5>
-            </div>
-            <div class="card-body">
-              <form class="m-1 px-4">
-                <div class="form-group f">
-                  <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name"  style=" border: none;border:#2ecab6 solid 2px;outline:none;">
-                  <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email"  style="border:#2ecab6 solid 2px;outline:none;">
-                  <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
-                  <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Write Comments Here ." id="comment" style="border:#2ecab6 solid 2px;outline:none;"></textarea>
-                </div>
-                <div class="buttonn d-flex justify-content-between">
-                  <button type="button" class="btn btn-primary btn-sm" id="optrqt" style="background-color: #2ecab6;">Request OTP</button>
-                <button type="button" class="btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Verify OTP</button>
-                <button type="button" class="btn btn-primary btn-sm" style="background-color: #2ecab6;">Resend OTP</button>
-                
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 mr-md-0 mr-lg-0" type="search" placeholder="Search Locality" aria-label="Search " style="border-radius: 0!important">
+                    <button class="btn btn-search btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <div class=" dropdown" style="margin-left: 0px!important">
+
+
+
+
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="plan" style="background-color: #2ECAB6">Sheltie's Plan</button>
+                            <div data-toggle="modal" data-target="#myModal3" class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 60px !important;">
+                                <a class="dropdown-item" href="#">Premium Tenant Plans</a>
+                                <a class="dropdown-item" href="#">Premium Partner Plans</a>
+                                <a class="dropdown-item" href="#">Career Reboot 2.0</a>
+                                <a class="dropdown-item" href="#">Gharelu-Serve & Earn</a>
+                                <a class="dropdown-item" href="#">Financial Assistance</a>
+                                <a class="dropdown-item" href="#">Plot Buying Assistance</a>
+                                <a class="dropdown-item" href="#">Home Buying Solutions</a>
+                                <a class="dropdown-item" href="#">Strategic Advisory & Valuation</a>
+                                <a class="dropdown-item" href="#">Plot Selling Assistance</a>
+                                <a class="dropdown-item" href="#">Home Selling Assistance</a>
+                                <a class="dropdown-item" href="#">Loan Assistance</a>
+
+                            </div>
+
+
+                    </li>
+
+                    <li class="nav-item mr-4 login">
+                        <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign up </a>
+                    </li>
+                    <li class="nav-item mr-4 login">
+                        <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign in </a>
+                    </li>
+
+                </ul>
+                </div>
+        </nav>
+        </div>
+        <!--header end---------->
+
+
+        <div style="margin-top:5px; background-color: #f1f3f6; border: 1px solid grey; margin: 20px;">
+            <div class="container-fluid">
+
+                <!-- mobile view -->
+                <div class="mv">
+                    <!-- img -->
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="position: relative;">
+                        <ol class="carousel-indicators ">
+                            <style>
+                                .carousel-indicators li {
+                                    margin: 20px;
+                                }
+                            </style>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" style="margin-top: 15px">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 250px; ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184" alt="First slide" style="height: 250px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 250px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-info btn-sm vall" style=" position: absolute; right: 4%; top:65%; background-color: #2ecab6;"><i class="fa fa-picture-o"
+              aria-hidden="true" style="margin: 5px;"></i>View All Photos</button>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next" style="height: 80%;">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- img end -->
+                    <!-- Prop details -->
+                    <div class="card mb-3 mt-1">
+                        <div class="card-header mb-0" style="border:none; background-color: #2ecab6; color: #fff;">
+                            <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
+                            <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota,
+              Rajasthan</span>
+                            <select name="category" id="category" style="background-color: #2ECAB6; color: white">
+              <option class="opt" value="none" selected disabled>Residential Rent</option>
+              <option class="opt" value="none">Family Zoned</option>
+              <option class="opt" value="none">Female Only</option>
+              <option class="opt" z value="none">Male Only</option>
+            </select>
+                        </div>
+                        <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 ">
+                            <select name="category" id="category" style="margin-left: 3px;">
+              <option class="opt" value="none" selected disabled>Couple Privacy</option>
+              <option class="opt" value="none">Family Zoned</option>
+              <option class="opt" value="none">Female Only</option>
+              <option class="opt" value="none">Male Only</option>
+            </select>
+                            <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended</p>
+
+
+                        </div>
+                    </div>
+                    <!-- prop details end -->
+                    <!-- location -->
+                    <div class="card ">
+                        <div class="card-header pb-1" style="background-color: #2ecab6; color: #fff; ">
+                            <h5 style="color: white">Location
+                                <h5>
+                        </div>
+                        <div class="card-body py-2 px-1 ">
+                            <div class="row">
+                                <div class="col-5 ">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-sm">City</span>
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                </div>
+                                <div class="col pb-0">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-sm">Locality</span>
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pb-0">
+                                <div class="col">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-sm">Nearest Bus/Metro Stop</span>
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- location end -->
+                    <!-- peoples viewing -->
+                    <div class="card mt-3">
+                        <div class="card-body p-0">
+                            <div class="card-text">
+                                <p class="text-center py-1 mb-0" style="font-size: 20px; background-color: #2ecab6;"><span class="mx-1" id="rn"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- peoples are viewing end -->
+                    <!-- price table -->
+                    <div class="card mt-3 mb-3">
+                        <div class="card-header text-center" style="font-size: 20px; background-color: #2ecab6; color: white; border:none;">
+                            <h4>Get Owner Details</h4>
+                            <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
+
+                        </div>
+                        <div class="card-body p-1" style="margin: 15px;">
+                            <div class="card-text">
+                                <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
+                                    <div class="  rnt mb-1">
+                                        <h4 class="p-0 m-0">&#8377;4500</h4>
+                                        <p class="p-0 m-0" style="font-size: small;">(Per Month Rent)</p>
+                                    </div>
+
+                                    <h4>-</h4>
+                                    <!--  <h5 >Negotiable</h5> -->
+                                    <select class="p-0  mb-3" style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+                  <option value="1m">Negotiable</option>
+                  <option value="2m">Non-Negotiable</option>
+                </select>
+                                </div>
+                                <div class="depo py-3" style="border-bottom:#444 solid 1px;">
+                                    <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+                  <option value="1m">1 Month Deposit</option>
+                  <option value="2m">2 Month Deposit</option>
+                </select>
+                                </div>
+                                <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
+                                    <h6 class="p-0 m-0">Owner Identity Verified </h6>
+                                    <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
+                                </div>
+                                <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
+                                    <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+                    <option value="1m">Owner</option>
+                    <option value="2m">Manager</option>
+                    <option value="2m">Buyer</option>
+                  </select> </h6>
+                                </div>
+                                <div class="contactd py-3">
+                                    <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6; border: none; outline: none;">
+                  Get Contact Details
+                </button>
+                                </div>
+                            </div>
+                            <button aria-hidden="true" style=" border : none;background-color: #23b6ae; color: white;" type="button" class="btn btn-primary btn-block">Book Now </button>
+                        </div>
+                    </div>
+                    <!--price table end -->
+                    <!-- know your new home -->
+                    <div class="card new mb-3">
+                        <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
+                            <h5 style="color: white; "> Know Your New Home
+                                <h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Rental Category</td>
+                                            <td class="w-auto" style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Semi-Furnished</option>
+                          <option value="#">Non-Furnished</option>
+                          <option value="#">Fully-Furnished</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gym</td>
+                                            <td class="w-auto" style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>BHK Type</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">1RK</option>
+                          <option value="#">1BHK</option>
+                          <option value="#">2BHK</option>
+                          <option value="#">3BHK</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Water Supply</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Floor</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">1st Floor</option>
+                          <option value="#">2nd Floor</option>
+                          <option value="#">3rd Floor</option>
+                          <option value="#">4th Floor</option>
+                          <option value="#">5th Floor</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gated Security</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bathroom</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Meals</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Not Included</option>
+                          <option value="#">Included</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Parking</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Floors</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">4</option>
+                          <option value="#">5</option>
+                          <option value="#">6</option>
+                          <option value="#">7</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Electricity</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Not-Included</option>
+                          <option value="#">Included</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tenant Preference</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Male Only</option>
+                          <option value="#">Female Only</option>
+                          <option value="#">Couple Privacy</option>
+                          <option value="#">Family Zoned</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Balcony</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Yes</option>
+                          <option value="#">No</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>PG Sharing type</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Single</option>
+                          <option value="#">Double</option>
+                          <option value="#">Tripple</option>
+                          <option value="#">Quadraple</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- know your new home end -->
+                    <!-- privacy 2.0 start -->
+                    <div class="card new mb-3">
+                        <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
+                            <h5 style="color: white; "> Privacy 2.0
+                                <h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered mydatatable">
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-auto">Opposite Gender Allowed</td>
+                                            <td class="w-auto" style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">Not-Allowed</option>
+                          <option value="#">Allowed</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="w-auto">Smoking And Drinking</td>
+                                            <td class="w-auto" style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Not-Allowed</option>
+                          <option value="#">Allowed</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Owner Stays At Home</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select>
+                          <option value="#">No</option>
+                          <option value="#">Yes</option>
+                        </select></center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Non-Veg Allowed</td>
+                                            <td style="color: #23b6ae;">
+                                                <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                          <option value="#">Not-Allowed</option>
+                          <option value="#">Allowed</option>
+
+                        </select></center>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- privacy 2.0 end -->
+
+                    <!-- Amenities  -->
+                    <div class="card mb-3  ">
+                        <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
+                            <h5 style="color: white">Amenities
+                                <h5>
+                        </div><br>
+                        <div class="card-body my-3 p-0 m-3 ame text-center ">
+                            <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>WiFi</p>
+                            </div>
+                            <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
+                                <p>TV</p>
+                            </div>
+                            <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
+                                <p>Bed</p>
+                            </div>
+                            <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png" /></i>
+                                </i>
+                                <p>AC</p>
+                            </div>
+                            <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
+                                <p>Guard</p>
+                            </div>
+                            <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
+                                </i>
+                                <p>Laundry</p>
+                            </div>
+                            <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png" /></i>
+                                </i>
+                                <p>Microwave</p>
+                            </div>
+                            <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png" /></i>
+                                <p>Balcony</p>
+                            </div>
+                            <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png" /></i>
+                                </i>
+                                <p>CCTV</p>
+                            </div>
+                            <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
+                                </i>
+                                <p>Lift</p>
+                            </div>
+                            <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                                </i>
+                                <p>Cooler</p>
+                            </div>
+                            <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png" /></i>
+                                </i>
+                                <p>Fridge</p>
+                            </div>
+                            <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
+                                <p>Table & Chair</p>
+                            </div>
+                            <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
+                                </i>
+                                <p>Attached Bathroom</p>
+                            </div>
+                            <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
+                                <p>Power Backup</p>
+                            </div>
+                            <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                                </i>
+                                <p>RO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Amenities  end -->
+                    <!-- reviews -->
+                    <div class="card p-0 mt-3 mb-3">
+                        <h4 class="text-center py-2" style=" background-color: #2ecab6;color: #fff;">Reviews</h4>
+                        <div class="reviewsm ">
+                            <div class="card m-2">
+                                <div class="card-body mx-0 px-1 py-2">
+                                    <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                    <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body px-1 mx-0  py-2">
+                                    <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                    <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body mx-0 px-1 py-2">
+                                    <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                    <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body mx-0 px-1 py-2">
+                                    <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                    <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commnt">
+                            <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+                        </div>
+                    </div>
+                    <!-- rewievs end -->
+
+
+                    <!-------------------------Our Services part start----------------------->
+                    <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
+                    <section class=" pb-0 " style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); ">
+                        <div class="header d-flex justify-content-center mb-4">
+                            <div style="padding-top:10px;">
+                                <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
+                                    OUR SERVICES
+                                </h3>
+                                <hr style="margin: 0 auto; background: red;">
+                            </div>
+
+                        </div>
+                        <div class="container-fluid cf m-0 p-0">
+                            <div class="row p-lg-4 p-md-4 p-sm-3 p-0 mb-3 text-center">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                    <div class="card  ">
+                                        <img class="img1 wow swing" src="./images/4-star-hotel.png" alt="Card image cap" />
+                                        <h5 class="text-center wow bounce"><b>Rental Services Listing</b></h5>
+                                        <div class="text-left m-auto">
+                                            <i class="fas fa-check  mr-2"></i>PG/Hostel<br>
+                                            <i class="fas fa-check mr-2"></i>Flat & Apartments<br>
+                                            <i class="fas fa-check mr-2"></i>House<br>
+                                            <i class="fas fa-check mr-2"></i>Commercial Space etc.
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card pt-3 pb-4 px-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/bank.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Strategic Advisory & Asset Valuation</h5>
+                                        <p> Unleash the true potential of an asset with dynamic research insights and Discover optimum value of your assets.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card pt-3 pb-4 px-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/money-prize-100.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Premium Tenant Plans</h5>
+                                        <p> Scheduled Cleaning, Laundry, Newspapers, Magazines, Professional Maid, Home Tuition from Premium Institution’s Alumni etc.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/growing-money.png" alt="Card image cap" />
+                                        <h5 class="wow bounce">Financial Assistance</h5>
+                                        <div class="">Need Money?<br> Let us know your requirement...!!</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/building.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Home Buying Solutions</h5>
+                                        <p>Simplifying the search for homebuyers with our wide selection of projects and exclusive offers.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/online-shop.png" alt="Card image cap" />
+                                        <h5 class="wow bounce">Premium Rental Services</h5>
+                                        <p> Online booking available only for Premium Properties i.e. Sheltie’s Shelter.</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/gingerbread-house.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Premium Partner Plan</h5>
+                                        <p>Sheltie’s Shelter</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/apartment.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Plot Selling Assistance</h5>
+                                        <h5 class="wow bounce"> House Selling Assistance</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/receive-cash.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Loan Assistance</h5>
+                                        <h5 class="wow bounce"> Insurance Plans</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card pt-3 pb-5 px-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/real-estate.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Plot Buying Assistance</h5>
+                                        <p>Want to buy piece of land and upset with Brokers?<br> Well!! Not Anymore. </p>
+                                        <div class="text-left m-auto">
+                                            <i class="fas fa-check  mr-2"></i>See verified listings of plots and<br> compare rates quoted by seller.
+                                            <br>
+                                            <i class="fas fa-check  mr-2"></i>Absolutely No Commission.
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/icons8-home-address-100.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Gharelu-Serve & Earn</h5>
+                                        <p> An initiative for domestic women that provides the best value of their top skills.</p>
+                                        <div class="text-left m-auto">
+                                            <i class="fas fa-check  mr-2"></i> Dressmaker<br>
+                                            <i class="fas fa-check mr-2"></i> Cooking<br>
+                                            <i class="fas fa-check mr-2"></i>Home Decor<br>
+                                            <i class="fas fa-check mr-2"></i>Pickling<br>
+                                            <i class="fas fa-check mr-2"></i> Baking & much more.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="card p-3">
+                                        <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/pass-money.png" alt="Card image cap" />
+                                        <h5 class="wow bounce"> Walk of Life-CareerReboot2.0</h5>
+                                        <p>For Women who are willing to start 2nd innings at work.</p>
+                                        <div class="text-left m-auto">
+                                            <i class="fas fa-check mr-2"></i> Personalised Job Alerts <br>
+                                            <i class="fas fa-check mr-2"></i> Ultramodern Trainings<br>
+                                            <i class="fas fa-check mr-2"></i> Motivational Gatherings<br>
+                                            <i class="fas fa-check mr-2"></i> Round-Table Sittings<br>
+                                            <i class="fas fa-check mr-2"></i> Mother-To-Mother Talks
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-------------------------Our Services part end--------------------------------------->
+
+                </div>
+                <!-- mobile view end -->
+                <!-- Desktop View -->
+                <!--carousel dv  -->
+                <div class="dv">
+                    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" style="position: relative;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" style="margin-top: 15px">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px; ">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184" alt="First slide" style="height: 300px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px;">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+
+                                        <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 300px;">
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide" style="height: 300px;">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="watermark">
+                                            <div class="content">Sheltown.in</div>
+                                        </div>
+                                        <img class="d-block w-100" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="First slide" style="height: 300px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-info vall" style="position: absolute;right:5%;bottom: 4%; background-color: #2ecab6; "><i class="fa fa-picture-o"
+                aria-hidden="true" style="margin: 5px;"></i>View All Photos</button>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- carousel dv end -->
+                <!-- col9 start left -->
+                <div class="row dv">
+                    <div class="col-9 mr-0 pr-0">
+                        <!-- Property details start -->
+                        <div class="card mb-3 d-slid " style="margin: 15px;">
+                            <div class="card-header " style="background-color: #2ecab6; color: #fff;">
+                                <div style="display: flex;flex-direction: row;">
+                                    <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
+                                    <div class="col1">
+                                        <select name="category" id="category" style="margin-left: 13em;background-color: #2ecab6;">
+                    <option class="opt" value="none" selected disabled style="color: white;">Couple Privacy</option>
+                    <option class="others" value="none">Family Zoned</option>
+                    <option class="others" value="none">Female Only</option>
+                    <option class="others" value="none">Male Only</option>
+                  </select>
+                                    </div>
+                                </div>
+                                <div style="display: flex;flex-direction: row;">
+                                    <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi,
+                  Kota, Rajasthan</span>
+                                    <p style="margin-left: 16.5em; font-size: 17px">Sheltown Recommended</p>
+                                </div>
+                                <div class="col2">
+                                    <select name="category" id="category" style="width: 18%; background-color: #2ecab6;">
+                  <option value="none" selected disabled>Residential Rent</option>
+                  <option value="none">Family Zoned</option>
+                  <option value="none">Female Only</option>
+                  <option value="none">Male Only</option>
+
+                </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Know your new home start -->
+
+                        <div class="card new" style="margin: 15px;">
+                            <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
+                                <h5 style="color: white; "> Know Your New Home
+                                    <h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-auto">Rental Category</td>
+                                                <td class="w-auto" style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Semi-Furnished</option>
+                            <option value="#">Non-Furnished</option>
+                            <option value="#">Fully-Furnished</option>
+                          </select></center>
+                                                </td>
+
+                                                <td class="w-auto">Gym</td>
+                                                <td class="w-auto" style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+                          </select></center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>BHK Type</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">1RK</option>
+                            <option value="#">1BHK</option>
+                            <option value="#">2BHK</option>
+                            <option value="#">3BHK</option>
+                          </select></center>
+                                                </td>
+                                                <td>Water Supply</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+                          </select></center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Floor</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">1st Floor</option>
+                            <option value="#">2nd Floor</option>
+                            <option value="#">3rd Floor</option>
+                            <option value="#">4th Floor</option>
+                            <option value="#">5th Floor</option>
+
+                          </select></center>
+                                                </td>
+                                                <td>Gated Security</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+                          </select></center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bathroom</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+
+                          </select></center>
+                                                </td>
+
+                                                <td>Meals</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Not Included</option>
+                            <option value="#">Included</option>
+                          </select></center>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Parking</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+                          </select></center>
+                                                </td>
+                                                <td>Total Floors</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">4</option>
+                            <option value="#">5</option>
+                            <option value="#">6</option>
+                            <option value="#">7</option>
+
+                          </select></center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Electricity</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Not-Included</option>
+                            <option value="#">Included</option>
+
+                          </select></center>
+                                                </td>
+                                                <td>Tenant Preference</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Male Only</option>
+                            <option value="#">Female Only</option>
+                            <option value="#">Couple Privacy</option>
+                            <option value="#">Family Zoned</option>
+                        </center>
+                        </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Balcony</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Yes</option>
+                            <option value="#">No</option>
+                        </center>
+                        </select>
+                                                </td>
+                                                <td>PG Sharing Type</td>
+                                                <td style="color: #23b6ae;">
+                                                    <center>
+                                                        <select>
+                            <option value="#">Single</option>
+                            <option value="#">Double</option>
+                            <option value="#">Triple</option>
+                            <option value="#">Quadruple</option>
+                        </center>
+                        </select>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- privacy 2.0 start -->
+
+                        <div class="card new" style="margin: 15px;">
+                            <div class="card-header mb-2 pb-2" style="background-color: #2ecab6; ">
+                                <h5 style="color: white; "> Privacy 2.0
+                                    <h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-striped table-bordered mydatatable" style="width: 100%;  ">
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-auto">Opposite Gender Allowed</td>
+                                                <td class="w-auto" style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Not-Allowed</option>
+                            <option value="#">Allowed</option>
+                          </select></center>
+                                                </td>
+
+                                                <td class="w-auto">Smoking And Drinking</td>
+                                                <td class="w-auto" style="color: #23b6ae;">
+                                                    <center> <select>
+                            <option value="#">Not-Allowed</option>
+                            <option value="#">Allowed</option>
+                          </select></center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Owner Stays At Home</td>
+                                                <td style="color:#23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">No</option>
+                            <option value="#">Yes</option>
+                          </select></center>
+                                                </td>
+                                                <td>Non-Veg Allowed</td>
+                                                <td style="color:#23b6ae;">
+                                                    <center> <select style="border: none; outline: none; background-color:#FEFDFD;">
+                            <option value="#">Not-Allowed</option>
+                            <option value="#">Allowed</option>
+
+                          </select></center>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- privacy 2.0 end -->
+                        <!-- Location Start --->
+                        <div class="card new" style=" margin: 15px;">
+                            <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
+                                <h5 style="color: white">Location
+                                    <h5>
+                            </div>
+                            <div class="card-body" style="display: flex;flex-direction: row;">
+                                <label style="font-size: 20px; margin-bottom: 10px;">City :</label>
+                                <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+                                <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Locality :</label>
+                                <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+                                <label style="font-size: 20px; margin-bottom: 10px; margin-left: 50px">Nearest Bus/Metro Stop:</label>
+                                <input type="text" name="" style="width: 13%; height: 11%; margin-left: 10px; margin-top:5px ">
+
+                            </div>
+                        </div>
+                        <!-- location end -->
+                        <!-- Amenities start -->
+                        <div class="card mb-3 amenity new " style=" margin: 15px; ">
+                            <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
+                                <h5 style="color: white">Amenities
+                                    <h5>
+                            </div><br>
+                            <div class="card-body my-3 p-0 m-3 ame text-center ">
+                                <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
+                                    <p>WiFi</p>
+                                </div>
+                                <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
+                                    <p>TV</p>
+                                </div>
+                                <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
+                                    <p>Bed</p>
+                                </div>
+                                <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png" /></i>
+                                    </i>
+                                    <p>AC</p>
+                                </div>
+                                <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
+                                    <p>Guard</p>
+                                </div>
+                                <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
+                                    </i>
+                                    <p>Laundry</p>
+                                </div>
+                                <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png" /></i>
+                                    </i>
+                                    <p>Microwave</p>
+                                </div>
+                                <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png" /></i>
+                                    <p>Balcony</p>
+                                </div>
+                                <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png" /></i>
+                                    </i>
+                                    <p>CCTV</p>
+                                </div>
+                                <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
+                                    </i>
+                                    <p>Lift</p>
+                                </div>
+                                <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                                    </i>
+                                    <p>Cooler</p>
+                                </div>
+                                <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png" /></i>
+                                    </i>
+                                    <p>Fridge</p>
+                                </div>
+                                <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
+                                    <p>Table & Chair</p>
+                                </div>
+                                <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
+                                    </i>
+                                    <p>Attached Bathroom</p>
+                                </div>
+                                <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
+                                    <p>Power Backup</p>
+                                </div>
+                                <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                                    </i>
+                                    <p>RO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Amenities end -->
+
+                    </div>
+                    <!-- right side -->
+                    <div class="col-3 ml-0 pl-0">
+                        <!-- price table -->
+                        <div class="card mt-3" style="margin-right: 15px;">
+                            <div class="card-header text-center" style="font-size: 20px; background-color: #2ecab6; color: white; border:none;">
+                                <h4>Get Owner Details</h4>
+                                <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a>
+
+                            </div>
+                            <div class="card-body p-1" style="margin: 15px;">
+                                <div class="card-text">
+                                    <div class="pmr  d-flex justify-content-between " style="border-bottom: #444 solid 1px;">
+                                        <div class="  rnt mb-1">
+                                            <h4 class="p-0 m-0">&#8377;4500</h4>
+                                            <p class="p-0 m-0" style="font-size: small;">(Per Month Rent)</p>
+                                        </div>
+                                        <h4>-</h4>
+                                        <!-- <h5 >Negotiable</h5> -->
+                                        <select class="p-0 mb-3 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+                    <option value="1m">Negotiable</option>
+                    <option value="2m">Non-Negotiable</option>
+                  </select>
+                                    </div>
+                                    <div class="depo py-3" style="border-bottom:#444 solid 1px;">
+                                        <select class="p-0 " style="border: none; outline: none; background-color:#fff; " name="deposit" id="deposit">
+                    <option value="1m">1 Month Deposit</option>
+                    <option value="2m">2 Month Deposit</option>
+                  </select>
+                                    </div>
+                                    <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
+                                        <h6 class="p-0 m-0">Owner Identity Verified </h6>
+                                        <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;"></i>
+                                    </div>
+                                    <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
+                                        <h6 class="p-0 m-0">Property Listed By <select class="p-0 " style="border: none; outline: none; background-color: #fff; " name="deposit" id="deposit">
+                      <option value="1m">Owner</option>
+                      <option value="2m">Manager</option>
+                      <option value="2m">Buyer</option>
+                    </select> </h6>
+                                    </div>
+                                    <div class="contactd py-3">
+                                        <button type="button " class=" btn btn-info btn-block" data-toggle="modal" data-target="#myModal" style=" font-size: large !important; background-color:#2ECAB6;">
+                    Get Contact Details
+                  </button>
+                                    </div>
+                                </div>
+                                <button aria-hidden="true" data-placement="top" data-toggle="tooltip" title="Online Booking only Available for Premium Properties" style=" background-color: #2ecab6; color: white;" type="button" class="btn btn-primary btn-block">Book
+                Now </button>
+                                <script>
+                                    $(document).ready(function() {
+                                        $("body").tooltip({
+                                            selector: '[data-toggle=tooltip]'
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <!--price table end -->
+                        </div>
+                        <div class="card mt-3" style="margin-right: 15px;">
+                            <div class="card-body p-0">
+                                <div class="card-text">
+                                    <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #2ecab6; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> Peoples are viewing this right now</p>
+                                </div>
+                            </div>
+                            <style>
+                                #flashh {
+                                    -webkit-animation: breathing 2s ease-out infinite normal;
+                                    animation: breathing 1s ease-in-out infinite normal;
+                                }
+                                
+                                @-webkit-keyframes breathing {
+                                    from {
+                                        color: rgb(160, 141, 141);
+                                    }
+                                    to {
+                                        color: #333;
+                                    }
+                                }
+                                
+                                @keyframes breathing {
+                                    from {
+                                        color: rgb(160, 141, 141);
+                                    }
+                                    to {
+                                        color: #333;
+                                    }
+                                }
+                            </style>
+                            <script>
+                                // Function to generate random number  
+                                function randomNumber(min, max) {
+                                    return Math.floor(Math.random() * (max - min) + min);
+                                }
+                                // Function call 
+                                document.getElementById("rn").innerHTML = randomNumber(1, 20); // for mv
+                                document.getElementById("rn1").innerHTML = randomNumber(1, 20); // for dv
+                            </script>
+                        </div>
+                        <!-- reviews -->
+                        <div class="card p-0 mt-3" style="margin-right: 15px;">
+                            <h4 class="text-center py-2" style=" background-color: #2ecab6;color: #fff;">Reviews</h4>
+                            <div class="review">
+                                <div class="card m-2">
+                                    <div class="card-body mx-0 px-1 py-2">
+                                        <p class="card-textmb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                        <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                    </div>
+                                </div>
+
+                                <div class="card m-2">
+                                    <div class="card-body px-1 mx-0  py-2">
+                                        <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                        <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="card-body px-1 mx-0  py-2">
+                                        <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                        <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="card-body px-1 mx-0  py-2">
+                                        <p class="card-text pb-0 mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
+                                        <p class="mb-0 px-2 py-1 float-right" style="  width: fit-content;border: solid 1px;border-radius: 2px;">9903****10</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="commnt">
+                                <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+                            </div>
+                        </div>
+
+
+                        <!-- rewievs end -->
+                    </div>
+                    <!-- right side end -->
+                </div>
+                <!-- col9 start left  end-->
+                <!-------------------------Our Services part start----------------------->
+                <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
+                <section class=" dv pb-0" style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
+                    <div class="header d-flex justify-content-center mb-4">
+                        <div style="padding-top:10px;">
+                            <h3 class="text-center font-weight-bold  pt-4 wow slideInLeft" style="text-shadow: 5px 5px 10px #2ecab6;">
+                                OUR SERVICES
+                            </h3>
+                            <hr style="margin: 0 auto; background: red;">
+                        </div>
+
+                    </div>
+                    <div class="container-fluid cf">
+                        <div class="row p-lg-4 p-md-4 p-sm-3 p-0 mb-3 text-center">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                <div class="card p-3 ">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/4-star-hotel.png" alt="Card image cap" />
+                                    <h5 class="text-center wow bounce"><b>Rental Services Listing</b></h5>
+                                    <div class="text-left m-auto">
+                                        <i class="fas fa-check  mr-2"></i>PG/Hostel<br>
+                                        <i class="fas fa-check mr-2"></i>Flat & Apartments<br>
+                                        <i class="fas fa-check mr-2"></i>House<br>
+                                        <i class="fas fa-check mr-2"></i>Commercial Space etc.
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card pt-3 pb-4 px-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/bank.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Strategic Advisory & Asset Valuation</h5>
+                                    <p> Unleash the true potential of an asset with dynamic research insights and Discover optimum value of your assets.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card pt-3 pb-4 px-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/money-prize-100.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Premium Tenant Plans</h5>
+                                    <p> Scheduled Cleaning, Laundry, Newspapers, Magazines, Professional Maid, Home Tuition from Premium Institution’s Alumni etc.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/growing-money.png" alt="Card image cap" />
+                                    <h5 class="wow bounce">Financial Assistance</h5>
+                                    <div class="">Need Money?<br> Let us know your requirement...!!</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/building.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Home Buying Solutions</h5>
+                                    <p>Simplifying the search for homebuyers with our wide selection of projects and exclusive offers.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/online-shop.png" alt="Card image cap" />
+                                    <h5 class="wow bounce">Premium Rental Services</h5>
+                                    <p> Online booking available only for Premium Properties i.e. Sheltie’s Shelter.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/gingerbread-house.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Premium Partner Plan</h5>
+                                    <p>Sheltie’s Shelter</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/apartment.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Plot Selling Assistance</h5>
+                                    <h5 class="wow bounce"> House Selling Assistance</h5>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/receive-cash.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Loan Assistance</h5>
+                                    <h5 class="wow bounce"> Insurance Plans</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card pt-3 pb-5 px-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/real-estate.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Plot Buying Assistance</h5>
+                                    <p>Want to buy piece of land and upset with Brokers?<br> Well!! Not Anymore. </p>
+                                    <div class="text-left m-auto">
+                                        <i class="fas fa-check  mr-2"></i>See verified listings of plots and<br> compare rates quoted by seller.
+                                        <br>
+                                        <i class="fas fa-check  mr-2"></i>Absolutely No Commission.
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/icons8-home-address-100.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Gharelu-Serve & Earn</h5>
+                                    <p> An initiative for domestic women that provides the best value of their top skills.</p>
+                                    <div class="text-left m-auto">
+                                        <i class="fas fa-check  mr-2"></i> Dressmaker<br>
+                                        <i class="fas fa-check mr-2"></i> Cooking<br>
+                                        <i class="fas fa-check mr-2"></i>Home Decor<br>
+                                        <i class="fas fa-check mr-2"></i>Pickling<br>
+                                        <i class="fas fa-check mr-2"></i> Baking & much more.
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card p-3">
+                                    <img class="img1 wow swing" style="animation-delay: 1s;" src="./images/pass-money.png" alt="Card image cap" />
+                                    <h5 class="wow bounce"> Walk of Life-CareerReboot2.0</h5>
+                                    <p>For Women who are willing to start 2nd innings at work.</p>
+                                    <div class="text-left m-auto">
+                                        <i class="fas fa-check mr-2"></i> Personalised Job Alerts <br>
+                                        <i class="fas fa-check mr-2"></i> Ultramodern Trainings<br>
+                                        <i class="fas fa-check mr-2"></i> Motivational Gatherings<br>
+                                        <i class="fas fa-check mr-2"></i> Round-Table Sittings<br>
+                                        <i class="fas fa-check mr-2"></i> Mother-To-Mother Talks
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-------------------------Our Services part end--------------------------------------->
+
             </div>
-          </div>
-      </div>
-      <script>
-        $(document).ready(function() {
-    var wrapper = $(".f");
-    var add_otp = $("#optrqt");
-    var  c = 0;
-    $(add_otp).click(function(e) {
-      if (c<=0){
-        c=1;
-        e.preventDefault(); 
-            $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="6" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;">'); //add input box
-      }
-    });
-  });
-      </script>
-      <script>
-    $(document).ready(function() {
-    var wrapper = $(".f1");
-    var add_otp = $("#optrqt1");
-    var  c = 0;
-    $(add_otp).click(function(e) {
-      if (c<=0){
-        c=1;
-        e.preventDefault(); 
-            $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="6" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;"> <button type="button" class="btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Verify OTP</button> <button type="button" class=" btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Resend OTP</button>'); //add input box
-      }
-    });
-  });
-      </script>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" style="background-color: #2ecab6;">Post Comment</button>
-      </div>
-    </div>
-  </div>
-  </div>
+            <!-- Sheltown help end -->
+            <!-- Desktop view end -->
+
+        </div>
+
+        <!-- modals -->
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body m-0 p-0">
+                        <div class="card">
+                            <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
+                                <h5 class=" p-0 m-0 "><i style="display: inline;" class="fas fa-people-arrows ml-2"></i> Get Owner Details</h5>
+                                <p class=" p-0 m-0 ">100% Genuine Owners</p>
+                            </div>
+                            <form class="m-1 px-4">
+                                <div class="form-group f1">
+                                    <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name" style=" border: none;border:#2ecab6 solid 2px;outline:none;">
+                                    <input type="name" class="form-control ip mt-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" style="border:#2ecab6 solid 2px;outline:none;">
+                                    <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
+                                    <button class="btn btn-primary btn-sm  mb-2  " id="optrqt1" style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Get OTP</button>
+
+
+                                    <!-- <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;outline:none;width: 6.5rem;">Submit Details</button> -->
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-sm mb-2 mt-1 " style="float: right;background-color:#2ecab6;color:#fff;">Get Owner Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal btn-->
+
+        <!-- Modal comment -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <form>
+                            <div class="card p-0 m-0">
+                                <div class="card-header  text-center" style="background-color: #2ecab6; color: #fff;">
+                                    <h5 class=" p-0 m-0 ">Write Comment</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form class="m-1 px-4">
+                                        <div class="form-group f">
+                                            <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name" style=" border: none;border:#2ecab6 solid 2px;outline:none;">
+                                            <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" style="border:#2ecab6 solid 2px;outline:none;">
+                                            <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:#2ecab6 solid 2px;outline:none;">
+                                            <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Write Comments Here ." id="comment" style="border:#2ecab6 solid 2px;outline:none;"></textarea>
+                                        </div>
+                                        <div class="buttonn d-flex justify-content-between">
+                                            <button type="button" class="btn btn-primary btn-sm" id="optrqt" style="background-color: #2ecab6;">Request OTP</button>
+                                            <button type="button" class="btn btn-primary btn-sm" style="background-color: #2ecab6;"> Verify
+                      OTP</button>
+                                            <button type="button" class="btn btn-primary btn-sm" style="background-color: #2ecab6;">Resend
+                      OTP</button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            var wrapper = $(".f");
+                            var add_otp = $("#optrqt");
+                            var c = 0;
+                            $(add_otp).click(function(e) {
+                                if (c <= 0) {
+                                    c = 1;
+                                    e.preventDefault();
+                                    $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="6" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;">'); //add input box
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            var wrapper = $(".f1");
+                            var add_otp = $("#optrqt1");
+                            var c = 0;
+                            $(add_otp).click(function(e) {
+                                if (c <= 0) {
+                                    c = 1;
+                                    e.preventDefault();
+                                    $(wrapper).append('<input type="name" class="form-control optf ip mt-2 mb-2 " id="otp"  placeholder="Enter OTP" maxlength="6" aria-describedby="OTP"  style="border:#2ecab6 solid 2px;outline:none;"> <button type="button" class="btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Verify OTP</button> <button type="button" class=" btn btn-primary btn-sm"  style="background-color: #2ecab6;"> Resend OTP</button>'); //add input box
+                                }
+                            });
+                        });
+                    </script>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" style="background-color: #2ecab6;">Post Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </body>
 
@@ -1570,14 +1588,9 @@ to{
                 <!-- Content -->
                 <h6 class="text-uppercase font-weight-bold">Shelt + Own</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p style="font-size:16px" class="text-justify">We are a strong team focused on building a network where we could serve you
-                regarding
-                all your needs of having your own shelter.
-                We are bound to provide you the best possible care and support which helps you meet your demands.
-                Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely
-                interwoven into the fibre of our efforts.
-                We help you to find your match, book rental homes of choice across Indian cities.</p>
-                <p >Accept our warm SheltOwn hug.</p>
+                <p style="font-size:16px" class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter. We are bound to provide you the best possible care and support which helps you meet your demands. Our core
+                    values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts. We help you to find your match, book rental homes of choice across Indian cities.</p>
+                <p>Accept our warm SheltOwn hug.</p>
 
             </div>
             <!-- Grid column -->
@@ -1589,10 +1602,10 @@ to{
                 <h6 class="white-text text-uppercase font-weight-bold">Useful Links</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                  <a href="/AboutUs/">About Us</a>
+                    <a href="/AboutUs/">About Us</a>
                 </p>
                 <p>
-                  <a href="/Policy/">Our Policies</a>
+                    <a href="/Policy/">Our Policies</a>
                 </p>
                 <p>
                     <a class="" href="/Joinus/">Work With Us</a>
@@ -1633,11 +1646,14 @@ to{
                 <h6 class="text-uppercase font-weight-bold">Love to hear</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                    <i class="fas fa-home mr-3"></i> H-B2, 3rd Floor, Chattarpur Extension, New Delhi-110074</p>
+                    <i class="fas fa-home mr-3"></i> H-B2, 3rd Floor, Chattarpur Extension, New Delhi-110074
+                </p>
                 <p>
-                    <i class="fas fa-envelope mr-3"></i> info@sheltown.com</p>
+                    <i class="fas fa-envelope mr-3"></i> info@sheltown.com
+                </p>
                 <p>
-                    <i class="fas fa-phone mr-3"></i> +91-7428-770-297</p>
+                    <i class="fas fa-phone mr-3"></i> +91-7428-770-297
+                </p>
 
             </div>
             <!-- Grid column -->
@@ -1655,60 +1671,62 @@ to{
     </div>
     <!-- Copyright -->
 
-        <div style="background-color:  #2ECAB6;">
-            <div class="container mx-0">
+    <div style="background-color:  #2ECAB6;">
+        <div class="container mx-0">
 
-                <!-- Grid row-->
-                <div class="row py-4 d-flex align-items-center">
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
 
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 pl-5">Get connected with us on social networks!</h6>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-                        <!-- Facebook -->
-                        <a class="fb-ic" href="https://www.facebook.com/sheltownIndia/" target="_blank">
-                            <i class="fab fa-facebook-f white-text mr-4"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic" href="https://twitter.com/OwnShelt" target="_blank">
-                            <i class="fab fa-twitter white-text mr-4"> </i>
-                        </a>
-                        <!-- Google +-->
-
-                        <!--Linkedin -->
-                        <a class="li-ic" href="https://www.linkedin.com/company/sheltown" target="_blank">
-                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
-                            <i class="fab fa-instagram white-text mr-4"> </i>
-                        </a>
-                        <a href="#" class=" to-top"><i class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"></i></a>
-                    </div>
-                    <!-- Grid column -->
-
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 pl-5">Get connected with us on social networks!</h6>
                 </div>
-                <!-- Grid row-->
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic" href="https://www.facebook.com/sheltownIndia/" target="_blank">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic" href="https://twitter.com/OwnShelt" target="_blank">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+
+                    <!--Linkedin -->
+                    <a class="li-ic" href="https://www.linkedin.com/company/sheltown" target="_blank">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
+                        <i class="fab fa-instagram white-text mr-4"> </i>
+                    </a>
+                    <a href="#" class=" to-top"><i
+              class="fas fa-chevron-up bg-danger d-flex align-items-center justify-content-center"></i></a>
+                </div>
+                <!-- Grid column -->
 
             </div>
+            <!-- Grid row-->
+
         </div>
+    </div>
 
 </footer>
 <!-------------------------footer end------------------------------------------------->
-     <script src="index.js"></script>
-     <script>
-$(document).ready(function(){
-  $('#carouselExampleIndicators').carousel();
-  $('#carouselExampleIndicators1').carousel();
-})
-     </script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#carouselExampleIndicators').carousel();
+        $('#carouselExampleIndicators1').carousel();
+    })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
