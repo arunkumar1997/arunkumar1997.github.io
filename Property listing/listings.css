@@ -5,7 +5,7 @@
   font-family: "ITC Officina Sans Std Book";
 }
 body {
-  background: #f1f3f6;
+  background: #f1f3f6 !important;
 }
 
 input[type=checkbox] ,a{
