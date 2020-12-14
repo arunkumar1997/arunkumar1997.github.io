@@ -444,5 +444,31 @@ background-color: #e0f0ed;
     font-size: 25px !important;
 }
 
-
+/*  comments style */
+     #red{
+         margin-left: 10px;
+     }
+    .btnn{
+        color: #aaa;
+        cursor: pointer;
+        outline: none ;
+        border: none;
+        padding: 0;
+        margin-left:0 ;
+        }
+        .btnn:hover ,
+        .btnn:focus {
+        outline: none !important;
+        border: none !important;
+        color: blue;
+        }
+        
+        .num{
+            
+          color: #aaa;
+          line-height: 1px;
+            font-weight: bold;
+            font-size: 0.7rem;
+        }
+        /* comments style end */
 /*---------------------------mob view part end---------------------------------------------*/
