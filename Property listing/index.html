@@ -153,16 +153,16 @@
                         </a>
                         <script>
                             function onClickShare() {
-if(navigator.share) {
-  navigator.share({
-    title: 'Sheltown',
-    text: 'Sheltown',
-    
-  })
-  .then(() => console.log('share'))
-  .catch((error) => console.log('Share Error', error));
-}
-}
+                                if(navigator.share) {
+                                navigator.share({
+                                    title: 'Sheltown',
+                                    text: 'Sheltown',
+                                    url:''
+                                })
+                                .then(() => console.log('share'))
+                                .catch((error) => console.log('Share Error', error));
+                                }
+                                }
                         </script>
                         <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
