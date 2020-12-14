@@ -176,9 +176,37 @@
           <option class="opt" value="none">Female Only</option>
           <option class="opt" value="none">Male Only</option> 
         </select>
-                            <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended<i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;margin-left: 5px; color: blue;"></i></p>
+                            <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended<i class="fa fa-check-circle mr-3 flashblue" aria-hidden="true" style="font-size: medium;margin-left: 5px; color: blue;"></i></p>
+                            <style>
+                                .flashblue {
+                                    -webkit-animation: breathingb 2s ease-out infinite normal;
+                                    animation: breathingb 1s linear infinite normal;
+                                
 
-
+                                }
+                                
+                                @-webkit-keyframes breathingb {
+                                    from {
+                                        color: blue;
+                                        opacity: 0.6;
+                                    }
+                                    to {
+                                        opacity: 1;
+                                        color: blue;
+                                    }
+                                }
+                                
+                                @keyframes breathingb {
+                                    from {
+                                        color: blue;
+                                        opacity: 0.0;
+                                    }
+                                    to {
+                                        opacity: 1;
+                                        color: blue;
+                                    }
+                                }
+                            </style>
                         </div>
                     </div>
                     <!-- prop details end -->
@@ -844,7 +872,7 @@
                                 </div>
                                 <div style="display: flex;flex-direction: row;">
                                     <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-                                    <p style="margin-left: 16.5em; font-size: 17px">Sheltown Recommended <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;margin-left: 8px; color: blue;"></i></p>
+                                    <p style="margin-left: 16.5em; font-size: 17px">Sheltown Recommended <i class="fa fa-check-circle flashblue mr-3" aria-hidden="true" style="font-size: medium;margin-left: 8px; color: blue;"></i></p>
                                 </div>
                                 <div class="col2">
                                     <select name="category" id="category" style="width: 18%; background-color: #2ecab6;">
@@ -1227,6 +1255,8 @@
                                 #flashh {
                                     -webkit-animation: breathing 2s ease-out infinite normal;
                                     animation: breathing 1s ease-in-out infinite normal;
+                                
+
                                 }
                                 
                                 @-webkit-keyframes breathing {
