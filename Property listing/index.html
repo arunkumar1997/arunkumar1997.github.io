@@ -101,7 +101,6 @@
 
         <div style="margin-top:5px; background-color: white; border: 1px solid grey; margin: 15px;">
             <div class="container-fluid p-0">
-
                 <!-- mobile view -->
                 <div class="mv ">
                     <!-- img -->
@@ -146,7 +145,7 @@
                         </div>
                         <a style="border: none;outline: none; position: absolute; top: 1%;right: 20%; z-index: 100;" id="btnhearta1"><i class="fa fa-heart " style=" color:#fff ;font-size:25px;"  id="hearta1" ></i></a>
                         <a style=" position: absolute;right:5%;top: 2%; z-index: 100;" onclick="onClickShare()" id="share"><i class="fa fa-share-alt"  style=" color: #333; font-size:20px;" aria-hidden="true"></i></a>
-                        <button type="button" class="btn btn-info btn-sm vall" style=" position: absolute; right: 2%;bottom: 2%; background-color: #2ecab6;"><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All</button>
+                        <!-- <button type="button" class="btn btn-info btn-sm vall" style=" position: absolute; right: 2%;bottom: 2%; background-color: #2ecab6;"><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All</button> -->
                         <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -174,10 +173,11 @@
                     <!-- img end -->
                     <!-- Prop details -->
                     <div class="card mb-3 mt-1">
-                        <div class="card-header mb-0" style="border:none; background-color: #2ecab6; color: #fff;">
+                        <div class="card-header mb-0" style="border:none;  color: #2ecab6; background-color: #fff;">
                             <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
-                            <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
-                            <select name="category" id="category" style="background-color: #2ECAB6; color: white">
+                            <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: red; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
+                            <br/>
+                            <select name="category" id="category" style=" color: #2ECAB6">
           <option class="opt" value="none" selected disabled >Residential Rent</option>
           <option class="opt" value="none">Family Zoned</option>
           <option class="opt" value="none">Female Only</option>
@@ -185,13 +185,13 @@
         </select>
                         </div>
                         <div class="card-body  mt-1 mb-1 px-1  pb-0 pt-0 ">
-                            <select name="category" id="category" style="margin-left: 3px;">
+                            <select name="category" id="category" style="margin-left: 3px; background-color: white;">
           <option class="opt" value="none" selected disabled>Couple Privacy</option>
           <option class="opt" value="none">Family Zoned</option>
           <option class="opt" value="none">Female Only</option>
           <option class="opt" value="none">Male Only</option> 
         </select>
-                            <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended<i class="fa fa-check-circle mr-3 flashblue" aria-hidden="true" style="font-size: medium;margin-left: 5px; color: blue;"></i></p>
+             <p class="mb-0" style="font-size: 14px; margin-left: 3px;">Sheltown Recommended<i class="fa fa-check-circle mr-3 flashblue" aria-hidden="true" style="font-size: medium;margin-left: 5px; color: blue;"></i></p>
                             <style>
                                 .flashblue {
                                     -webkit-animation: breathingb 2s ease-out infinite normal;
@@ -222,6 +222,9 @@
                                     }
                                 }
                             </style>
+
+
+
                         </div>
                     </div>
                     <!-- prop details end -->
@@ -267,7 +270,7 @@
                     <div class="card mt-3">
                         <div class="card-body p-0">
                             <div class="card-text">
-                                <p class="text-center py-1 mb-0" style="font-size: 20px; background-color: #2ecab6;"><span class="mx-1" id="rn"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> <br> Peoples are viewing this right now</p>
+                                <p class="text-center py-1 mb-0" style="font-size: 20px; background-color: #d81c1c;"><span class="mx-1" id="rn"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> <br> Peoples are viewing this right now</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +278,7 @@
                     <!-- price table -->
                     <div class="card mt-3 mb-3">
                         <div class="card-header text-center" style="font-size: 20px; background-color: #2ECAB6; color: white; border:none;">
-                            <h4>Rental Details</h4>
+                            <h4 style="height: 18px;">Rental Details</h4>
                             <!--  <a href="" style="color: white; font-size: small; ">LOGIN Is Required</a> -->
 
                         </div>
@@ -301,7 +304,7 @@
             </select>
                                 </div>
                                 <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-                                    <h6 class="p-0 m-0">Owner Identity Verified <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;margin-left: 8px; color: blue;"></i></h6>
+                                    <h6 class="p-0 m-0">Owner Identity Verified <i class="fa fa-check-circle mr-3 flashblue" aria-hidden="true" style="font-size: medium;margin-left: 5px; color: blue;"></i></h6>
 
                                 </div>
                                 <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
@@ -317,7 +320,7 @@
             </button>
                                 </div>
                             </div>
-                            <button aria-hidden="true" style=" border : none; color: white;" type="button" class="btn btn-success btn-block">Book Now </button>
+                            <button aria-hidden="true" style=" border : none; color: white; " type="button" class="btn btn-success btn-block">Book Now </button>
                         </div>
                     </div>
                     <!--price table end -->
@@ -560,23 +563,23 @@
                                 <h5>
                         </div><br>
                         <div class="card-body my-3 p-0 m-3 ame text-center ">
-                            <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
+                            <div class="wifi selectea"><i class="fa fa-wifi" aria-hidden="true" ></i>
                                 <p>WiFi</p>
                             </div>
-                            <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
+                            <div class="tv selectea"><i class="fa fa-television" aria-hidden="true"></i></i>
                                 <p>TV</p>
                             </div>
-                            <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
+                            <div class="bed" selectea> <i class="fa fa-bed" aria-hidden="true"></i></i>
                                 <p>Bed</p>
                             </div>
                             <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png" /></i>
                                 </i>
                                 <p>AC</p>
                             </div>
-                            <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
+                            <div class="guard selectea"><i class="fas fa-user-shield" aria-hidden="true" ></i></i>
                                 <p>Guard</p>
                             </div>
-                            <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
+                            <div class="laundry selectea"><img style="color: #EF0F0F" src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
                                 </i>
                                 <p>Laundry</p>
                             </div>
@@ -591,7 +594,7 @@
                                 </i>
                                 <p>CCTV</p>
                             </div>
-                            <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
+                            <div class="lift selectea"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
                                 </i>
                                 <p>Lift</p>
                             </div>
@@ -603,26 +606,26 @@
                                 </i>
                                 <p>Fridge</p>
                             </div>
-                            <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
+                            <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i>
                                 <p>Table & Chair</p>
                             </div>
-                            <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
+                            <div class="ab selectea"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
                                 </i>
                                 <p>Attached Bathroom</p>
                             </div>
-                            <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
+                            <div class="pb"><i class="fas fa-plug" aria-hidden="true" ></i></i>
                                 <p>Power Backup</p>
                             </div>
                             <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
                                 </i>
-                                <p>RO</p>
+                                <p >RO</p>
                             </div>
                         </div>
                     </div>
                     <!-- Amenities  end -->
-                    <!-- reviews -->
+                     <!-- reviews -->
                     <div class="card p-0 mt-3 mb-3">
-                        <h4 class="text-center py-2" style=" background-color: #3b5998;color: #fff;">Reviews</h4>
+                        <h4 class="text-center py-2" style=" background-color: #0c246c;color: #fff;">Reviews</h4>
                         <div class="reviewsm">
                             <div class="card-body mx-0 px-1 py-2 border-bottom border-top">
                                 <p class="card-text mb-2"> &quot;Some quick example text to build on the card title and make up the bulk of the card's content. &quot;</p>
@@ -663,7 +666,7 @@
                         </div>
 
                         <div class="commnt">
-                            <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+                            <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content; background-color: #20B216; color: black;">Comment Now</button>
                         </div>
                     </div>
                     <!-- rewievs end -->
@@ -875,7 +878,7 @@
                             </div>
                             <a class="mt-2" style="border: none;outline: none; position: absolute; top: 1%;right: 1%; z-index: 100;" id="btnhearta"><i class="fa fa-heart " style=" color:#fff ;font-size:20px;"  id="hearta" ></i></a>
                             <button type="button" class="btn btn-info vall pl-0" style=" position: absolute;right:2%;bottom: 4.2%; background-color: #2ecab6; "><i class="fa fa-share mx-1 p-0" aria-hidden="true"></i>Share</button>
-                            <button type="button" class="btn btn-info vall" style="position: absolute;right:10%;bottom: 4%; background-color: #2ecab6; "><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All Photos</button>
+                           <!--  <button type="button" class="btn btn-info vall" style="position: absolute;right:10%;bottom: 4%; background-color: #2ecab6; "><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All Photos</button> -->
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -891,14 +894,14 @@
                 <!-- col9 start left -->
                 <div class="row dv">
                     <div class="col-9 mr-0 pr-0">
-                        <!-- Property details start -->
+                       <!-- Prop details start -->
                         <div class="card mb-3 d-slid " style="margin: 15px;">
-                            <div class="card-header " style="background-color: #2ecab6; color: #fff;">
+                            <div class="card-header "  style="background-color: white; color:  #2ecab6;">
                                 <div style="display: flex;flex-direction: row;">
                                     <h4 class="mb-0 ">Ganga Residency Sheltown</h4>
                                     <div class="col1">
-                                        <select name="category" id="category" style="margin-left: 13em;background-color: #2ecab6;">
-           <option class="opt" value="none" selected disabled style="color: white;">Couple Privacy</option>
+                                        <select name="category" id="category" style="margin-left: 13em;color:  black; background-color: #fff">
+           <option class="opt" value="none" selected disabled style="color: black; background-color: #fff">Couple Privacy</option>
            <option class="others" value="none">Family Zoned</option>
            <option class="others" value="none">Female Only</option>
            <option class="others" value="none">Male Only</option> 
@@ -906,11 +909,11 @@
                                     </div>
                                 </div>
                                 <div style="display: flex;flex-direction: row;">
-                                    <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #fff; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
+                                    <i class="fa fa-map-marker-alt " aria-hidden="true" style="color: #2ecab6; font-size: medium; margin-top: 3px"></i><span style="font-size: large;">Kunadi, Kota, Rajasthan</span>
                                     <p style="margin-left: 16.5em; font-size: 17px">Sheltown Recommended <i class="fa fa-check-circle flashblue mr-3" aria-hidden="true" style="font-size: medium;margin-left: 8px; color: blue;"></i></p>
                                 </div>
                                 <div class="col2">
-                                    <select name="category" id="category" style="width: 18%; background-color: #2ecab6;">
+                                    <select name="category" id="category" style="width: 18%; background-color: #fff; color:black; ">
            <option value="none" selected disabled>Residential Rent</option>
            <option value="none">Family Zoned</option>
            <option value="none">Female Only</option>
@@ -920,7 +923,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                         <!-- Know your new home start -->
 
@@ -1154,76 +1156,9 @@
                             </div>
                         </div>
                         <!-- location end -->
-                        <!-- Amenities start -->
-                        <div class="card mb-3 amenity new " style=" margin: 15px; ">
-                            <div class="card-header pb-2" style="background-color: #2ecab6; color: #fff; ">
-                                <h5 style="color: white">Amenities
-                                    <h5>
-                            </div><br>
-                            <div class="card-body my-3 p-0 m-3 ame text-center ">
-                                <div class="wifi"><i class="fa fa-wifi" aria-hidden="true"></i>
-                                    <p>WiFi</p>
-                                </div>
-                                <div class="tv"><i class="fa fa-television" aria-hidden="true"></i></i>
-                                    <p>TV</p>
-                                </div>
-                                <div class="bed"> <i class="fa fa-bed" aria-hidden="true"></i></i>
-                                    <p>Bed</p>
-                                </div>
-                                <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png" /></i>
-                                    </i>
-                                    <p>AC</p>
-                                </div>
-                                <div class="guard"><i class="fas fa-user-shield" aria-hidden="true"></i></i>
-                                    <p>Guard</p>
-                                </div>
-                                <div class="laundry"><img src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
-                                    </i>
-                                    <p>Laundry</p>
-                                </div>
-                                <div class="microwave"><img src="https://img.icons8.com/material/24/000000/microwave.png" /></i>
-                                    </i>
-                                    <p>Microwave</p>
-                                </div>
-                                <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png" /></i>
-                                    <p>Balcony</p>
-                                </div>
-                                <div class="cctv"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png" /></i>
-                                    </i>
-                                    <p>CCTV</p>
-                                </div>
-                                <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
-                                    </i>
-                                    <p>Lift</p>
-                                </div>
-                                <div class="cooler"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
-                                    </i>
-                                    <p>Cooler</p>
-                                </div>
-                                <div class="Fridge"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png" /></i>
-                                    </i>
-                                    <p>Fridge</p>
-                                </div>
-                                <div class="chair"><i class="fas fa-chair" aria-hidden="true"></i></i>
-                                    <p>Table & Chair</p>
-                                </div>
-                                <div class="ab"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
-                                    </i>
-                                    <p>Attached Bathroom</p>
-                                </div>
-                                <div class="pb"><i class="fas fa-plug" aria-hidden="true"></i></i>
-                                    <p>Power Backup</p>
-                                </div>
-                                <div class="ro"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
-                                    </i>
-                                    <p>RO</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Amenities end -->
-
-                    </div>
-                    <!-- right side -->
+                          </div>
+                       
+                        <!-- right side -->
                     <div class="col-3 ml-0 pl-0">
                         <!-- price table -->
                         <div class="card mt-3" style="margin-right: 15px;">
@@ -1253,7 +1188,7 @@
           </select>
                                     </div>
                                     <div class="owneridentity d-flex justify-content-between py-3" style="border-bottom:#444 solid 1px;">
-                                        <h6 class="p-0 m-0">Owner Identity Verified <i class="fa fa-check-circle mr-3" aria-hidden="true" style="font-size: medium;margin-left: 10px; color: blue;"></i> </h6>
+                                        <h6 class="p-0 m-0">Owner Identity Verified <i class="fa fa-check-circle flashblue mr-3" aria-hidden="true" style="font-size: medium;margin-left: 8px; color: blue;"></i> </h6>
 
                                     </div>
                                     <div class="prop-listed-by py-3" style="border-bottom:#444 solid 1px;">
@@ -1292,7 +1227,7 @@
                         <div class="card mt-3" style="margin-right: 15px;">
                             <div class="card-body p-0">
                                 <div class="card-text text-center">
-                                    <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #2ecab6; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> <br> Peoples are viewing this right now</p>
+                                    <p class="text-center m-0 p-0" style="font-size: 20px; background-color: #d81c1c; color: white;"><span class="mx-1" id="rn1"></span><i class="fa fa-bolt mr-1" style="font-size: medium;" id="flashh" aria-hidden="true"></i> <br> Peoples are viewing this right now</p>
                                 </div>
                             </div>
                             <style>
@@ -1337,7 +1272,7 @@
                         </div>
                         <!-- reviews -->
                         <div class="card p-0 mt-3" style="margin-right: 15px;">
-                            <h4 class="text-center py-2" style=" background-color: #3b5998;color: #fff;">Reviews</h4>
+                            <h4 class="text-center py-2" style=" background-color: #0c246c;color: #fff;">Reviews</h4>
                             <div class="review">
 
                                 <div class="card-body mx-0 px-1 py-2 border-bottom border-top">
@@ -1379,7 +1314,7 @@
                             </div>
 
                             <div class="commnt">
-                                <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color: #2ECAB6;">Comment Now</button>
+                                <button class="btn float-right btn-primary my-2 mx-2" type="button" data-toggle="modal" data-target="#exampleModal" style="width: fit-content;background-color:#20B216; color: black;">Comment Now</button>
                             </div>
                         </div>
 
@@ -1387,8 +1322,97 @@
                         <!-- rewievs end -->
                     </div>
                     <!-- right side end -->
+
+                    
+                   
                 </div>
                 <!-- col9 start left  end-->
+                <!-- Amenities start -->
+                <div class="card mb-3 amenity new " style=" margin-left: 15px;margin-right: 15px; ">
+                    <div class="card-header pb-2 " style="background-color: #2ecab6; color: #fff; ">
+                        <h5 style="color: white">Amenities
+                            <h5>
+                    </div>
+                    <div class="card-body my-3 p-0 m-3 mt-0 ame text-center ">
+                        <div class="wifi selectea"><i class="fa fa-wifi" aria-hidden="true" ></i>
+                            <p>WiFi</p>
+                        </div>
+                        <div class="tv selectea"><i class="fa fa-television" aria-hidden="true" ></i></i>
+                            <p>TV</p>
+                        </div>
+                        <div class="bed selectea"> <i class="fa fa-bed" aria-hidden="true" ></i></i>
+                            <p>Bed</p>
+                        </div>
+                        <div class="ac"><img src="https://img.icons8.com/material/24/000000/air-conditioner.png" />
+                            <p>AC</p>
+                        </div>
+                        <div class="guard selectea "><i class="fas fa-user-shield" aria-hidden="true" ></i></i>
+                            <p>Guard</p>
+                        </div>
+                        <div class="laundry selectea"><img src="https://img.icons8.com/material/24/000000/washing-machine.png" /></i>
+                            </i>
+                            <p>Laundry</p>
+                        </div>
+                        <div class="microwave selectea"><img src="https://img.icons8.com/material/24/000000/microwave.png" /></i>
+                            </i>
+                            <p>Microwave</p>
+                        </div>
+                        <div class="ab selectea"><img src="https://img.icons8.com/material/24/000000/door-closed.png" /></i>
+                        </i>
+                        <p>Attached Bathroom</p>
+                    </div>
+                        <div class="balcony"><img src="https://img.icons8.com/material/24/000000/balcony.png" /></i>
+                            <p>Balcony</p>
+                        </div>
+                        <div class="cctv selectea"><img src="https://img.icons8.com/material/24/000000/bullet-camera.png" /></i>
+                            </i>
+                            <p>CCTV</p>
+                        </div>
+                        <div class="lift"><img src="https://img.icons8.com/material/24/000000/elevator.png" /></i>
+                            </i>
+                            <p>Lift</p>
+                        </div>
+                        <div class="cooler "><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                            </i>
+                            <p>Cooler</p>
+                        </div>
+                        <div class="fridge selectea"><img src="https://img.icons8.com/material-outlined/24/000000/fridge.png" /></i>
+                            </i>
+                            <p>Fridge</p>
+                        </div>
+                        <div class="chair selectea"><i class="fas fa-chair" aria-hidden="true" ></i></i>
+                            <p>Table & Chair</p>
+                        </div>
+                        <div class="pb selectea" ><i class="fas fa-plug" aria-hidden="true" ></i></i>
+                            <p>Power Backup</p>
+                        </div>
+                        <div class="ro selectea"><img src="https://img.icons8.com/material/24/000000/water-cooler.png" /></i>
+                            </i>
+                            <p>RO</p>
+                        </div>
+                    </div>
+                    <style>
+                        .amenity .card-body div> *{
+                            padding-top: 10px;
+                            
+                        }
+                        .amenity .card-body > div {
+                            border: solid 1px #2ECAB6;
+                            
+                        }
+                        .amenity p{
+                            margin-bottom: 0 !important;
+                        }
+                        .selectea{
+                            background-color: #f1e8e8;
+                            box-shadow:  2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+                           
+                           
+                        }
+                    </style>
+                </div>
+                
+                 <!-- Amenities end -->
                 <!-------------------------Our Services part start----------------------->
                 <!--<section class=" mx-lg-5 mx-md-5 mx-sm-5 mx-3 pb-5 mt-0" style="background-image: linear-gradient(27deg, #fff 50%, #2ecab6 50%);margin-top: 0px;">-->
                 <section class=" pb-0 dv" style="margin-top: 0px;background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%); margin-right: 15px; margin-left: 15px;">
@@ -1579,13 +1603,13 @@
                     <div class="modal-body p-0 ">
                         <div class="card p-0 m-0 ">
                             <div class="card-header  text-center">
-                                <h3 class=" p-0 m-0 ">Details Sent successfully <i class="far fa-check-circle mt-2"></i></h3>
+                                <h3 class=" p-0 m-0 ">Details Sent Successfully <i class="far fa-check-circle mt-2"></i></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal" id="gcloses" style="background-color: #2ecab6;">Close</button>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -1613,7 +1637,7 @@
                                     <form class="m-1 px-4">
                                         <div class="form-group f">
                                             <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name" style=" border: none;border:black solid 1px;outline:none;">
-                                            <input type="name" class="form-control ip mt-2 " id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter Email" style="border:black solid 1px;outline:none;">
+                                            <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" style="border:black solid 1px;outline:none;">
                                             <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:black solid 1px;outline:none;">
                                             <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Leave Comments Here ." id="comment" style="border:black solid 1px;outline:none;"></textarea>
                                         </div>
@@ -1656,7 +1680,7 @@
                         });
                     </script>
                     <div class="modal-footer">
-                        <button type="button" id="postc" data-dismiss="modal" data-toggle="modal" data-target="#succuss" class="btn btn-primary" style="background-color: #2ecab6;">Post Comment</button>
+                        <button type="button" id="postc" data-dismiss="modal" data-toggle="modal" data-target="#succuss" class="btn btn-primary" style="background-color: #83f283; color: black;">Post Comment</button>
                     </div>
                 </div>
             </div>
@@ -1677,9 +1701,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal" id="closes" style="background-color: #2ecab6;">Close</button>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

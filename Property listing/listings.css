@@ -164,6 +164,8 @@ background-color:#2ecab6 ;
     color: white;
 }
 
+s
+
 select {
     /* for Firefox */
     -moz-appearance: none;
@@ -373,22 +375,32 @@ background-color: #e0f0ed;
 }
 
 .ame {
+    
     display: grid;
-    grid-row-gap: 10px;
+    grid-gap: 10px;
     width: auto;
     grid-template-columns: repeat(8, 0.125fr);
+   
 }
 
 @media (max-width:600px) {
     .ame {
         display: grid;
+        grid-gap: 5px;
         grid-template-columns: repeat(3, 0.333fr);
         width: 100%;
         grid-auto-flow: dense;
-        grid-row-gap: 0;
         margin: 0 !important;
         padding: 0 !important;
     }
+    .selectea{
+        background-color: #f1e8e8;
+       border: #2ecab6 solid 1px;
+      box-shadow: none !important;
+    }
+    .amenity .card-body > div * {
+        padding-top: 10x !important;
+}
 }
 
 .fst {
@@ -443,7 +455,6 @@ background-color: #e0f0ed;
     color: red !important;
     font-size: 25px !important;
 }
-
 /*  comments style */
      #red{
          margin-left: 10px;
@@ -471,4 +482,6 @@ background-color: #e0f0ed;
             font-size: 0.7rem;
         }
         /* comments style end */
+
 /*---------------------------mob view part end---------------------------------------------*/
+
