@@ -145,24 +145,25 @@
                             </div>
                         </div>
                         <a style="border: none;outline: none; position: absolute; top: 1%;right: 20%; z-index: 100;" id="btnhearta1"><i class="fa fa-heart " style=" color:#fff ;font-size:25px;"  id="hearta1" ></i></a>
-                        <a style=" position: absolute;right:5%;top: 2%; z-index: 100;" id="share"><i class="fa fa-share-alt"  style=" color: #333; font-size:20px;" aria-hidden="true"></i></a>
+                        <a style=" position: absolute;right:5%;top: 2%; z-index: 100;" onclick="onClickShare()" id="share"><i class="fa fa-share-alt"  style=" color: #333; font-size:20px;" aria-hidden="true"></i></a>
                         <button type="button" class="btn btn-info btn-sm vall" style=" position: absolute; right: 2%;bottom: 2%; background-color: #2ecab6;"><i class="fa fa-picture-o" aria-hidden="true" style="margin: 5px;"></i>View All</button>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <script>
-                            var sharemv = document,getElementById("share");
- sharemv.addEventListener('click', event => {
-  if (navigator.share) { 
-   navigator.share({
-      title: 'sheltown',
-      url: 'page url here'
-    })
-    } else {
-        console.log("error");
-    }
-});                </script>
+                            function onClickShare() {
+if(navigator.share) {
+  navigator.share({
+    title: 'Sheltown',
+    text: 'Sheltown',
+    url: 'url here'
+  })
+  .then(() => console.log('share'))
+  .catch((error) => console.log('Share Error', error));
+}
+}
+                        </script>
                         <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
@@ -1610,7 +1611,7 @@
                                     <form class="m-1 px-4">
                                         <div class="form-group f">
                                             <input type="name" class="form-control ip mt-1 mb-1" id="name" aria-describedby="name" placeholder="Name" style=" border: none;border:black solid 1px;outline:none;">
-                                            <input type="name" class="form-control ip mt-2 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" style="border:black solid 1px;outline:none;">
+                                            <input type="name" class="form-control ip mt-2 " id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter Email" style="border:black solid 1px;outline:none;">
                                             <input type="tel" class="form-control ip mt-2 mb-1" id="mobileno" aria-describedby="mobileno" placeholder="Enter Phone No." style="border:black solid 1px;outline:none;">
                                             <textarea class="form-control mt-2 mb-1" rows="4" maxlength="160  " placeholder="Leave Comments Here ." id="comment" style="border:black solid 1px;outline:none;"></textarea>
                                         </div>
