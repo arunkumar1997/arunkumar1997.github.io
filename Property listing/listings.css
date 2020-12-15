@@ -500,7 +500,7 @@ background-color: #e0f0ed;
                 display: grid;
                 grid-gap: 5px;
                 font-size: medium;
-                grid-template-columns: repeat(3,auto);
+                grid-template-columns: repeat(2,auto);
             }
         }
 
