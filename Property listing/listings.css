@@ -502,7 +502,7 @@ background-color: #e0f0ed;
         /* comments style end */
 
         /* footer link */
-        .links .card-body .container .grid-hotel{
+        .links .card-body .container-fluid .grid-hotel{
             display: grid;
             grid-gap: 5px;
             text-align: center;
