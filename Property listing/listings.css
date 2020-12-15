@@ -509,9 +509,8 @@ background-color: #e0f0ed;
             grid-template-columns: repeat(6,0.166fr);
         }
         @media (max-width:600px){
-            .links .card-body .container .grid-hotel{
+            .links .card-body .container-fluid .grid-hotel{
                 display: grid;
-              
                 text-align: center;
                 grid-gap: 5px;
                 font-size: medium;
