@@ -7,7 +7,19 @@
 
 body {
     background: #f1f3f6 !important;
+ 
 }
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+
+
 
 input[type=checkbox],
 a {
@@ -215,7 +227,7 @@ select::-ms-expand {
 /*gradient*/
 .viewing {
     
-    background: linear-gradient(to right, #8360c3 0% , #2ebf91 100% );
+    background: linear-gradient(to right,  #BD3F32 0% , #CB356B 100% );
 }
 
 .rev,.headings{
@@ -493,11 +505,14 @@ background-color: #e0f0ed;
         .links .card-body .container .grid-hotel{
             display: grid;
             grid-gap: 5px;
+            text-align: center;
             grid-template-columns: repeat(6,0.166fr);
         }
         @media (max-width:600px){
             .links .card-body .container .grid-hotel{
                 display: grid;
+              
+                text-align: center;
                 grid-gap: 5px;
                 font-size: medium;
                 grid-template-columns: repeat(2,auto);
@@ -508,5 +523,30 @@ background-color: #e0f0ed;
             box-shadow: 2px 2px 2px 2px #2ECAB6;
             border-radius: 5px;
            
+        }
+
+        .reviewsm::-webkit-scrollbar {
+            width: 0.4em;
+        }
+        
+        .reviewsm::-webkit-scrollbar-thumb {
+          background-color:rgb(155, 148, 148);
+          border-radius: 5px;
+          border: none;
+        }
+
+        .review::-webkit-scrollbar {
+            width: 0.4em;
+        }
+        
+        .review::-webkit-scrollbar-thumb {
+          background-color:#2ECAB6;
+          border-radius: 5px;
+          border: none;
+        }
+
+        .watermark{
+            opacity: 0.6;
+            font-size: large;
         }
 /*---------------------------mob view part end---------------------------------------------*/
