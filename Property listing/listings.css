@@ -226,8 +226,8 @@ select::-ms-expand {
 */
 /*gradient*/
 .viewing {
-    
     background: linear-gradient(to right,  #BD3F32 0% , #CB356B 100% );
+    border-radius: 5px;
 }
 
 .rev,.headings{
