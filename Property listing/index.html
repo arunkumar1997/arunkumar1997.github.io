@@ -153,6 +153,7 @@
             <span class="sr-only">Previous</span>
           </a>
            <h5  class="sharetitle" style="display: none !important;">Sheltown.in</h5>
+           <h5 class="sharetext" style="display: none !important;">Sheltown &quot;Live like you own it&quot;[Refer and Earn]. (or any other promo here) <br> </h5>
          
           <!-- mv share  -->
           <script>
@@ -160,7 +161,7 @@
               if (navigator.share) {
                 navigator.share({
                     title: document.querySelector('h5.sharetitle').textContent,
-                    text: 'Sheltown "Live like you own it "[Refer and Earn]. (or any other promo here)',
+                    text: document.querySelector('h5.sharetext').textContent,
                     url: 'https://sheltown.in/YouOwnIt'
                   })
                   .then(() => console.log('share'))
