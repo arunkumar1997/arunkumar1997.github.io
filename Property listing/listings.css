@@ -529,9 +529,11 @@ background-color: #e0f0ed;
                 font-size: medium;
                 grid-template-columns: repeat(2,auto);
             }
-            .tbbs ul  li {
-                font-size: small !important;
-            }
+        }
+        @media (max-width:600px){
+            .nav-pills > li > a{
+                font-size: 12px;
+              }
         }
 
         .shadoww{
