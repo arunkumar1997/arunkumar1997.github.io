@@ -19,8 +19,17 @@ body::-webkit-scrollbar-thumb {
   border: none;
 }
 
-
-
+.tab-content::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+    background-color:white;
+    border-radius: 5px;
+}
+.tab-content::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
 input[type=checkbox],
 a {
     cursor: pointer;
@@ -504,9 +513,13 @@ background-color: #e0f0ed;
         /* footer link */
         .links .card-body .container-fluid .grid-hotel{
             display: grid;
-            grid-gap: 5px;
+            grid-row-gap: 5px;
+            grid-column-gap: 10px;
             text-align: center;
-            grid-template-columns: repeat(6,0.166fr);
+            grid-template-columns: repeat(6,12.7rem);
+            grid-auto-flow: row;
+            
+           
         }
         @media (max-width:600px){
             .links .card-body .container-fluid .grid-hotel{
@@ -515,6 +528,9 @@ background-color: #e0f0ed;
                 grid-gap: 5px;
                 font-size: medium;
                 grid-template-columns: repeat(2,auto);
+            }
+            .tbbs ul  li {
+                font-size: small !important;
             }
         }
 
