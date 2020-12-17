@@ -4,6 +4,15 @@ body {
   color: #4e4e4e;
 }
 
+body::-webkit-scrollbar {
+  width: 0.45em;
+}
+body::-webkit-scrollbar-thumb {
+background-color:#0078FF;
+border-radius: 5px;
+border: none;
+}
+
 h1,
 h2,
 h3,
