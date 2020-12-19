@@ -6,4 +6,11 @@ $(".rmb").click(function(){
   });
   });
 
-  
+// date picker
+  $ ('#cale').click(function() {
+    $(this).datepicker({ 
+          autoclose: true, 
+          todayHighlight: true,
+          format: "dd M yyyy"
+    }).datepicker('update', new Date());
+  });
