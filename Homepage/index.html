@@ -17,9 +17,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>
-	<div class="header" style="margin-bottom: 4.8rem;">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #fff;">
+<body class="body-darkmode">
+	<div class="header " style="margin-bottom: 4.8rem;">
+    <nav class="navbar  navbar-expand-lg navbar-light fixed-top " style="background-color: #fff;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -65,10 +65,10 @@
           </li>
 
           <li class="nav-item mr-4 login">
-            <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign up </a>
+            <a class="nav-link"  data-toggle="modal" data-target="#SignupModal">Sign up </a>
           </li>
           <li class="nav-item mr-4 login">
-            <a class="nav-link" href="#LoginModal" data-toggle="modal">Sign in </a>
+            <a class="nav-link"  data-toggle="modal" data-target="#LoginModal">Sign in </a>
           </li>
 
         </ul>
@@ -78,12 +78,17 @@
   <!--header end---------->
   <!-- container -->
   <div class="container-fluid ">
+    <div class="row custom-control custom-switch text-right container-fluid ">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+      <label class="custom-control-label  " for="customSwitch1" style="color: #f5f5f5;">Toggle Dark on</label>
+      
+    </div>
     <div class="row">
         <!--- left side -->
       <div class="col-3 pr-0 ">
-  <div class="card shadow">
-    <h5 class="card-header rounded-top">Work</h5>
-    <div class="card-body">
+  <div class="card card-darkmode shadow">
+    <h5 class="card-header card-darkmode rounded-top border-bottom">Work</h5>
+    <div class="card-body card-darkmode">
       <h5 class="card-title">21/12/2020</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <h5 class="card-title">29/12/2020</h5>
@@ -91,9 +96,9 @@
       <a href="#"  style="color: blue; text-decoration: none; float: right;">View All</a>
     </div>
   </div>
-  <div class="card shadow" >
-    <h5 class="card-header">Events</h5>
-    <div class="card-body">
+  <div class="card  card-darkmode shadow" >
+    <h5 class="card-header border-bottom card-darkmode">Events</h5>
+    <div class="card-body  card-darkmode">
       <h5 class="card-title">21/12/2020</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <h5 class="card-title">29/12/2020</h5>
@@ -101,9 +106,9 @@
       <a href="#"  style="color: blue; text-decoration: none; float: right;">View All</a>
     </div>
   </div>
-  <div class="card shadow">
-    <h5 class="card-header">Request</h5>
-    <div class="card-body">
+  <div class="card card-darkmode shadow">
+    <h5 class="card-header card-darkmode">Request</h5>
+    <div class="card-body card-darkmode">
       <input type="text"  value="Leave" style="margin-bottom: 10px;">
       <input type="text" value="Documents" style="margin-bottom: 10px;">
       <input type="text" value="Certificates" style="margin-bottom: 10px;">
@@ -114,8 +119,8 @@
   <!-- left side end -->
   <!-- middle sec -->
       <div class="col-6 px-0 md-sec" style="height: 150vh; overflow-y: scroll;">
-        <div class="card shadow">
-          <div class="card-body pb-1 pt-3">
+        <div class="card card-darkmode shadow">
+          <div class="card-body card-darkmode pb-1 pt-3">
             <div class="shrep pb-3">
               <button class=" btn btn-block border speak-loud text-left" ><span><i class="far fa-edit fa-lg" style="color: #5E5E5E;"></i></span><span class="pl-2" style="color: #7C7C7C;">Speak Out Louder</span> </button>
             </div>
@@ -129,8 +134,8 @@
           </div>
         </div>
         <!-- second card -->
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
+        <div class="card card-darkmode shadow">
+          <div class="card-body card-darkmode pb-2 mx-2">
             <div class="row mb-3 ">
               <div class="col-2 pr-0">
                 <i class="fas fa-user-circle fa-3x pl-0 "></i>
@@ -146,7 +151,7 @@
             </div>
             <div class="card-text " >
               <div class="post-text">
-                <p class="preview">
+                <p class="preview mb-0"  >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                  Proin et est gravida, rutrum massa eu, lacinia tortor. 
                  Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
@@ -156,7 +161,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Proin et est gravida, rutrum massa eu, lacinia tortor. 
                   Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                   Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
+                   Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
                   
                  </p>
                  <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post1" role="button" aria-expanded="false" aria-controls="post1" style="color: blue; text-decoration: none;" >Show More</a>  
@@ -174,8 +179,8 @@
             </div>
           </div>
         </div>
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
+        <div class="card card-darkmode shadow">
+          <div class="card-body card-darkmode pb-2 mx-2">
             <div class="row mb-3 ">
               <div class="col-2 pr-0">
                 <i class="fas fa-user-circle fa-3x pl-0 "></i>
@@ -189,21 +194,21 @@
                 </div>
               </div>
             </div>
-            <div class="card-text " >
+            <div class="card-text  " >
               <div class="post-text">
-                <p class="preview">
+                <p class="preview  mb-0" >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit..
                   Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,...
                 </p>
                 <div class="moretext" >
-                  <p class="collapse" id="post2">
+                  <p class="collapse my-0 py-0" id="post2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin et est gravida, rutrum massa eu, lacinia tortor. 
                     Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
                      Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
                     
                    </p>
-                   <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post1" role="button" aria-expanded="false" aria-controls="post1" style="color: blue; text-decoration: none;" >Show More</a>                  </div>
+                   <a class=" text-left  my-1 mb-2 rmb clr"  data-toggle="collapse" href="#post2" role="button" aria-expanded="false" aria-controls="post2" style="color: blue; text-decoration: none;" >Show More</a>                  </div>
               </div>
             </div>
             <div class=" text-center border-bottom border-top  pb-3">
@@ -223,9 +228,9 @@
       <!-- middle sec end -->
       <!-- right side start -->
   <div class="col-3 pl-0">
-  <div class="card shadow ">
-    <h5 class="card-header">Today's Headlines</h5>
-    <div class="card-body">
+  <div class="card card-darkmode shadow ">
+    <h5 class="card-header card-darkmode border-bottom">Today's Headlines</h5>
+    <div class="card-body card-darkmode">
       <h5 class="card-title">21/12/2020</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <h5 class="card-title">29/12/2020</h5>
@@ -233,9 +238,9 @@
       <a href="#"  style="color: blue; text-decoration: none; float: right;" >View All</a>
     </div>
   </div>
-  <div class="card shadow " >
-    <h5 class="card-header">My Schedule</h5>
-    <div class="card-body schedule" >
+  <div class="card shadow card-darkmode " >
+    <h5 class="card-header card-darkmode border-bottom">My Schedule</h5>
+    <div class="card-body schedule card-darkmode" >
       <h5 class="card-title" >21/12/2020</h5><br>
       <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
@@ -254,8 +259,53 @@
 <!-- container end -->
 
 
+<!-- Modal -->
+<!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- you forms here -->
+        <h4>Sign Form here</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- modal for login start -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- you forms here -->
+        <h4>Login Form here</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
