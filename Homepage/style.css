@@ -317,11 +317,3 @@ button:hover {
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
-
-/* date picker */
-#datepicker,
-#datepicker1,
-#datepicker2,
-#datepicker3 {
-    width: 7rem;
-}
