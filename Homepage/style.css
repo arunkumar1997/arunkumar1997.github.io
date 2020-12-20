@@ -41,7 +41,8 @@ a {
 .navbar-brand {
     font-size: 20px;
     margin-top: 5px!important;
-    margin-bottom: -10px!important
+    margin-bottom: -10px!important;
+    
 }
 
 .navbar-brand p {
@@ -88,14 +89,13 @@ a {
 }
 /*i {
    margin-left: 8px;
-
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
 /*left  cards*/
 .card {
     margin: 10px;
-    background:#4C5352!important;
+    background: #333!important;
     color: white;
 }
 
@@ -110,10 +110,14 @@ a {
 }
 .list >li {
     margin: 10px;
+    color: white;
 
 }
 .view a:hover{
     text-decoration: underline;
+}
+.inputs:hover{
+  text-decoration: underline;
 }
 /*right cards*/
 .schedule{
@@ -122,7 +126,7 @@ a {
 }
 
 /* post now border */
-
+/*
 .speak-loud{
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
@@ -130,6 +134,7 @@ a {
     font-size: small;
     font-weight: bold;
 }
+*/
 .speak-loud:hover{
     background-color: #EBEBEB;
 }
@@ -160,13 +165,16 @@ a {
 #text{
     display: none;
 }
-/* card header bg remove */
 
-.left,.right{
-    display: block;
-  }
-  .mfooter{
-    display:none;
+
+.schedule::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.schedule::-webkit-scrollbar-thumb {
+  background-color:rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
 }
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
@@ -177,44 +185,25 @@ a {
 /* Full-width input fields */
 input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 5px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background:#111;
 }
 .email{
     width: 100%;
-  padding: 15px;
+  padding: 5px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #111;
 
 }
 .docs > input {
-    background: lightgrey;
+    background: #111;
  
 }
-
-
-
-/*hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}*/
-
-/* Set a style for all buttons */
-/*button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}*/
 
 button:hover {
   opacity:1;
@@ -223,14 +212,14 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .contibtn {
-  padding: 14px 20px;
+  padding: 5px;
 }
 
 
 
 /* Add padding to container elements */
 .container {
-  padding: 16px;
+  padding: 5px;
 }
 
 /* Clear floats */
@@ -256,12 +245,28 @@ button:hover {
 } 
 
 .unique span { 
-    background:#fff; 
+    background:#111; 
     padding:5px 5px; 
+    color: #fff;
 }
 
 /* Modal end */
 
+.left,.right{
+    display: block;
+  }
+  .mfooter{
+    display:none;
+}
+.header1{
+    display: block;
+}
+.header2{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
 /*--------------------media query for mob view--------------------*/
 @media (max-width: 768px) {
   .left,.right{
@@ -270,7 +275,12 @@ button:hover {
   .c1{
     display: none;
   }
-
+.header1{
+    display: none;
+}
+.header2{
+    display: block;
+}
 .mfooter{
     display:block;
 }
@@ -291,29 +301,67 @@ button:hover {
     border: 1px solid white;
     font-size: 12px;
 }
-.n1 .nav-item a{
-    border-bottom: 1px solid white!important;
-    padding:10px; 
-    display: flex;
-}
-.n1 .nav-item a:hover{
-    background: blue!important;
-}
-.n1 i{
-   margin-right: 10px;
-    }
+ .sidenav {
+    display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1032;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 18px;
 
 }
-/* scroll */
-.schedule::-webkit-scrollbar {
-    width: 0.3em;
+
+.menu a {
+ padding: 10px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  
+}
+.menu i{
+    font-size: 16px;
 }
 
-.schedule::-webkit-scrollbar-thumb {
-  background-color:rgb(155, 148, 148);
-  border-radius: 5px;
-  border: none;
+.sidenav .closebtn { 
+  font-size: 36px;
+  color: white;
+ 
 }
-.md-sec::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space for middle secction */
+
+
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+a {
+    color: #0254EB
+}
+a:visited {
+    color: #0254EB
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
 }
