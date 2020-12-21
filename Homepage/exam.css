@@ -60,9 +60,21 @@ a {
 }
 
 .btn.btn-search {
-    background: #2ECAB6!important;
+    background: #fff!important;
     border-radius: 0;
     color: white;
+
+}
+.sr1 .fa-search{
+  color: black;
+}
+.fa-comment-dots{
+  color: white;
+  font-size: 20px;
+}
+.in{
+  border:none!important;
+  border-radius: 0;
 }
 
 .login a:hover {
@@ -93,12 +105,33 @@ a {
 
 /*-----------------------navbar end------------------------------------------->*/
 /*----------------------------table start-------*/
-table th select {
-    /*width: 100px;
-    height: 30px;*/
-    /*padding: 10px;
-    font-size: 1rem;*/
-  }
+
+ul {
+  list-style: none;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #111;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: white;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color:rgb(54, 214, 54);;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
 /*---------------table end----------------*/
 
 .left,.right{
@@ -189,6 +222,9 @@ table th select {
   height: auto!important;
   overflow: hidden;
 }
+ ul.breadcrumb li {
+    font-size: 14px !important;
+  }
 
 }
 @media screen and (max-height: 450px) {

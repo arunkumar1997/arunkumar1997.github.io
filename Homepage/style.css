@@ -6,7 +6,8 @@
 }
 
 body {
-    background: #111!important;
+ 
+    background: #222!important;
  
 }
 body::-webkit-scrollbar {
@@ -60,10 +61,23 @@ a {
 }
 
 .btn.btn-search {
-    background: #2ECAB6!important;
+    background: #fff!important;
     border-radius: 0;
     color: white;
+
 }
+.sr1 .fa-search{
+  color: black;
+}
+.fa-comment-dots{
+  color: white;
+  font-size: 20px;
+}
+.in{
+  border:none!important;
+  border-radius: 0;
+}
+
 
 .login a:hover {
     text-decoration: underline;
@@ -92,11 +106,15 @@ a {
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
-/*left  cards*/
+/*----------------------left  cards-----------------------------------*/
+
 .card {
     margin: 10px;
-    background: #333!important;
+    background: #111!important;
     color: white;
+}
+.card-header{
+  color: #36D636;
 }
 
 .dv{
@@ -116,34 +134,55 @@ a {
 .view a:hover{
     text-decoration: underline;
 }
-.inputs:hover{
-  text-decoration: underline;
+.viewall{
+  color: #1DA1F2;
+  /*color: #007bff;*/
 }
-/*right cards*/
+.docs button{
+  border: 1px solid #1DA1F2!important;
+  border-radius: 5px;
+  color: #1DA1F2;
+}
+
+/*---------------------------middle cards------------------------------------*/
+.icons{
+  display: flex; 
+  justify-content: space-around;
+   align-items: center;
+}
+.speak input[type=text]{
+  border: none;
+  outline: none;
+}
 .schedule{
     overflow-y: scroll;
     height: 350px;
 }
 
 /* post now border */
-/*
-.speak-loud{
+
+/*.speak-loud{
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     border-radius: 50px;
     font-size: small;
     font-weight: bold;
-}
-*/
+}*/
 .speak-loud:hover{
     background-color: #EBEBEB;
 }
 /* rounded card */
 .card{
     border-radius: 10px;
-    padding: 5px;
+    
+    border: 0.5px solid #444;
 }
-
+.card a i{
+  font-size: 22px;
+}
+.cards .card-body{
+  padding: 5px 3px!important;
+}
 .sharebtm{
     font-weight: bold;
     color: white !important;
@@ -165,7 +204,33 @@ a {
 #text{
     display: none;
 }
+a.morelink {
+  color: #1DA1F2;
+}
+a:visited {
+    color: #1DA1F2;
+}
+a {
+    color: #0254EB;
+}
 
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+.fa-ellipsis-h{
+  color: white;
+  font-size: initial!important;
+}
+/* card header bg remove */
 
 .schedule::-webkit-scrollbar {
     width: 0.3em;
@@ -179,6 +244,9 @@ a {
 .md-sec::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space for middle secction */
 }
+/*.far{
+  margin: 3px !important;
+}*/
 /* Modal start */
 
 
@@ -260,6 +328,7 @@ button:hover {
 }
 .header1{
     display: block;
+
 }
 .header2{
     display: none;
@@ -285,7 +354,7 @@ button:hover {
     display:block;
 }
 .mfooter a{
-    font-size: 12px;
+    font-size: 21px;
 }
 .mfooter ul{
     margin-bottom: 0!important
@@ -299,7 +368,7 @@ button:hover {
     border-radius: 50%;
     color: white;
     border: 1px solid white;
-    font-size: 12px;
+    font-size: 13px;
 }
  .sidenav {
     display: block;
@@ -307,7 +376,7 @@ button:hover {
   width: 0;
   position: fixed;
   z-index: 1032;
-  top: 0;
+  bottom: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -336,32 +405,20 @@ button:hover {
   color: white;
  
 }
-
-
+.md-sec{
+  height: auto!important;
+  overflow: hidden;
+}
+.card {
+    margin: 5px;
+   
+}
+.md-sec{
+  margin-bottom: 9vh;
+}
 
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-
-
-a {
-    color: #0254EB
-}
-a:visited {
-    color: #0254EB
-}
-a.morelink {
-    text-decoration:none;
-    outline: none;
-}
-.morecontent span {
-    display: none;
-}
-.comment {
-    width: 400px;
-    background-color: #f0f0f0;
-    margin: 10px;
 }
