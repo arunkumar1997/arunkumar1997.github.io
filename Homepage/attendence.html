@@ -18,110 +18,164 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
-      body {
- 
-  line-height: 1.25;
-}
-
-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
+body {
+line-height: 1.25;
+background-color: #111111 !important;
 }
 
 table caption {
-  font-size: 1.5em;
-  padding: 0;
-  padding-top: 5px ;
+font-size: 1.5em;
+padding: 0;
+padding-top: 5px ;
+color: white;
 }
-
+table caption:first-child{
+  margin-top: 10px;
+}
 table tr {
-  background-color: #333;
-  border: 1px solid #ddd;
-  padding: .35em;
+background-color: #222;
+padding: .35em;
 }
 table th{
-    padding: .625em;
-    text-align: center;
-    background-color: #333;
-    color:rgb(54, 214, 54);
+  padding: .625em;
+  text-align: center;
+  background-color: #222;
+  color:rgb(54, 214, 54);
+}
+table.table-bordered{
+    border:2px solid #555;
+  }
+table.table-bordered > thead > tr > th{
+    border:2px solid #555;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #555;
+}
+table.table-bordered{
+   /* make things invisible upon start */
+   opacity:0;  
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
 
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+  /* make things invisible upon start  end*/
 }
 
 table td {
-  padding: .625em;
-  text-align: center;
-  background-color: #333;
-  color: #f8f8f8;
+padding: .625em;
+text-align: center;
+background-color: #222;
+color: #f8f8f8;
 }
 
 table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+font-size: .85em;
+letter-spacing: .1em;
+text-transform: uppercase;
 }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 @media screen and (max-width: 600px) {
-  table {
-    border: none !important;
-  }
-   tbody{
-      border: none;
-  }
-  .mvhsub{
-      display: none;
-  }
-  table caption {
-    margin-top: 0 ;
-    margin-bottom: 0 ;
-    font-size: 1.3em;
-  }
-  
-  table thead {
+table {
+  border: none !important;
+  box-shadow: none;
+  /* make things invisible upon start */
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+  /* make things invisible upon start  end*/
+}
+ tbody{
     border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-      border: none;
-    background:#121212;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+}
+
+
+table caption {
+  margin-left: 10px;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  font-size: 1.1em;
+}
+table td:first-child{
+  display: none;
+}
+
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+table tr {
+  border: none;
+  background:#1111;
+  display: block;
+  padding: 0;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px  rgba(0,0,0,0.75);
+}
+
+table td {
+  /* make things invisible upon start */
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+  /* make things invisible upon start  end*/
+
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: 1em;
+  text-align: right;
+  color:lightgreen;
+}
+table td::before {
+  content: attr(data-label);
+  float: left;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: white;
+}
 }
 select{
-    padding:1px 10px;
+  padding:1px 10px;
 }
 
 
-  </style>
+</style>
 </head>
 <body>
   <div class="header header1" style="margin-bottom: 4.8rem; ">
@@ -243,413 +297,1764 @@ function closeNav() {
 
   <!-- attendence start -->
   <div class="container-fluid">
-      <div class="container text-center">
-        <label for="sem"><h3 class="text-light">Select Semister:</h3></label>
-        <select id="size_select" style="background-color: #121212; color: #f8f8f8;" >
-            <option value="option1">1</option>
-            <option value="option2">2</option>
-            <option value="option3">3</option>
-            <option value="option4">4</option>
-            <option value="option5">5</option>
-            <option value="option6">6</option>
+    <div class="container">
+      <div class="headeratt">
+        <label for="sem"><h3 class="text-light">Attendence of</h3></label>
+        <select id="size_select" style="background-color: #111111; color: #f8f8f8; appearance: none;" >
+            <option value="option1">Pre-Nursery</option>
+            <option value="option2">Nursery</option>
+            <option value="option3">KG</option>
+            <option value="option4">LKG</option>
+            <option value="option5">UKG</option>
+            <option value="option6">Class 1</option>
+            <option value="option7">Class 2</option>
+            <option value="option8">Class 3</option>
+            <option value="option9">Class 4</option>
+            <option value="option10">Class 5</option>
+            <option value="option11">Class 6</option>
+            <option value="option12">Class 7</option>
+            <option value="option13">Class 8</option>
+            <option value="option14">Class 9</option>
+            <option value="option15">Class 10</option>
+            <option value="option16">Class 11</option>
+            <option value="option17">Class 12</option>
           </select>
       </div>
+    </div>
       <!--Size dropdown content-->
       <div id="option1" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-1</h4>
-            </div>
             <table class="table table-bordered">
-              <caption>Extra attendence:</caption>
-              <caption>Attendence deduction as penalty:</caption>
-              <caption>Final Attendence:</caption>
+              <caption>Total no. of lectures: 60</caption>
+              <caption>No. of lectures attended: 48</caption>
+              <caption>Extra attendence:
+                <select class="text-white" style="appearance: none; background-color: #1111;" >
+                  <option value="">3</option>
+                  <option value="">None</option>
+                </select> 
+              </caption>
+              <caption>Attendence deduction as penalty:
+                <select class="text-white" style="appearance: none; background-color: #1111;" >
+                  <option value="volvo">3</option>
+                  <option value="saab">None</option>
+                </select> 
+              </caption>
+              <caption>Final Attendence: 80%</caption>
               <thead>
                 <tr>
-                  <th   style="width:3.5rem;" scope="col">S.No</th>
+                  <th class="mvhsub"  style="width:3.5rem;" scope="col">S.No</th>
                   <th  scope="col">Subject</th>
                   <th  scope="col">Total no. of lectures</th>
                   <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
+                  <th  scope="col">Attendence  (%)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
+                  <td  data-label="Subject">Mathematics</td>
                   <td  data-label="Total no. of lectures">10</td>
                   <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
                 <tr>
                   <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
+                  <td  data-label="Subject">Environment Science</td>
                   <td  data-label="Total no. of lectures">10</td>
                   <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
                 <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
+                  <td  data-label="S.No">3</td>
+                  <td  data-label="Subject">General Awareness</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
                 <tr>
                   <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
+                  <td  data-label="Subject">Other Activities</td>
                   <td  data-label="Total no. of lectures">10</td>
                   <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
                 <tr>
                   <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
+                  <td  data-label="Subject">More Subjets</td>
                   <td  data-label="Total no. of lectures">10</td>
                   <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
                 <tr>
                   <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
+                  <td  data-label="Subject">More Subjets</td>
                   <td  data-label="Total no. of lectures">10</td>
                   <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
+                  <td  data-label="Attendence(%)">80</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">7</td>
+                  <td  data-label="Subject">More Subjets</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">80</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">8</td>
+                  <td  data-label="Subject">More Subjets</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">80</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">9</td>
+                  <td  data-label="Subject">More Subjets</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">80</td>
+                </tr>
+                <tr>
+                  <td  data-label="S.No">10</td>
+                  <td  data-label="Subject">More Subjets</td>
+                  <td  data-label="Total no. of lectures">10</td>
+                  <td  data-label="No. of lectures attended">8</td>
+                  <td  data-label="Attendence(%)">80</td>
                 </tr>
               </tbody>
             </table>
-      
         </div>
       </div>
       <div id="option2" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-2</h4>
-            </div>
-            <table class="table table-bordered">
-                <caption>Extra attendence:</caption>
-                <caption>Attendence deduction as penalty:</caption>
-                <caption>Final Attendence:</caption>
-              <thead>
-                <tr>
-                  <th  style="width:3.5rem;" scope="col">S.No</th>
-                  <th  scope="col">Subject</th>
-                  <th  scope="col">Total no. of lectures</th>
-                  <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-              </tbody>
-            </table>
-      
-        </div>
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+              <caption>No. of lectures attended: 48</caption>
+              <caption>Extra attendence:
+                <select class="text-white" style="appearance: none; background-color: #1111;" >
+                  <option value="">3</option>
+                  <option value="">None</option>
+                </select> 
+              </caption>
+              <caption>Attendence deduction as penalty:
+                <select class="text-white" style="appearance: none; background-color: #1111;" >
+                  <option value="volvo">3</option>
+                  <option value="saab">None</option>
+                </select> 
+              </caption>
+              <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence  (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Mathematics</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Environment Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">General Awareness</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Other Activities</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">More Subjets</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">More Subjets</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">7</td>
+                <td  data-label="Subject">sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
       <div id="option3" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-3</h4>
-            </div>
-            <table class="table table-bordered">
-                <caption>Extra attendence:</caption>
-                <caption>Attendence deduction as penalty:</caption>
-                <caption>Final Attendence:</caption>
-              <thead>
-                <tr>
-                  <th  style="width:3.5rem;" scope="col">S.No</th>
-                  <th  scope="col">Subject</th>
-                  <th  scope="col">Total no. of lectures</th>
-                  <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-              </tbody>
-            </table>
-      
-        </div>
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th class="mvhsub"  style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Language Arts</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Math</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Studies</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Character Building</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">Art</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">7</td>
+                <td  data-label="Subject">Music</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Practical Life</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">PE</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">more sub</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
       <div id="option4" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-4</h4>
-            </div>
-            <table class="table table-bordered">
-                <caption>Extra attendence:</caption>
-                <caption>Attendence deduction as penalty:</caption>
-                <caption>Final Attendence:</caption>
-              <thead>
-                <tr>
-                  <th  style="width:3.5rem;" scope="col">S.No</th>
-                  <th  scope="col">Subject</th>
-                  <th  scope="col">Total no. of lectures</th>
-                  <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-              </tbody>
-            </table>
-      
-        </div>
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Action words</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Opposites</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Rhymes</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Story</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Language Skills</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">7</td>
+                <td  data-label="Subject">Family-wise cursive writing</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sequence cursive writing</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">Sight Words</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
       <div id="option5" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-5</h4>
-            </div>
-            <table class="table table-bordered">
-                <caption>Extra attendence:</caption>
-                <caption>Attendence deduction as penalty:</caption>
-                <caption>Final Attendence:</caption>
-              <thead>
-                <tr>
-                  <th  style="width:3.5rem;" scope="col">S.No</th>
-                  <th  scope="col">Subject</th>
-                  <th  scope="col">Total no. of lectures</th>
-                  <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-              </tbody>
-            </table>
-      
-        </div>
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">General Awareness</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Environmental Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">sub 6</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">sub7</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
       <div id="option6" class="size_chart">
         <div class="container">
-            <div class="headeratt">
-                <h4 class="text-light">Attendence of Semister-6</h4>
-            </div>
-            <table class="table table-bordered">
-                <caption>Extra attendence:</caption>
-                <caption>Attendence deduction as penalty:</caption>
-                <caption>Final Attendence:</caption>
-              <thead>
-                <tr>
-                  <th  style="width:3.5rem;" scope="col">S.No</th>
-                  <th  scope="col">Subject</th>
-                  <th  scope="col">Total no. of lectures</th>
-                  <th  scope="col">No. of lectures attended</th>
-                  <th  scope="col">Attendence(%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td  data-label="S.No">1</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">2</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td " data-label="S.No">3</td>
-                  <td " data-label="Subject">English</td>
-                  <td " data-label="Total no. of lectures">10</td>
-                  <td " data-label="No. of lectures attended">8</td>
-                  <td " data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">4</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">5</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-                <tr>
-                  <td  data-label="S.No">6</td>
-                  <td  data-label="Subject">English</td>
-                  <td  data-label="Total no. of lectures">10</td>
-                  <td  data-label="No. of lectures attended">8</td>
-                  <td  data-label="Attendence(%)">20</td>
-                </tr>
-              </tbody>
-            </table>
-      
-        </div>
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">EnglPhysical Educationish</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Arts & Craft </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">EVS</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">7</td>
+                <td  data-label="Subject">General Knowledge </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option7" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">EnglPhysical Educationish</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Arts & Craft </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">EVS</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">7</td>
+                <td  data-label="Subject">General Knowledge </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option8" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">EnglPhysical Educationish</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Arts & Craft </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">EVS</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">General Knowledge </td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option9" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="volvo">3</option>
+                <option value="saab">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">EnglPhysical Educationish</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Arts & Craft </td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">6</td>
+                <td  data-label="Subject">EVS</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">General Knowledge </td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option10" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option11" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option12" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option13" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option14" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option15" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Social Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">Computer Science</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">PE</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">Sub8</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option16" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Chemistry</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Biology</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Physics</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">sub7</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <div id="option17" class="size_chart">
+        <div class="container">
+          <table class="table table-bordered">
+            <caption>Total no. of lectures: 60</caption>
+            <caption>No. of lectures attended: 48</caption>
+            <caption>Extra attendence:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Attendence deduction as penalty:
+              <select class="text-white" style="appearance: none; background-color: #1111;" >
+                <option value="">3</option>
+                <option value="">None</option>
+              </select> 
+            </caption>
+            <caption>Final Attendence: 80%</caption>
+            <thead>
+              <tr>
+                <th   style="width:3.5rem;" scope="col">S.No</th>
+                <th  scope="col">Subject</th>
+                <th  scope="col">Total no. of lectures</th>
+                <th  scope="col">No. of lectures attended</th>
+                <th  scope="col">Attendence(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  data-label="S.No">1</td>
+                <td  data-label="Subject">Maths</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">2</td>
+                <td  data-label="Subject">Chemistry</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">3</td>
+                <td  data-label="Subject">Biology</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Physics</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">5</td>
+                <td  data-label="Subject">English</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">4</td>
+                <td  data-label="Subject">Hindi</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td " data-label="S.No">7</td>
+                <td " data-label="Subject">sub7</td>
+                <td " data-label="Total no. of lectures">10</td>
+                <td " data-label="No. of lectures attended">8</td>
+                <td " data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">8</td>
+                <td  data-label="Subject">Sub7</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">9</td>
+                <td  data-label="Subject">sub9</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+              <tr>
+                <td  data-label="S.No">10</td>
+                <td  data-label="Subject">sub10</td>
+                <td  data-label="Total no. of lectures">10</td>
+                <td  data-label="No. of lectures attended">8</td>
+                <td  data-label="Attendence(%)">20</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
   </div>
 
