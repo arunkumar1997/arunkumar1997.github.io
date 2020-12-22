@@ -17,10 +17,99 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+      body{
+          background-color: #111 !important;
+          padding-bottom: 80px;
+      }
+      .modal-title{
+         text-align: center;
+      }
+      .hs>li > *{
+          font-size: 1.4em;
+          background: #222;
+          
+      }
+      .hs>li>span>a{
+          text-decoration: none;
+          color: white;
+      }
+      .modal-content{
+          background: #222;
+          color: white;
+      }
+      .hs>li{
+        background: #222;
+      }
+      .card{
+        box-shadow: 5px 5px 10px 2px  rgba(0,0,0,0.75);
+        border: none !important;
+        outline: none !important;
+        border-radius:0 ;
+        background: #222;
+      }
+      .card-body{
+          background: #222;
+      }
+      .card-header{
+          background-color: #222 !important ;
+      }
+      .efdate > span{
+          display: block;
+      }
+      .efdate>span>span{
+          display: block;
+      }
+      .pd > span{
+          display: block;
+      }
+      .pd>span>span{
+          display: block;
+      }
+      .dv{
+          display: block;
+      }
+      .mv {
+          display: none !important;
+      }
+      @media (max-width:600px){
+        .dv{
+          display: none !important;
+      }
+      .dvh{
+          border-bottom: none !important;
+      }
+      .mv {
+          display: block !important;
+      }
+      .comment{
+          font-size: 1em !important;
+      }
+      .card-body{
+          padding: 0;
+      }
+      .hs>li>*{
+          font-size: 1em  ;
+          padding-right: 10px;
+          padding-left:10px ;
+      }
+      .hs{
+          height: 40vh !important;
+      }
+      .hs>li{
+          margin-bottom: 10px;
+      }
+      .hsm{
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+          margin-bottom: 0;
+      }
+      }
+  </style>
 </head>
 <body>
-  <div class="header header1" style="margin-bottom: 4.8rem; ">
-    <nav class="navbar navbar-expand-lg  fixed-top n1" style="background-color: rgb(75, 71, 71);">
+  <div class="header header1" style="margin-bottom: 2rem !important; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top n1" style="background-color: #111;border-bottom: 1px solid #444;">
       <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
@@ -33,18 +122,41 @@
         
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item mr-4 ">
-            <a href=""><div><i class="fa fa-home" aria-hidden="true"></i></div>
+            <a href="index.html"><div><i class="fa fa-home" aria-hidden="true"></i></div>
             <div>Home</div></a> 
            
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></div>
-      <div>Academics</div></a>      
-          </li>
-          <li class="nav-item mr-4">
-              <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></div>
-              <div>Campus</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-book" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="attendence.html" style="color: black !important;">Attendence</a>
+          <a class="dropdown-item" href="time-table.html" style="color: black !important;">Time-Table</a>
+          <a class="dropdown-item" href="exam.html" style="color: black !important;">Examination</a>
+          <a class="dropdown-item" href="assignment.html" style="color: black !important;">Assignment</a>
+          <a class="dropdown-item" href="study.html" style="color: black !important;">Study Material</a>
+          <a class="dropdown-item" href="research.html" style="color: black !important;">Research</a>
+   
+        </div>
+      </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-building" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Campus
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="" style="color: black !important;">Classroom</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Fee Details</a>
+          <a class="dropdown-item" href="request.html" style="color: black !important;">Raise A Request</a>
+          <a class="dropdown-item" href="badges.html" style="color: black !important;">Recommendation Badges</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Feedback</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Notice Board</a>
+          <a class="dropdown-item" href="complaints.html" style="color: black !important;">Complaints</a>
+          <a class="dropdown-item" href="" style="color: black !important;">Holidays</a>
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
              <div>Internship</div></a>      
@@ -57,45 +169,53 @@
             <a href=""><div><i class="fa fa-bell" aria-hidden="true"></i></div>
                <div>Notifications</div></a>      
           </li>
-          <li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></div>
-           <div>E-Learning</div></a>      
-          </li>
+          <li class="nav-item dropdown " >
+            <a href=""><div><i class="fa fa-tablet" aria-hidden="true"></i></a>
+        <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          E-Learning
+        </a>
+        <div class="dropdown-menu sections" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="news.html" style="color: black !important;">News & Articles</a>
+ 
+        </div>
+      </li>
           <li class="nav-item mr-4">
             <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
               <div>Search</div></a>      
           </li>
-
-       
-          
-       
         </ul>
 
       </div>
 
     </nav>
-  </div>
+  </div><br><br>
 
 
 
   <!--header end---------->
   <!----------------------mob header---------------------------------->
-  <div class="header header2" style="margin-bottom: 4.8rem;">
-    <nav class="navbar navbar-dark bg-dark justify-content-between fixed-top">
-  <div style="width: 60%;"class="d-flex">
-    <div class="d-flex justify-content-center align-items-center"onclick="openNav()">
-      <img src="images/work-3.jpg"style="width:35px;height:35px;background:#fff;"class="rounded-circle">
-    </div>
-     <a class="navbar-brand pl-4 py-0 " href="#"><b>SHELTOWN.in</b><br>
+  <div class="header header2" style="margin-bottom: 2rem;">
+    <nav class="navbar navbar-dark  justify-content-between fixed-top"style="background-color: #111;border-bottom: 1px solid #444;">
+  <div class="d-flex">
+     <a class="navbar-brand pl-0 py-0 " href="#"><b>SHELTOWN.in</b><br>
         <p>Live Like You Own It</p>
       </a>
     </div>
-  <div>
-    <!-- <ul><li class="nav-item mr-4">
-            <a href=""><div><i class="fa fa-search" aria-hidden="true"></i></div>
-              </a>      
-          </li></ul> -->
-  </div>
+  
+        <div class=" input-group form-container"style="width:40%">
+          <span class="input-group-btn sr1">
+                <button class="btn  btn-search pr-1 pl-2" type="submit"><i
+                    class="fas fa-search mr-1"></i></button>
+          </span>
+              <input class="form-control in" type="search" placeholder="Search"
+                aria-label="Search" autocomplete="off">
+            </div>
+      
+        <div>
+            <a href=""><div><i class="fas fa-comment-dots"></i></div>
+              </a> 
+              </div>     
+          
 </nav>
 </div>
 <div id="mySidenav" class="sidenav ">
@@ -105,7 +225,7 @@
     <div><a href="javascript:void(0)" class="closebtn p-0 my-0" onclick="closeNav()">&times;</a></div>
   </div>
   <div class="text-left p-4"style="border-bottom: 1px solid white;">
-    <img src="images/work-3.jpg"style="width:45px;height: 45px;background: #fff;"class="rounded-circle">
+    <img src="images/boy.png"style="width: 20%;height: auto;background: #fff;"class="rounded-circle">
     <div>Priyanka</div>
     <div>Grade-8th</div>
     <div>Delhi Public School</div>
@@ -127,7 +247,7 @@
 </div>
   <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
@@ -135,297 +255,263 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
-  <!-- container -->
-  <div class="container-fluid ">
-    <div class="row">
-        <!--- left side -->
-  <div class="col-3 pr-0 left">
-  <div class="card shadow">
-    <h5 class="card-header rounded-top border-bottom" style="background-color: #333;">Work</h5>
-    <div class="card-body view">
-      <ul class="card-text list" style="list-style: none;">
-        <li class="py-0 my-0" style="font-weight: bold;">Due on <input class="ml-2" type="text" value="20 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none; font-weight: bold;"></li>
-        <li class="py-0 my-0 mb-3" ><input class="inputs w-100" type="text" value="Maths Assignment"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-        <li class="py-0 my-0"  style="font-weight: bold;">Due on <input class="ml-2" type="text" value="26 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none; font-weight: bold;"></li>
-        <li class="py-0 my-0 mb-3" ><input class="inputs  w-100 " type="text" value="Civics Assignment"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-        <li class="py-0 my-0"  style="font-weight: bold;">Due on <input class="ml-2" type="text" value="30 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none; font-weight: bold;"></li>
-        <li class="py-0 my-0 mb-3" > <input class="inputs  w-100  " type="text" value="English Assignment"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-      </ul>
-      <a href="#" style="color: white; float: right;">View All</a>
-    </div>
-  </div>
-  <div class="card shadow" >
-    <h5 class="card-header" style="background-color: #333;">Events</h5>
-    <div class="card-body view">
-      <ul class="card-text list" style="list-style: none;">
-        <li  class="py-0 my-0" ><input  type="text" value="20 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none; font-weight: bold;"></li>
-        <li  class="py-0 my-0 mb-3" ><input type="text" value="Foundation Day Ceremony"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-        <li  class="py-0 my-0" ><input type="text" value="26 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none;font-weight: bold;"></li>
-        <li  class="py-0 my-0 mb-3" ><input type="text" value="Republic Day Celebration"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-        <li  class="py-0 my-0" ><input type="text" value="30 Jan 2022"  disabled="true" size="10" style="background-color: #333; color: white; border: none;font-weight: bold;"></li>
-        <li  class="py-0 my-0 mb-3" ><input type="text" value="Mid-Term Exams Starting"  disabled="true" style="background-color: #333; color: white; border: none;"></li>
-      </ul>
-      <a href="#"  style="color: white; float: right;">View All</a>
-    </div>
-  </div>
-  <div class="card shadow">
-    <h5 class="card-header border-bottom" style="background-color: #333;">Request</h5>
-    <div class="card-body docs">
-      <button type="button" class="btn btn-outline-secondary"  style="margin-bottom: 10px; width: 10rem;" data-toggle="modal" data-target="#exampleModal">Leave</button><br/>
-
-      <button type="button" class="btn btn-outline-secondary"  style="margin-bottom: 10px;  width: 10rem;" data-toggle="modal" data-target="#exampleModal">Documents</button><br/>
-      <button type="button" class="btn btn-outline-secondary"  style="margin-bottom: 10px;  width: 10rem;" data-toggle="modal" data-target="#exampleModal">Certificates</button><br/>
-      
-
-
-
-
-    </div>
-  </div>
-      </div>
-  <!-- left side end -->
-  <!-- middle sec -->
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0 md-sec" style="height: 150vh; overflow-y: scroll;">
-        <div class="card shadow c1">
-          <div class="card-body pb-1 pt-3">
-            <div class="shrep pb-3">
-              <div class="speak">
-                <input  type="text" placeholder="&#xf044; Speak Out Loud" style="border: none; width: 100%; border-radius: 25px; padding: 10px;   font-family:Arial, FontAwesome" >
  
-            </div><br>
-            <div class="sharepimg  d-flex justify-content-between">
-              <a class="sharebtm">Photos</a>
-              <a class="sharebtm">Videos</a>
-              <a class="sharebtm">Petition</a>
-              <a class="sharebtm">Celebrate</a> 
-              <a class="sharebtm">Invite</a>
-            </div>
-          </div>
+<!-- container  -->
+<div class="container-fluid">
+    <div class="headerr">
+        <h3 class="text-white mt-2 mb-lg-5">Notice Board</h3>
+    </div>  
+    <!-- board -->
+    <div class="card mb-lg-4 mb-3 " style=" background: #222;">
+        <div class="card-header dvh border-bottom d-flex justify-content-between">
+            <div class="efdate d-flex" style="align-items: center;"><span>Effevtive From <span>12/5/2020</span> </span></div>
+            <div class="nn dv  d-flex" style=" align-items: center;"><h2>Republic Day Notice</h2></div>
+            <div class="pd d-flex" style="align-items: center;"><span> Published in<span>12/5/2020</span> <span></div>
         </div>
-        </div>
-        <!-- second card -->
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
-            <div class="row mb-3 ">
-              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
-               <img class="rounded-circle" src="images/work-3.jpg" width="50" height="50" alt="">
-              </div>
-              <div class=" col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
-                <div class="row">
-                  <span class="name" style="font-size: 20px;">Priyanka Desai</span> 
-                </div>
-                <div class="row mb-">
-                  <span class="schl">Delhi Public School , 11<sup>th</sup> </span>
-                </div>
-              </div>
-            </div>
-            <div class="card-text " >
-              <div class="post-text">
-                <p class="comment more" style="width: 100%; background-color: #333;">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+        <div class="card-header border-bottom mv"><div class="nn text-center" style=" align-items: center;"><h3>Republic Day Notice</h3></div></div>
+        <div class="card-body text-white" style="background: #222;">
+            <p class="comment more text-white" style="background: #222; line-height: 1.4em; font-size: 1.5em;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit..
                   Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin et est gravida, rutrum massa eu, lacinia tortor. 
                     Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
                      Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                </p>
-                
-                   
-              </div>
-            </div>
-            <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
-            </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm"><i class="fas fa-check-square mr-2"></i>Acknowledge</a>
-              <a class="sharebtm "><i class="far fa-comment-dots mr-2"></i>Express</a>
-              <a class="sharebtm "><i class="far fa-handshake mr-2"></i>Support</a>
-              <a class="sharebtm "><i class="far fa-share-square mr-2"></i>Send</a> 
-
-            </div>
-          </div>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                       Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                        Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                        Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                          Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                           Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+            </p>
         </div>
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
-            <div class="row mb-3 ">
-              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
-                <img class="rounded-circle" src="images/work-3.jpg" width="50" height="50" alt="">
-              </div>
-              <div class="col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
-                <div class="row">
-                  <span class="name" style="font-size: 20px">Neha Parmar</span> 
-                </div>
-                <div class="row mb-">
-                  <span class="schl">Delhi Public School , 11<sup>th</sup> </span>
-                </div>
-              </div>
-            </div>
-            <div class="card-text " >
-              <div class="post-text">
-                <p class="comment more" style="width: 100%; background-color: #333;">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                    Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                </p>
-                
-              </div>
-            </div>
-            <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
-            </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm"><i class="fas fa-check-square mr-2" ></i>Acknowledge</a>
-              <a class="sharebtm"><i class="far fa-comment-dots mr-2"></i>Express</a>
-              <a class="sharebtm"><i class="far fa-handshake mr-2"></i>Support</a>
-              <a class="sharebtm"><i class="far fa-share-square mr-2"></i>Send</a> 
- 
-
-            </div>
-          </div>
-        </div>
-        <!-- second card end -->
-        <!-- third card start -->
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
-            <div class="row mb-3 ">
-              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
-                 <img class="rounded-circle" src="images/work-3.jpg" width="50" height="50" alt="">
-              </div>
-              <div class="col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
-                <div class="row">
-                  <span class="name" style="font-size: 20px">Raj Salvi</span> 
-                </div>
-                <div class="row mb-">
-                  <span class="schl">Delhi Public School , 11<sup>th</sup> </span>
-                </div>
-              </div>
-            </div>
-            <div class="card-text " >
-              <div class="post-text">
-                <p class="comment more" style="width: 100%; background-color: #333;">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                    Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                </p>
-                
-              </div>
-            </div>
-            <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
-            </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm"><i class="fas fa-check-square mr-2"></i>Acknowledge</a>
-              <a class="sharebtm"><i class="far fa-comment-dots mr-2"></i>Express</a>
-              <a class="sharebtm"><i class="far fa-handshake mr-2"></i>Support</a>
-              <a class="sharebtm"><i class="far fa-share-square mr-2"></i>Send</a> 
-
-
-            </div>
-          </div>
-        </div>
-        <!-- third card end -->
-        <!-- fourth card start -->
-        <div class="card shadow">
-          <div class="card-body pb-2 mx-2">
-            <div class="row mb-3 ">
-              <div class="col-lg-2 col-sm-2 col-md-2 col-3 pr-0">
-                 <img class="rounded-circle" src="images/work-3.jpg" width="50" height="50" alt="">
-              </div>
-              <div class="col-lg-10 col-md-10 col-sm-10 col-9 pl-lg-0 pl-2 pl-sm-2">
-                <div class="row">
-                  <span class="name" style="font-size: 20px">Shreyash Shah</span> 
-                </div>
-                <div class="row mb-">
-                  <span class="schl">Delhi Public School , 11<sup>th</sup> </span>
-                </div>
-              </div>
-            </div>
-            <div class="card-text " >
-              <div class="post-text">
-                <p class="comment more" style="width: 100%; background-color: #333  ;">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                    Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                </p>
-                
-              </div>
-            </div>
-            <div class=" text-center border-bottom border-top  pb-3">
-              <img class="img-fluid  mt-lg-3" src="work-3.jpg" alt="" width="400px" height="100px">
-            </div>
-            <div class="post-footer mt-2 d-flex justify-content-between">
-              <a class="sharebtm"><i class="fas fa-check-square mr-2"></i>Acknowledge</a>
-              <a class="sharebtm"><i class="far fa-comment-dots mr-2"></i>Express</a>
-              <a class="sharebtm"><i class="far fa-handshake mr-2"></i>Support</a>
-              <a class="sharebtm"><i class="far fa-share-square mr-2"></i>Send</a> 
- 
-
-            </div>
-          </div>
-        </div>
-        <!-- fourth card end -->
-      </div>
-      <!-- middle sec end -->
-      <!-- right side start -->
-  <div class="col-3 pl-0 right">
-  <div class="card shadow ">
-    <h5 class="card-header border-bottom " style="background-color: #333;">Today's Headlines</h5>
-    <div class="card-body view">
-      <ul style="list-style: none;">
-      <li class="card-text mb-3" style="line-height: 1.3em;">With supporting text below as a natural lead-in to additional content.</li>
-      <li class="card-text mb-3" style="line-height: 1.3em;">With supporting text below as a natural lead-in to additional content.</li>
-      <li class="card-text mb-3" style="line-height: 1.3em;">With supporting text below as a natural lead-in to additional content.</li>
-    </ul>
-      <a href="#"  style="color: white;  float: right;" >View All</a>
     </div>
-  </div>
-<div class="card shadow " >
-    <div class="card-header border-bottom"  style="background-color: #333;">
-      <div class="d-flex">
-        <h5>My Schedule</h5> <span class="mx-3" ><a id="cale" class="p-1" style="color: white;" ><i class="fas fa-calendar-alt fa-lg"></i><a></span> 
-      </div>
-<!--       <h5 class="card-title mb-0 pb-0" >21/12/2020</h5> -->
-      </div>
-    <div class="card-body schedule view" >
-
-      <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><b>8:15 - 9:15 </b><br>With supporting text below as a natural lead-in to additional content.</p>
-      
-      </div>
-      <a href="#" class="text-right card-body" style="color: white;float: right; ">View All</a>
-    
-  </div>
-      </div>
-      <!-- right side end -->
-      </div> <!--Row end -->
+    <!-- board end -->
+    <!-- history -->
+    <div class="card">
+        <div class="border-bottom hsm card-header text-center ">
+            <h3 >History</h3>
+        </div>
+        <div class="card-body hs" style="height: 50vh; overflow-y: scroll;" >
+            <li class="d-flex mt-3 border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong">Independence Day</a> </span> <span>12/2/2020</span> </li>
+            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong1">Notice1 </a> </span> <span>12/2/2020</span> </li>
+            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong2">Independence Day</a> </span> <span>12/2/2020</span> </li>
+            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong3">Notice4 </a> </span> <span>12/2/2020</span> </li>
+            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong4">Independence Day</a> </span> <span>12/2/2020</span> </li>
+            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong5">Holiday </a> </span> <span>12/2/2020</span> </li>
+        </div>
     </div>
+     <!-- history  end-->
+</div>
 <!-- container end -->
 
-
+  
+  <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle">Independence Day</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin et est gravida, rutrum massa eu, lacinia tortor. 
+              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle1">Notice1</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin et est gravida, rutrum massa eu, lacinia tortor. 
+              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle2"> Independence Day</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin et est gravida, rutrum massa eu, lacinia tortor. 
+              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle3">Notice4</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin et est gravida, rutrum massa eu, lacinia tortor. 
+              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle4">Independence Day</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+           metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle5" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title " id="exampleModalLongTitle5"> Holiday</h5>
+          
+        </div>
+        <div class="modal-body">
+          <p>
+           metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
+                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin et est gravida, rutrum massa eu, lacinia tortor
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
 
 <!-------footer for mob view start------------>
-<div class="mfooter ">
-  <nav class="navbar navbar-light  bg-dark"id="navbar1"style="color: white!important;">
+<!-------footer for mob view start------------>
+<div class="mfooter">
+  <nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
     <ul class=" d-flex justify-content-between "style="width: 100%;">
           <li class="nav-item mx-2 text-center">
             <a href="">
-              <div><i class="fa fa-home" aria-hidden="true" style="font-size: medium;"></i></div>
+              <div><i class="fa fa-home" aria-hidden="true"></i></div>
               
             </a> 
            
           </li>
           <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fa fa-tablet" aria-hidden="true" style="font-size: medium;"></i>
+            <a href=""><i class="fas fa-book" aria-hidden="true"></i>
             </a>      
           </li>
           <li class="nav-item mx-2 text-center">
@@ -435,12 +521,12 @@ function closeNav() {
                 
           </li>
            <li class="nav-item mx-2 text-center">
-            <a href=""><i class="fa fa-bell" aria-hidden="true" style="font-size: medium;"></i>
-             </a>      
+            <a href=""><i class="fa fa-bell" aria-hidden="true"></i>
+              </a>      
           </li>
           <li class="nav-item mx-2 text-center">
-             <a href=""><i class="fa fa-search" aria-hidden="true" style="font-size: medium;"></i>
-           </a>      
+             <div onclick="openNav()"><img src="images/boy.png" class="rounded-circle"style="width: 30px;height: auto;background: #fff;">
+           </div>      
           </li>
 
 
@@ -448,25 +534,53 @@ function closeNav() {
         </ul>
   </nav>
 </div>
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar1").style.bottom = "0";
-  } else {
-    document.getElementById("navbar1").style.bottom = "-100%";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
+
 <!-------footer for mob view end------------>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-<script src="index.js"></script>
+<script>
+    $(document).ready(function() {
+        if ($(window).width()<601){
+            var showChar = 200;
+        }
+        else{
+            var showChar = 900;
+        }
+  var ellipsestext = "...";
+  var moretext = "more";
+  var lesstext = "less";
+  $('.more').each(function() {
+    var content = $(this).html();
+
+    if(content.length > showChar) {
+
+      var c = content.substr(0, showChar);
+      var h = content.substr(showChar-1, content.length - showChar);
+
+      var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+      $(this).html(html);
+    }
+
+  });
+
+  $(".morelink").click(function(){
+    if($(this).hasClass("less")) {
+      $(this).removeClass("less");
+      $(this).html(moretext);
+    } else {
+      $(this).addClass("less");
+      $(this).html(lesstext);
+    }
+    $(this).parent().prev().toggle();
+    $(this).prev().toggle();
+    return false;
+  });
+});
+</script>
 
 </body>
 </html>
