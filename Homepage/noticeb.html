@@ -30,6 +30,39 @@
           background: #222;
           
       }
+      button>span{
+        font-size: 1.4em;
+      }
+      .accordion {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: solid 1px #333;
+}
+
+.active, .accordion:hover {
+  background-color: #333; 
+}
+.accordion:focus{
+  outline: none !important;
+  border: none !important;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #222;
+  overflow: hidden;
+  color: white;
+}
+
       .hs>li>span>a{
           text-decoration: none;
           color: white;
@@ -92,6 +125,9 @@
           font-size: 1em  ;
           padding-right: 10px;
           padding-left:10px ;
+      }
+      button>span{
+        font-size: 1  em;
       }
       .hs{
           height: 40vh !important;
@@ -296,209 +332,109 @@ function closeNav() {
             <h3 >History</h3>
         </div>
         <div class="card-body hs" style="height: 50vh; overflow-y: scroll;" >
-            <li class="d-flex mt-3 border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong">Independence Day</a> </span> <span>12/2/2020</span> </li>
-            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong1">Notice1 </a> </span> <span>12/2/2020</span> </li>
-            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong2">Independence Day</a> </span> <span>12/2/2020</span> </li>
-            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong3">Notice4 </a> </span> <span>12/2/2020</span> </li>
-            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong4">Independence Day</a> </span> <span>12/2/2020</span> </li>
-            <li class="d-flex border-bottom mb-lg-3 justify-content-between" ><span><a href="" data-toggle="modal" data-target="#exampleModalLong5">Holiday </a> </span> <span>12/2/2020</span> </li>
-        </div>
-    </div>
-     <!-- history  end-->
+          <button class="accordion d-flex justify-content-between "> <span>Extra Class Notice  </span> <span>12/2/2020</span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Proin et est gravida, rutrum massa eu, lacinia tortor. 
+       Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+        Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
+
+<button class="accordion d-flex justify-content-between"><span>College Reopening  </span> <span>12/2/2020</span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Proin et est gravida, rutrum massa eu, lacinia tortor. 
+       Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+        Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<button class="accordion d-flex justify-content-between "> <span>Lock Down Notice</span> <span>12/2/2020</span></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+     Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Proin et est gravida, rutrum massa eu, lacinia tortor. 
+       Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+        Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+       
+   
+    
+    <button class="accordion d-flex justify-content-between"><span>Holiday</span> <span>1/2/2021</span></button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+         Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Proin et est gravida, rutrum massa eu, lacinia tortor. 
+           Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    
+    <button class="accordion d-flex justify-content-between"><span>Independence Day</span> <span>15/8/2020</span></button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+         Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Proin et est gravida, rutrum massa eu, lacinia tortor. 
+           Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+
+       
+        
+        <button class="accordion d-flex justify-content-between"><span>Eating Compitation</span> <span>12/7/2020</span></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+             nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+             Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Proin et est gravida, rutrum massa eu, lacinia tortor. 
+               Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+        <button class="accordion d-flex justify-content-between"><span>Patent Teacher Meeting</span> <span>12/6/2020</span></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+             nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+             Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Proin et est gravida, rutrum massa eu, lacinia tortor. 
+               Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
+                Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+
+                </div>
+            
+     <!-- history  end-->
+
 <!-- container end -->
 
   
-  <!-- Button trigger modal -->
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog " role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle">Independence Day</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Proin et est gravida, rutrum massa eu, lacinia tortor. 
-              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle1">Notice1</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Proin et est gravida, rutrum massa eu, lacinia tortor. 
-              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle2"> Independence Day</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Proin et est gravida, rutrum massa eu, lacinia tortor. 
-              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle3" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle3">Notice4</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-            Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Proin et est gravida, rutrum massa eu, lacinia tortor. 
-              Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-               Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle4" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle4">Independence Day</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-           metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle5" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-bottom">
-          <h5 class="modal-title " id="exampleModalLongTitle5"> Holiday</h5>
-          
-        </div>
-        <div class="modal-body">
-          <p>
-           metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin et est gravida, rutrum massa eu, lacinia tortor. 
-                 Nunc ut ipsum diam. Maecenas lobortis posuere eleifend.
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit..
-                  Donec varius, justo et fermentum vehicula, turpis metus sollicitudin metus,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin et est gravida, rutrum massa eu, lacinia tortor
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Modal end -->
 
-<!-------footer for mob view start------------>
+
 <!-------footer for mob view start------------>
 <div class="mfooter">
   <nav class="navbar navbar-light "id="navbar1"style="background-color: #111;border-top: 1px solid #444;">
@@ -581,6 +517,22 @@ function closeNav() {
   });
 });
 </script>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 </html>
