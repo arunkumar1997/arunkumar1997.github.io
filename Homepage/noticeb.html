@@ -22,16 +22,12 @@
           background-color: #111 !important;
           padding-bottom: 80px;
       }
-      .modal-title{
-         text-align: center;
-      }
-      .hs>li > *{
-          font-size: 1.4em;
-          background: #222;
-          
-      }
       button>span{
         font-size: 1.4em;
+        color:rgb(54, 214, 54);
+      }
+      .panel>p{
+        font-size: 1.3em;
       }
       .accordion {
   background-color: #222;
@@ -54,7 +50,10 @@
   outline: none !important;
   border: none !important;
 }
-
+.accordion{
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
 .panel {
   padding: 0 18px;
   display: none;
@@ -63,23 +62,27 @@
   color: white;
 }
 
-      .hs>li>span>a{
-          text-decoration: none;
-          color: white;
-      }
-      .modal-content{
-          background: #222;
-          color: white;
-      }
-      .hs>li{
-        background: #222;
-      }
+    
       .card{
         box-shadow: 5px 5px 10px 2px  rgba(0,0,0,0.75);
         border: none !important;
         outline: none !important;
         border-radius:0 ;
         background: #222;
+        /* make things invisible upon start */
+      opacity:0;  
+      -webkit-animation:fadeIn ease-in 1; 
+      -moz-animation:fadeIn ease-in 1;
+      animation:fadeIn ease-in 1;
+
+      -webkit-animation-fill-mode:forwards;  
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+
+      -webkit-animation-duration:0.5s;
+      -moz-animation-duration:0.5s;
+      animation-duration:0.5s;
+  /* make things invisible upon start  end*/
       }
       .card-body{
           background: #222;
@@ -105,6 +108,34 @@
       .mv {
           display: none !important;
       }
+/* bc */
+      ul {
+  list-style: none;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #111;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: white;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color:rgb(54, 214, 54);;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
       @media (max-width:600px){
         .dv{
           display: none !important;
@@ -121,20 +152,14 @@
       .card-body{
           padding: 0;
       }
-      .hs>li>*{
-          font-size: 1em  ;
-          padding-right: 10px;
-          padding-left:10px ;
-      }
+      
       button>span{
         font-size: 1em;
       }
       .hs{
           height: 40vh !important;
       }
-      .hs>li{
-          margin-bottom: 10px;
-      }
+     
       .hsm{
           padding-top: 5px !important;
           padding-bottom: 5px !important;
@@ -291,7 +316,14 @@ function closeNav() {
 }
 </script>
   <!----------------------mob header end---------------------------------->
- 
+  <div class="">
+    <ul class="breadcrumb px-lg-5 px-md-5 px-sm-3 px-2">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Attendence</a></li>
+        
+    </ul>
+</div>
 <!-- container  -->
 <div class="container-fluid">
     <div class="headerr">
@@ -329,7 +361,7 @@ function closeNav() {
     <!-- history -->
     <div class="card">
         <div class="border-bottom hsm card-header text-center ">
-            <h3 >History</h3>
+            <h2 >History</h2>
         </div>
         <div class="card-body hs" style="height: 50vh; overflow-y: scroll;" >
           <button class="accordion d-flex justify-content-between "> <span>Extra Class Notice  </span> <span>12/2/2020</span></button>
