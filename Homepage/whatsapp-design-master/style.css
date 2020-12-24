@@ -1,0 +1,95 @@
+root{
+  font-size: 14px;
+  }
+  
+  .top-card{
+    margin-top: 5vh;
+  }
+  
+  #background{
+    background-image: url("https://img00.deviantart.net/31cf/i/2015/028/8/6/super_hero_whatsapp_background_by_x_ama-d8fr7iz.jpg");
+       height: 80vh;
+  }
+  
+  
+  #leftside{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:80vh;	
+  }
+  
+  
+  #leftside a{
+    text-decoration: none;
+  
+  }
+  
+  #leftside a :hover {
+    background-color: #EEEEEE;
+    color: #078898;
+  }
+  
+  
+  .rightside {
+    overflow-y:scroll;
+    height:80vh;	
+  }
+  
+  
+  .header{
+    background-color: rgb(209, 214, 214);
+    height:3em;
+  
+
+  }
+  
+  
+  .icons{
+    color: #004879;
+    margin-top: 2vh;
+  
+  }
+  
+  
+  .imgAvatar{
+     margin: 5px;
+     height:40px;
+     width:40px;
+  }
+  
+  .imgAttach{
+     height:5vh;
+     width:5vw;
+  }
+  
+  
+  .circle-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+  
+    background:#13ca13d2;
+    color: #fff;
+    font-size: 1em ;
+  }
+  
+  
+  .subtext{
+    font-size: 0.8em;
+  }
+  
+  
+  .reciever{
+    background-color: #f0f7fa;
+    padding: 0.5em;
+    border-left: 5px groove #f0f7fa;
+  }
+  
+  .sender{
+    background-color: #F4DECB;
+    padding: 0.5em;
+    border-right: 5px groove #F4DECB;
+  
+  }
+  

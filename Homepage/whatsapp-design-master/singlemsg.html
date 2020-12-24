@@ -1,0 +1,456 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="Images/favicon.ico">
+
+    <title>WhatsApp Web</title>
+
+   
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body >
+    <!-- Section for Large Devices -->
+    <section>
+      <div class="container-fluid border d-none d-sm-none d-md-none d-lg-block" style="background-color: #009688;height: 20vh">
+        <div class="row">
+
+          <div class="col-sm-4 card top-card"> <!--column for left side view of app -->
+            
+            <div class="row border header"> <!--header for left side view of app -->
+              
+              <div class="col-sm-9" id="avatar">
+                <a href="profilepic.html" data-toggle="tooltip" title="Profile">
+                  <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar" >
+                </a>
+              </div>
+
+              <div class="col-sm-1">
+                <a href="#" data-toggle="tooltip" title="Status">
+                  <i class="fas fa-circle-notch icons"></i>
+                </a>
+              </div>
+
+
+              <div class="col-sm-1">
+                <a href="#" data-toggle="tooltip" title="New Chat">
+                  <i class="far fa-comment icons"></i>
+                </a>
+              </div>
+
+              <div class="col-sm-1">
+                
+                  <div class="dropdown">
+                    
+                      <a href="#" id="dropdownThreeDotsSingleView" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+                        <i class="fas fa-ellipsis-v icons"></i>
+                      </a>
+
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownThreeDotsSingleView">
+                        <a class="dropdown-item" href="#">New Group</a>
+                        <a class="dropdown-item" href="profilepic.html">Profile</a>
+                        <a class="dropdown-item" href="#">Archived</a>
+                        <a class="dropdown-item" href="#">Starred</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+
+                      </div>
+                  </div>
+                
+              </div>
+            </div> <!--end header of left side view of app -->
+
+            
+            <div class="row border"><!--row for left side textbox of app --> 
+              <div class="col-sm-12">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="searchText" placeholder="Search or start new chat">
+                  </div>
+                </form>
+              </div> 
+            </div> <!--end row for left side textbox of app -->
+          
+            <div id="leftside">  <!--div for left side messages view of app -->
+                <a href="singlemsg.html">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                    </div>
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Friend <br>
+                            <span class="text-muted subtext" > I am fine bro </span>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext" > 16:50</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="groupmsg.html">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Group-icon.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Group <br>
+                            <span class="text-muted subtext"> Member : Whats going on Guys?</span>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext"> 6:20</span>
+                            <br>
+                            <span class="circle-text"> &nbsp;5&nbsp;</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#" >
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Friend 2<br>
+                            <span class="text-muted subtext"> Where are you going ? </span>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext"> 11:50</span>
+                            <br>
+                            <i class="fas fa-volume-off icons"></i>
+                          </p>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Group 2<br>
+                            <span class="text-muted subtext"> Member : Cool yaar</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="timer text-muted subtext" > 09:19</span>
+                            <br>
+                            <i class="fas fa-volume-off icons"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+
+            </div> <!--end div for left side messages view of app -->
+          </div> <!--column for left side view of app -->
+
+
+          <div class="col-sm-8 card top-card"> <!--column for right side view of app -->
+            <div class="row border header">
+              <div class="col-sm-1">
+                <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+              </div>
+              
+              <div class="col-sm-8">
+                <p>Friend
+                  <br>
+                  Last Seen at 6:50
+                </p>
+              </div>
+
+              <div class="col-sm-1">
+                <a href="#" data-toggle="tooltip" title="Search">
+                  <i class="fa fa-search icons" aria-hidden="true"></i>
+                </a>              
+              </div>
+
+              <div class="col-sm-1">
+                <div class="dropdown">
+                  <a href="#" id="dropdownAttach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Attach">
+                    <i class="fas fa-paperclip icons" ></i>
+                  </a>
+
+                 
+                </div>
+              </div>
+
+              <div class="col-sm-1">
+                <div class="dropdown">
+                  <a href="#" id="dropdownThreeDots" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+                    <i class="fas fa-ellipsis-v icons " ></i>
+                  </a>
+
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownThreeDots">
+                    <a class="dropdown-item" href="#">Group Info</a>
+                    <a class="dropdown-item" href="#">Select Messages</a>
+                    <a class="dropdown-item" href="#">Mute</a>
+                    <a class="dropdown-item" href="#">Clear Messages</a>
+                    <a class="dropdown-item" href="#">Delete Chat</a>
+                  </div>
+                </div>               
+              </div>
+
+            </div>
+
+            <div class="row rightside">
+              
+              <div class="col-sm-12" id="background"  >
+
+                <div class="row" style="margin-top: 5vh;">
+                  <div class="col-sm-4">
+                    <div class="reciever">
+                      <div class="border rounded-right">
+                        <p>Hello Santhosh, I need your help. <br>
+                          <span class="timer float-right text-muted subtext"> 16:39</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row ">
+                  <div class="offset-sm-8 col-sm-4">
+                    <div class="sender">
+                      <div class="border rounded-left">
+                        <p>Hi How are you ? <br>
+                          <span class="timer float-right text-muted subtext"> 16:50</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="reciever">
+                      <div class="border rounded-right">
+                        <p>I am fine bro. <br>
+                          <span class="timer float-right text-muted subtext"> 16:50</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>            
+            </div>
+
+            <div class="row border footer">
+              
+              <div id="col avatar" class="col-sm-1 ">
+                <i class="far fa-smile icons"></i>
+              </div>
+              
+              <div id="col groupname" class="col-sm-10">
+                <input type="text" class="form-control" aria-describedby="messageText" placeholder="Type a message">
+              </div>
+
+              <div id="col 3dots" class="col-sm-1">
+                <i class="fas fa-microphone icons"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>  
+      </div>  
+    </section>
+    <!-- End Section of Large Devices -->
+
+
+    <!-- Section for Mobile Devices -->
+    <section>
+      <div class="container-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none">
+
+          <div class="col-12 card">
+            
+            <div class="row border" style="background-color: #4ABDBC;height: 8vh"> <!--row for header  -->
+              
+            	<div class="col-1">
+                	<a href="index.html" style="text-decoration: none" data-toggle="tooltip" title="Back">
+                  		<i class="fas fa-chevron-circle-left icons"></i>
+                	</a>
+              	</div>
+
+              	<div class="col-2">
+                	<img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+              	</div>
+              
+              	<div class="col-7">
+                	<p>Friend
+                  	<br>
+                  	Last Seen at 6:50
+                	</p>
+              	</div>
+
+              	<div class="col-1">
+                	<div class="dropdown">
+                  	<a href="#" id="dropdownThreeDots" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+                    	<i class="fas fa-ellipsis-v icons " ></i>
+                  	</a>
+                  	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownThreeDots">
+                    	<a class="dropdown-item" href="#">Group Info</a>
+                    	<a class="dropdown-item" href="#">Select Messages</a>
+                    	<a class="dropdown-item" href="#">Mute</a>
+                    	<a class="dropdown-item" href="#">Clear Messages</a>
+                    	<a class="dropdown-item" href="#">Delete Chat</a>
+                  	</div>
+                	</div>
+               
+              	</div>
+
+            </div><!--row for header is end -->
+
+            <div class="row rightside" style="height: 80vh;" id="background"> <!--row for messages -->
+              
+              <div class="col-12"  style="margin-top: 3vh;">
+
+                <div class="row">
+                  <div class="col-6">
+                    <div class="reciever">
+                      <div class="border rounded-right">
+                        <p>Hello Santhosh, I need your help. <br>
+                          <span class="float-right text-muted subtext"> 16:39</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row ">
+                  <div class="offset-6 col-6">
+                    <div class="sender" >
+                      <div class="border rounded-left">
+                        <p>Hi How are you ? <br>
+                          <span class="float-right text-muted subtext"> 16:50</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="reciever">
+                      <div class="border rounded-right">
+                        <p>I am fine bro. <br>
+                          <span class="float-right text-muted subtext"> 16:50</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div> <!--end row for messages  -->
+
+            <div class="row border">  <!--row for footer -->
+              
+              <div class="col-1">
+                <i class="far fa-smile icons"></i>
+              </div>
+              
+              <div class="col-7">
+                <input type="text" class="form-control" aria-describedby="messageText" placeholder="Type a message">
+              </div>
+
+               <div class="col-1">
+				        <i class="fas fa-camera-retro icons"></i>
+               </div>
+
+              <div class="col-1">
+                <div class="dropdown">
+                  <a href="#" id="dropUpAttach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Attach">
+                    <i class="fas fa-paperclip icons" ></i>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="col-1">
+                <i class="fas fa-microphone icons"></i>
+              </div>
+
+
+            </div>
+          
+         </div>
+      </div>
+    </section> <!-- End Section of Mobile Devices -->
+
+      
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="Images/whats_icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>WhatsApp Web</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+
+</head>
+<body>
+      
+      <section><!-- Section for Large Devices -->
+        <div class="container-fluid border d-none d-sm-none d-md-none d-lg-block" style="background-color: #009688;height: 20vh"> <!--Container for app -->
+          <div class="row"> <!--row for app -->
+  
+            <div class="col-sm-4 card top-card"> <!--column for left side view of app -->
+              
+              <div class="row border header"> <!--header for left side view of app -->
+                
+                <div class="col-sm-9" id="avatar">
+                  <a href="profilepic.html" data-toggle="tooltip" title="Profile">
+                    <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar" >
+                  </a>
+                </div>
+  
+  
+                  <div class="col-sm-1">
+                    <a href="#" data-toggle="tooltip" title="Status">
+                      <i class="fas fa-circle-notch icons"></i>
+                    </a>
+                  </div>
+  
+  
+                <div class="col-sm-1">
+                  <a href="#" data-toggle="tooltip" title="New Chat">
+                    <i class="far fa-comment icons"></i>
+                  </a>
+                </div>
+  
+                <div class="col-sm-1">
+                  
+                  <a href="#" id="dropdownThreeDotsSingleView" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu">
+                          <i class="fas fa-ellipsis-v icons"></i>
+                        </a>
+</div>
+              </div> <!--end header of left side view of app -->
+  
+              
+              <div class="row border"><!--row for left side textbox of app --> 
+                <div class="col-sm-12">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="searchText" placeholder="Search or start new chat">
+                    </div>
+                  </form>
+                </div> 
+              </div> <!--end row for left side textbox of app -->
+              <div id="leftside">  <!--div for left side messages view of app -->
+                <a href="singlemsg.html">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Friend <br>
+                            <span class="text-muted subtext" > I am fine bro </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext" > 16:50</span>
+                            <br>
+                            <span class="circle-text"> &nbsp;1&nbsp;</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="groupmsg.html">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Group-icon.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Group <br>
+                            <span class="text-muted subtext"> Member : Whats going on Guys?</span>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext"> 6:20</span>
+                            <br>
+                            <span class="circle-text"> &nbsp;5&nbsp; </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#" >
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Friend 2<br>
+                            <span class="text-muted subtext"> Where are you going ? </span>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="text-muted subtext"> 11:50</span>
+                            <br>
+                            <i class="fas fa-volume-off icons"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="row border">
+                    <div class="col-sm-2">
+                      <img src="Images/Group-icon.png" alt="User" class="imgAvatar">
+                    </div>
+
+
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> Group 2<br>
+                            <span class="text-muted subtext"> Member : Cool yaar</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p> 
+                            <span class="timer text-muted subtext" > 09:19</span>
+                            <br>
+                            <i class="fas fa-volume-off icons"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+            </div> <!--end div for left side messages view of app -->
+          
+          </div> <!--column for left side view of app -->
+          <div class="col-sm-8 card top-card"> <!--column for right side view of app -->
+            <div class="row border">
+              <div class="col-sm-12">
+                <img src="Images/whatsapp_image.png" alt="backgroundImage" style="width: 100%">
+              </div>
+            </div>
+          </div><!--end column for right side view of app -->
+        
+
+        
+        </div> <!--end row for app --> 
+</div>
+</section>
+<section><!-- Section for Mobile Devices -->
+  <div class="container-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none "><!--Container -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top row" style="background-color: #4ABDBC;">
+      
+      <a class="navbar-brand col-7" href="#" >WhatsApp</a>
+
+      <div class="nav-item col-1">
+        <a href="profilepic.html" data-toggle="tooltip" title="Profile">
+          <i class="fas fa-user icons"></i>
+        </a>
+      </div> 
+      
+      <div class="nav-item col-1">
+        <a href="#" data-toggle="tooltip" title="Search">
+          <i class="fa fa-search icons" aria-hidden="true"></i>
+        </a>              
+      </div>
+
+      <div class="nav-item col-1">
+        <a href="#" data-toggle="tooltip" title="Menu">
+          <i class="fas fa-ellipsis-v icons"></i>
+        </a>
+      </div> 
+
+
+    </nav> <!--NAV ROW End-->
+
+
+    <div class="row">
+      <div class="col-12" >
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs row" role="tablist">
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#camera" ><img src="Images/camera.png" alt="User" style="height: 20px;width: 20px"></a>
+          </li>
+
+          <li class="nav-item col-3">
+            <a class="nav-link active" data-toggle="tab" href="#chats">Chats</a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link " data-toggle="tab" href="#status">Status</a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#calls">Calls</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          
+          
+
+          <div id="chats" class="container tab-pane active"><br>
+              <a href="singlemsg.html">
+                <div class="row border">
+        
+                  <div class="col-2">
+                    <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                  </div>
+
+                  <div class="col-8">                          
+                    <p> Friend <br>
+                      <span class="text-muted subtext"> I am fine bro </span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 16:50</span>
+                      <br>
+                      <span class="circle-text"> &nbsp;1&nbsp;</span>
+                    </p>
+                  </div>
+
+                </div>
+              </a>
+
+              <a href="groupmsg.html">
+                <div class="row border">
+                  
+                  <div class="col-2">
+                    <img src="Images/Group-icon.png" alt="User" class="imgAvatar">
+                  </div>
+
+
+                  <div class="col-8">
+                    <p> Group <br>
+                      <span class="text-muted subtext"> Member : Whats going on Guys?</span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 6:20</span>
+                      <br>
+                      <span class="circle-text"> &nbsp;5&nbsp;</span>
+                      </p>
+                  </div>
+
+                </div>
+              </a>
+              
+              <a href="#">
+                <div class="row border">
+                  <div class="col-2">
+                    <img src="Images/Circle-icons-profle.svg.png" alt="User" class="imgAvatar">
+                  </div>
+
+                  <div class="col-8">
+                    <p> Friend 2<br>
+                      <span class="text-muted subtext"> Where are you going ? </span>
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 11:50</span>
+                      <br>
+                      <i class="fas fa-volume-off icons"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="row border">
+                  <div class="col-2">
+                    <img src="Images/Group-icon.png" alt="User" class="imgAvatar">
+                  </div>
+
+                  <div class="col-8">
+                    <p> Group 2<br>
+                      <span class="text-muted subtext"> Member : Cool yaar</span>
+                    </p>                        
+                  </div>
+
+                  <div class="col-2">
+                    <p> 
+                      <span class="text-muted subtext"> 09:19</span>
+                      <br>
+                      <i class="fas fa-volume-off icons"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+         
+        </div>
+      </div> <!--col for Tabs End-->     
+    </div> <!--row for Tabs End-->    
+  </div> <!--Container End-->
+</section> <!-- End Section of Mobile Devices -->
+
+              
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
