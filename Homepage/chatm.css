@@ -235,3 +235,9 @@ root{
   .write_msg::placeholder{
     text-indent: 15px;
   }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+}
